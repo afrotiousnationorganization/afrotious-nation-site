@@ -1,0 +1,31 @@
+(Use when you approve someone who fits multiple roles or a custom role)
+
+Subject: Welcome to Afrotious Nation — You’re Approved
+
+Hi [Name],
+
+Congratulations! Your application for the [Role Name] position has been approved.
+
+Before onboarding, please review and accept the Afrotious Nation Creator Agreement:
+
+Creator Agreement:
+https://afrotiousnation.org/creator-agreement
+
+After reviewing, access your secure Creator Portal:
+
+Creator Portal:
+https://afrotiousnation.org/creator-portal (afrotiousnation.org in Bing)
+
+Inside the portal, you’ll create your login and unlock your creator tools:
+
+• Submission Portal
+• Brand/Music Upload Pages
+• Creator Dashboard
+• Marketplace tools
+
+Once logged in, you’ll receive your Stripe Connect onboarding link to set up payouts and compliance.
+
+Welcome to the cosmic realm.
+
+Afrotious Nation
+support@afrotiousnation.org

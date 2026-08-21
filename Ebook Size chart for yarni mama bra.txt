@@ -1,0 +1,76 @@
+Ebook Size chart for yarni mama bralette 
+<div class="size-chart">
+  <h2>Yarni Mama Bralette Size Chart</h2>
+
+  <p>
+    All Yarni Mama bralette cups are made using the same construction method. Measure from the bottom of your breast to just under the nipple (cup height), then measure around your back and underbust (band size). Match your measurements to the chart below.
+  </p>
+
+  <table>
+    <tr>
+      <th>Size</th>
+      <th>Cup Height</th>
+      <th>Band Measurement</th>
+      <th>Starting Chain</th>
+      <th>Rounds</th>
+      <th>Notes</th>
+    </tr>
+
+    <tr>
+      <td>XXS</td>
+      <td>7–8 cm</td>
+      <td>26–30 in</td>
+      <td>Chain 8</td>
+      <td>4–5 rounds</td>
+      <td>Very small cup; light coverage</td>
+    </tr>
+
+    <tr>
+      <td>XS</td>
+      <td>8–9 cm</td>
+      <td>30–32 in</td>
+      <td>Chain 9</td>
+      <td>5–6 rounds</td>
+      <td>Small cup; light/medium coverage</td>
+    </tr>
+
+    <tr>
+      <td>S</td>
+      <td>9–10 cm</td>
+      <td>32–34 in</td>
+      <td>Chain 10</td>
+      <td>5–6 rounds</td>
+      <td>Small/medium cup</td>
+    </tr>
+
+    <tr>
+      <td>M (Your Size)</td>
+      <td>10–11 cm</td>
+      <td>34–36 in</td>
+      <td>Chain 10 + 3 turning chain</td>
+      <td>6 rounds</td>
+      <td>Between B and C cup; your exact fit</td>
+    </tr>
+
+    <tr>
+      <td>L</td>
+      <td>11–12 cm</td>
+      <td>36–38 in</td>
+      <td>Chain 12</td>
+      <td>7 rounds</td>
+      <td>More height + more coverage</td>
+    </tr>
+
+    <tr>
+      <td>XL</td>
+      <td>12–13 cm</td>
+      <td>38–42 in</td>
+      <td>Chain 14</td>
+      <td>8 rounds</td>
+      <td>Fuller cup; medium/full coverage</td>
+    </tr>
+  </table>
+
+  
+  </p>
+</div>

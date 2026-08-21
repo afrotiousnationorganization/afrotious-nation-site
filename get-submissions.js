@@ -1,3 +1,5 @@
+// fetch is built-in, no import needed
+
 exports.handler = async (event) => {
   const formName = event.queryStringParameters.form;
 

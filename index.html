@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Afrotious Nation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="icon" type="image/png" href="favicon.png">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: radial-gradient(circle at top, #3A0CA3, #0A0A0F);
+      color: #F8F6FF;
+    }
+
+    header {
+      padding: 1.5rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(10, 10, 15, 0.7);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .logo {
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #C8A2C8;
+    }
+
+    nav a {
+      color: #F8F6FF;
+      text-decoration: none;
+      margin-left: 1rem;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #C8A2C8;
+    }
+
+    .hero {
+      padding: 3rem 2rem 1rem;
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+      color: #C8A2C8;
+      text-shadow: 0 0 15px rgba(200, 162, 200, 0.4);
+    }
+
+    .hero p {
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.6;
+      color: #EDE7F6;
+    }
+
+    .products {
+      padding: 2rem;
+      max-width: 1100px;
+      margin: 0 auto 3rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 2rem;
+    }
+
+    .product-card {
+      background: rgba(58, 12, 163, 0.15);
+      border: 1px solid rgba(200, 162, 200, 0.2);
+      border-radius: 15px;
+      padding: 1rem;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(8px);
+      transition: 0.3s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 35px rgba(123, 44, 191, 0.4);
+    }
+
+    .product-card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 0.75rem;
+      object-fit: cover;
+      max-height: 260px;
+      box-shadow: 0 0 20px rgba(200, 162, 200, 0.3);
+    }
+
+    .product-title {
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+      color: #EDE7F6;
+    }
+
+    .product-price {
+      color: #C8A2C8;
+      font-weight: 500;
+      margin-bottom: 0.75rem;
+    }
+
+    .buy-button {
+      display: inline-block;
+      text-align: center;
+      padding: 0.6rem 0.9rem;
+      border-radius: 999px;
+      background: #7B2CBF;
+      color: #F8F6FF;
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: 0.3s;
+    }
+
+    .buy-button:hover {
+      background: #9D4EDD;
+    }
+
+    footer {
+      padding: 1.5rem 2rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      font-size: 0.85rem;
+      color: #C8A2C8;
+      text-align: center;
+    }
+@keyframes floatUp {
+  0% { transform: translateY(0); opacity: 0.8; }
+  100% { transform: translateY(-120vh); opacity: 0; }
+}
+/* Make images responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Make iframe (SoundCloud) responsive */
+iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive text scaling */
+h1, h2, h3, p {
+  word-wrap: break-word;
+}
+
+/* Responsive grid spacing on small screens */
+@media (max-width: 600px) {
+  .products {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .product-card {
+    margin-bottom: 1.5rem;
+  }
+
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 0.5rem;
+  }
+}
+
+  </style>
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">Afrotious Nation</div>
+    <nav>
+      <a href="index.html">Marketplace</a>
+      <a href="music-universe.html">Music Universe</a>
+      <a href="contact.html">Contact</a>
+      <a href="about.html" class="header-btn">About</a>
+      <a href="faq.html" class="header-btn">FAQ</a>
+      <a href="creator-application.html" class="header-btn">Creator Application</a>
+      <a href="custom-orders.html" class="header-btn">Custom Orders</a>
+      <a href="cosmic-lore.html" class="header-btn">Cosmic Lore</a>
+	<a href="news.html" class="header-btn">News</a>
+	<a href="coming-soon.html" class="header-btn">Blog</a>
+	<a href="coming-soon.html" class="header-btn">Events</a>
+	<a href="radio.html" class="header-btn">Cosmic Radio</a>
+	<a class="header-btn" href="creator-dashboard.html">Dashboard</a>
+
+    </nav>
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  </header>
+
+  <section class="hero">
+    <h1>Marketplace</h1>
+    <p>Handmade creations infused with conscious artistic expressions.</p>
+<div class="section">
+    <h2> Creator Earnings</h2>
+    <p>
+        Afrotious Nation is built to empower creators across handmade fashion, digital items,  
+        and game experiences. Earnings come directly from your own products and creations.
+    </p>
+
+    <p><strong>Earnings Breakdown:</strong></p>
+    <p>
+        • Creator keeps 90% of each sale  
+        • Afrotious Nation receives 10%  
+        • No monthly fees  
+        • No subscriptions  
+        • No pay-to-join  
+    </p>
+
+    <p>
+        This model ensures the platform stays sustainable while keeping creators in control  
+        of their income and creative freedom. Afrotious Nation only earns when creators earn.
+    </p>
+</div>
+
+  </section>
+
+<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay; encrypted-media" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2077556268&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/afrotious_nation" title="𝔸𝕗𝕣𝕠𝕥𝕚𝕠𝕦𝕤 ℕ𝕒𝕥𝕚𝕠𝕟✨" target="_blank" style="color: #cccccc; text-decoration: none;">𝔸𝕗𝕣𝕠𝕥𝕚𝕠𝕦𝕤 ℕ𝕒𝕥𝕚𝕠𝕟✨</a> · <a href="https://soundcloud.com/afrotious_nation/dancing-in-the-realm" title="dancing in the realm" target="_blank" style="color: #cccccc; text-decoration: none;">dancing in the realm</a></div>
+
+  <section class="products">
+    
+<div class="product-card">
+  <img src="handmade-crochet-top-by-yarni-mama.png" alt="Handmade Crochet Top" />
+  <div class="product-title">Handmade Crochet Top (Various Styles)</div>
+  <div class="product-price">starting at $35.00</div>
+  <a class="buy-button" href="tops-options.html" target="_blank">View options</a>
+</div>
+
+<div class="product-card">
+  <img src="Durag.png" alt="Crochet Mesh Durag (Various Styles)" />
+  <div class="product-title">Crochet Mesh Durag (Various Styles)</div>
+  <div class="product-price">$100.00</div>
+  <a class="buy-button" href="Mesh-Durag-options.html" target="_blank">View options</a>
+</div>
+<div class="product-card">
+  <img src="Coming Soon Placeholder image.png" alt="Crochet Mesh Veil" />
+  <div class="product-title">Crochet Mesh Veil (Various Styles)</div>
+  <div class="product-price">$TBD</div>
+  <a class="buy-button" href="coming-soon.html" target="_blank">View Options</a>
+</div>
+<div class="product-card">
+  <img src="Handmade Crocheted Bralette by Yarni Mama.png" alt="Handmade Crocheted Bralette" />
+  <div class="product-title">Handmade Crocheted Bralette (Various Styles)</div>
+  <div class="product-price">starting at $28</div>
+  <a class="buy-button" href="crochet-bralette-options.html" target="_blank">View options</a>
+</div>
+<div class="product-card">
+  <img src="Coming Soon Placeholder image.png" alt="Handmade Crochet Dress" />
+  <div class="product-title">Handmade Crochet Dress(Various Styles)</div>
+  <div class="product-price">$TBD</div>
+  <a class="buy-button" href="coming-soon.html" target="_blank">View Options</a>
+</div>
+<div class="product-card">
+  <img src="Coming Soon Placeholder image.png" alt="Handmade Crochet Bottoms" />
+  <div class="product-title">Handmade Crochet Bottoms (Various Styles) </div>
+  <div class="product-price">$TBD</div>
+  <a class="buy-button" href="coming-soon.html" target="_blank">View Options</a>
+</div>
+<div class="product-card">
+  <img src="Bucket hat clone.png" alt="Crocheted Bucket Hat" />
+  <div class="product-title">Crocheted Bucket Hat w/ Belt</div>
+  <div class="product-price">$85.00</div>
+  <a class="buy-button" href="hats-options.html">View options
+</a>
+</div>
+<div class="product-card">
+  <img src="Melaninja Soulja Candles.png" alt="Unscented Mini Candles" />
+  <div class="product-title">Unscented Mini Candles (Various Styles)</div>
+  <div class="product-price">$29.00</div>
+  <a class="buy-button" href="coming-soon.html" target="_blank">View Options</a>
+</div>
+<div class="product-card">
+  <img src="Coming Soon Placeholder image.png" alt="Unscented Mini Soaps" />
+  <div class="product-title">Mini Soaps - Scented/Unscented(Various Styles) </div>
+  <div class="product-price">$28.30</div>
+  <a class="buy-button" href="coming-soon.html" target="_blank">View Options</a>
+</div>
+<div class="product-card">
+  <img src="Sachet-White.png" alt="Lavender Sachet" />
+  <div class="product-title">Lavender Sachet (Various Styles) </div>
+  <div class="product-price">$8.50</div>
+  <a class="buy-button" href="sachet-options.html"_blank">View options
+</a>
+</div>
+<div class="product-card">
+  <img src="kitsune neck pillow black.png" alt="Kitsune Neck Pillow Plush" />
+  <div class="product-title">Kitsune Neck Pillow Plush</div>
+  <div class="product-price">$95.00</div>
+  <a class="buy-button" href="neck-pillow-options.html" target="_blank">View options</a>
+</div>
+<div class="product-card">
+  <img src="Afrotious-Nation-logo-pic.png" alt="Melaninja Soulja Headbands" />
+  <div class="product-title">Headbands</div>
+  <div class="product-price">starting at $27</div>
+  <a class="buy-button" href="headbands-options.html
+">View options</a>
+</div>
+<div class="product-card">
+  <img src="Coming Soon Placeholder image.png" alt="Handmade Crochet Vests" />
+  <div class="product-title">Handmade Crochet Vests (Various Styles)</div>
+  <div class="product-price">$TBD</div>
+  <a class="buy-button" href="coming-soon.html">View options</a>
+</div>
+<div class="product-card">
+  <img src="Coming Soon Placeholder image.png" alt="Handmade Crochet Arm Warmers" />
+  <div class="product-title">Handmade Crochet Arm Warmers (Various Styles)</div>
+  <div class="product-price">$TBD</div>
+  <a class="buy-button" href="coming-soon.html">View options</a>
+</div>
+<div class="product-card">
+  <img src="Coming Soon Placeholder image.png" alt="Handmade Crochet Gloves" />
+  <div class="product-title">Handmade Crochet Gloves (Various Styles)</div>
+  <div class="product-price">$TBD</div>
+  <a class="buy-button" href="coming-soon.html">View options</a>
+</div>
+<div class="product-card">
+  <img src="Coming Soon Placeholder image.png" alt="Handmade Crochet Scarves" />
+  <div class="product-title">Handmade Crochet Scarves (Various Styles)</div>
+  <div class="product-price">$TBD</div>
+  <a class="buy-button" href="coming-soon.html">View options</a>
+</div>
+<div class="product-card">
+  <img src="Coming Soon Placeholder image.png" alt="Handmade Crochet Beanies" />
+  <div class="product-title">Handmade Crochet Beanies (Various Styles)</div>
+  <div class="product-price">$TBD</div>
+  <a class="buy-button" href="coming-soon.html">View options</a>
+</div>
+<div class="product-card">
+  <img src="Coming Soon Placeholder image.png" alt="Afrotious Nation DIY Booklets" />
+  <div class="product-title">E-books</div>
+  <div class="product-price">$TBD</div>
+  <a class="buy-button" href="coming-soon.html">View options</a>
+</div>
+<div class="product-card">
+  <img src="Coming Soon Placeholder image.png" alt="Sets" />
+  <div class="product-title">Sets</div>
+  <div class="product-price">$TBD</div>
+  <a class="buy-button" href="coming-soon.html">View options</a>
+</div>
+<div class="product-card">
+  <img src="Coming Soon Placeholder image.png" alt="Home Living/Decor" />
+  <div class="product-title">Home Living/Decor</div>
+  <div class="product-price">$TBD</div>
+  <a class="buy-button" href="coming-soon.html">View options</a>
+</div>
+  </section>
+  <footer>
+    <footer style="
+    width: 100%;
+    padding: 20px 10px;
+    margin-top: 40px;
+    text-align: center;
+    color: #F8F6FF;
+    font-family: 'Poppins', sans-serif;
+">
+    <p style="margin: 8px 0; font-size: 1rem;">
+        All original content © 2025 Afrotious Nation, © 2026 Afrotious Nation
+    </p>
+
+    <p style="margin: 8px 0; font-size: 0.95rem;">
+        <a href="/terms" style="color:#C8A2C8; text-decoration:none; margin-right:20px;">
+            Terms & Conditions
+        </a>
+        <a href="/privacy" style="color:#C8A2C8; text-decoration:none;">
+            Privacy Policy
+        </a>
+    </p>
+
+    <p style="margin: 8px 0; font-size: 0.9rem; opacity: 0.8;">
+        Powered by Stripe
+    </p>
+</footer>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const particleContainer = document.createElement("div");
+  particleContainer.style.position = "fixed";
+  particleContainer.style.top = 0;
+  particleContainer.style.left = 0;
+  particleContainer.style.width = "100%";
+  particleContainer.style.height = "100%";
+  particleContainer.style.pointerEvents = "none";
+  particleContainer.style.zIndex = "0";
+  document.body.appendChild(particleContainer);
+
+  function createParticle() {
+    const p = document.createElement("div");
+    p.style.position = "absolute";
+    p.style.width = "6px";
+    p.style.height = "6px";
+    p.style.borderRadius = "50%";
+    p.style.background = "rgba(200,162,200,0.8)";
+    p.style.boxShadow = "0 0 12px rgba(200,162,200,0.9) ";
+    p.style.left = Math.random() * window.innerWidth + "px";
+    p.style.top = window.innerHeight + "px";
+    p.style.opacity = 0.8;
+    p.style.animation = "floatUp 12s linear forwards";
+
+    particleContainer.appendChild(p);
+
+    setTimeout(() => p.remove(), 12000);
+  }
+
+  setInterval(createParticle, 450);
+// Authentication check
+  const user = netlifyIdentity.currentUser();
+  const authStatus = document.getElementById("auth-status");
+  const portalContent = document.getElementById("portal-content");
+
+  if (!user) {
+    authStatus.innerHTML = "You must be logged in to access the Submission Portal.";
+    netlifyIdentity.open();
+  } else {
+    authStatus.innerHTML = "Authenticated as: " + user.email;
+    portalContent.style.display = "block";
+  }
+
+  // Logout
+  document.getElementById("logout-btn").addEventListener("click", () => {
+    netlifyIdentity.logout();
+    location.reload();
+  });
+});
+</script>
+</body>
+</html>

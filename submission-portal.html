@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submission Portal — Afrotious Nation</title>
+
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background: radial-gradient(circle at top, #3A0CA3, #0A0A0F);
+            color: #F8F6FF;
+        }
+
+        header {
+            padding: 1.5rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(10, 10, 15, 0.7);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .logo {
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: #C8A2C8;
+        }
+
+        nav a {
+            color: #F8F6FF;
+            text-decoration: none;
+            margin-left: 1rem;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #C8A2C8;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            font-size: 2.4rem;
+            color: #ff4fd8;
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            font-size: 1.6rem;
+            color: #ff4fd8;
+            margin-top: 40px;
+            margin-bottom: 10px;
+        }
+
+        .divider {
+            height: 2px;
+            background: linear-gradient(to right, #ff4fd8, transparent);
+            margin: 20px 0;
+        }
+
+        .submission-card {
+            background-color: #111118;
+            border: 1px solid #ff4fd8;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+
+        .label {
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+
+        .value {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        a.file-link {
+            color: #ff4fd8;
+            text-decoration: none;
+        }
+
+        .loading {
+            font-size: 1.2rem;
+            opacity: 0.8;
+            margin-top: 20px;
+        }
+    </style>
+
+    <!-- Identity Script (ONLY ONCE) -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Afrotious Nation</div>
+    <nav>
+        <a href="index.html">Marketplace</a>
+        <a href="music-universe.html">Music Universe</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html" class="header-btn">About</a>
+        <a href="faq.html" class="header-btn">FAQ</a>
+        <a href="creator-application.html" class="header-btn">Creator Application</a>
+        <a href="custom-orders.html" class="header-btn">Custom Orders</a>
+        <a href="cosmic-lore.html" class="header-btn">Cosmic Lore</a>
+        <a href="news.html" class="header-btn">News</a>
+        <a href="coming-soon.html" class="header-btn">Blog</a>
+        <a href="coming-soon.html" class="header-btn">Events</a>
+        <a href="radio.html" class="header-btn">Cosmic Radio</a>
+        <a class="header-btn" href="creator-dashboard.html">Dashboard</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h1>Submission Portal</h1>
+    <p>View all your uploads across radio, music, brand, creator submissions, and role-based product uploads.</p>
+
+    <div id="loading" class="loading">Loading your submissions...</div>
+
+    <div id="submissions"></div>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    // Particle background
+    const particleContainer = document.createElement("div");
+    particleContainer.style.position = "fixed";
+    particleContainer.style.top = 0;
+    particleContainer.style.left = 0;
+    particleContainer.style.width = "100%";
+    particleContainer.style.height = "100%";
+    particleContainer.style.pointerEvents = "none";
+    particleContainer.style.zIndex = "0";
+    document.body.appendChild(particleContainer);
+
+    function createParticle() {
+        const p = document.createElement("div");
+        p.style.position = "absolute";
+        p.style.width = "6px";
+        p.style.height = "6px";
+        p.style.borderRadius = "50%";
+        p.style.background = "rgba(200,162,200,0.8)";
+        p.style.boxShadow = "0 0 12px rgba(200,162,200,0.9)";
+        p.style.left = Math.random() * window.innerWidth + "px";
+        p.style.top = window.innerHeight + "px";
+        p.style.opacity = 0.8;
+        p.style.animation = "floatUp 12s linear forwards";
+        particleContainer.appendChild(p);
+        setTimeout(() => p.remove(), 12000);
+    }
+
+    setInterval(createParticle, 450);
+
+    // Load submissions
+    loadSubmissions();
+});
+
+async function loadSubmissions() {
+    const user = netlifyIdentity.currentUser();
+
+    if (!user) {
+        document.getElementById('loading').innerText = "You must be logged in to view submissions.";
+        return;
+    }
+
+    const creatorEmail = user.email;
+    const creatorId = user.id;
+
+    const formNames = [
+        "radio-submission",
+        "creator-submission",
+        "music-upload",
+        "brand-upload",
+        "role1",
+        "role2-fashion-brand",
+        "role3-cosmic-accessory",
+        "role4-music-brand"
+    ];
+
+    const submissionsContainer = document.getElementById('submissions');
+    submissionsContainer.innerHTML = "";
+
+    let allSubmissions = [];
+
+    for (const formName of formNames) {
+        try {
+            const response = await fetch(`/.netlify/functions/get-submissions?form=${formName}`);
+            const data = await response.json();
+
+            const filtered = data.filter(sub =>
+                sub.data["creator-email"] === creatorEmail ||
+                sub.data["creator-id"] === creatorId
+            );
+
+            allSubmissions.push({ formName, submissions: filtered });
+
+        } catch (err) {
+            console.error("Error fetching form:", formName, err);
+        }
+    }
+
+    document.getElementById('loading').style.display = "none";
+
+    allSubmissions.forEach(group => {
+        const section = document.createElement("div");
+
+        section.innerHTML = `
+            <div class="section-title">${group.formName.replace(/-/g, " ").toUpperCase()}</div>
+            <div class="divider"></div>
+        `;
+
+        if (group.submissions.length === 0) {
+            section.innerHTML += `<p>No submissions yet.</p>`;
+        } else {
+            group.submissions.forEach(sub => {
+                const card = document.createElement("div");
+                card.className = "submission-card";
+
+                card.innerHTML = `
+                    <div class="label">Submission Type:</div>
+                    <div class="value">${group.formName}</div>
+
+                    <div class="label">Submitted On:</div>
+                    <div class="value">${new Date(sub.created_at).toLocaleString()}</div>
+
+                    <div class="label">Status:</div>
+                    <div class="value">Pending Review</div>
+
+                    <div class="label">File:</div>
+                    <div class="value">
+                        <a class="file-link" href="${sub.data.file || '#'}">Download</a>
+                    </div>
+                `;
+
+                section.appendChild(card);
+            });
+        }
+
+        submissionsContainer.appendChild(section);
+    });
+}
+</script>
+
+</body>
+</html>

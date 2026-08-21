@@ -1,0 +1,191 @@
+🌟 THE OFFICIAL AFROTIOUS CREATOR REVIEW WORKFLOW
+This is the full workflow YOU follow as the admin.
+
+I’m giving you the exact order, the exact checks, and the exact actions.
+
+⭐ 1. Check Netlify Identity → Users
+This is where you confirm:
+
+The user is verified
+
+The user is invited
+
+The user is approved
+
+The user is not pending
+
+The user is not unverified
+
+If they are NOT verified → resend invite.  
+If they ARE verified → continue.
+
+This step confirms the creator is a real, authenticated user.
+
+⭐ 2. Check Netlify Forms → Submissions
+This is your review queue.
+
+Every form you created appears here:
+
+creator-application
+
+brand-upload
+
+music-upload
+
+product-submission
+
+role-application
+
+ANY other form you added
+
+Inside each form you will see:
+
+Submission data
+
+Uploaded files
+
+Creator email
+
+Timestamps
+
+Role selection
+
+Portfolio links
+
+Brand assets
+
+Music files
+
+This is where you review EVERY submission.
+
+⭐ 3. Review the submission content
+For each submission, check:
+
+✔ A. Does the creator meet the role requirements?
+Portfolio quality
+
+Brand quality
+
+Music quality
+
+Product quality
+
+Correct category
+
+Correct role
+
+Correct submission type
+
+✔ B. Are the files valid?
+Images load
+
+Audio plays
+
+PDFs open
+
+No corrupted files
+
+✔ C. Is the creator legitimate?
+No spam
+
+No bots
+
+No fake accounts
+
+No stolen content
+
+✔ D. Does the submission follow your guidelines?
+No copyrighted music
+
+No stolen brand assets
+
+No inappropriate content
+
+No low‑quality uploads
+
+This is your quality control step.
+
+⭐ 4. Approve or Deny the submission
+You do this manually.
+
+✔ If APPROVED:
+Send your approval email (you already have this template).
+Tell them:
+
+They are approved
+
+Their role is active
+
+Their dashboard is unlocked
+
+Their uploads are accepted
+
+Their payout onboarding is next
+
+✔ If DENIED:
+Send your denial email (you already have this template).
+Tell them:
+
+They were not selected
+
+They can reapply
+
+They can improve their portfolio
+
+They can submit again later
+
+This is your decision step.
+
+⭐ 5. Add their role in Netlify Identity (optional)
+In Identity → Users:
+
+Click the user
+
+Add a role label (optional)
+
+fashion-creator
+
+music-creator
+
+brand-creator
+
+product-creator
+
+general-creator
+
+This is ONLY for your organization — it does NOT affect permissions.
+
+⭐ 6. Send Stripe Connect onboarding (if payouts are needed)
+If the creator will earn money:
+
+Send them the Stripe Connect onboarding link
+
+Stripe collects tax forms
+
+Stripe handles payouts
+
+Stripe handles compliance
+
+You do NOT collect tax forms manually.
+
+This is your payment onboarding step.
+
+⭐ 7. Add their approved content to the website (if needed)
+Depending on the role:
+
+✔ Fashion creators → add their products
+✔ Music creators → add their tracks
+✔ Brand creators → add their brand page
+✔ Product creators → add their listings
+This is your content publishing step.
+
+⭐ 8. Notify the creator their content is live
+Send a simple email:
+
+“Your brand is now live.”
+
+“Your music is now published.”
+
+“Your products are now visible.”
+
+This is your final confirmation step.

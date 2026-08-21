@@ -1,0 +1,141 @@
+Now lets do this one:
+
+
+1. Product Type
+Example:
+Crochet Bralette Top – Mesh + Crocodile (Yellow)
+2. Materials
+Examples:
+
+Polyester acrylic yarn
+
+3. Construction / Technique
+Examples:
+
+Handmade
+
+Crochet
+
+Mesh Pattern
+
+Crocodile Stitch
+
+4. Fit / Size Info
+Examples:
+
+Need Size chart, I personally learned from a basic template on pinterest that said xxs 30 a,32a, 30 b chain 14x5 rounds, xs chain 14 - 6 rounds. i watched a video after to get a more accurate bra cup size which said to measure from the bottom of your breast to underneath the nipple.... i'm inbetween an a and c ... i chained ten, then chain 3, then 6 rounds and it was fine, so
+i need sizes for xxs, xs , s, m, l, xl,
+
+Adjustable ties
+
+Stretch fit
+
+
+Mesh Pattern
+
+Cup coverage (light / medium)
+
+5. Use Case
+Examples:
+
+Festival wear
+
+summer wear
+
+Aesthetic
+
+
+Blanket Yarn
+
+Acrylic Yarn
+
+Beachwear
+
+Layering
+
+Everyday comfort
+
+Meditation / lounge
+
+6. Care Instructions
+Examples:
+
+Hand wash preferred. Machine washable for convenient maintenance and long-lasting use, without other clothes, in mesh bag.
+
+Roll in towel first, then Air dry
+
+Do not bleach
+
+
+7. Color Options
+You already have these for each product.
+
+8. Brand Voice / Vibe
+Yarni Mama/ 
+
+cosmic comfort
+
+handmade aura
+
+Artistic craftsmanship
+
+9. Keywords (SEO)
+Examples:
+
+handmade crochet bralette
+
+bikini top
+
+Yarni Mama crochet
+
+and add the storefront product description with a description made for the handmade crochet nature bralette top
+
+<div class="product-description">
+  <h2>Product Description</h2>
+  <p>
+    This handmade crochet bralette is crafted with soft acrylic yarn using a double‑crochet technique for breathable comfort and flexible support. Designed in a bikini‑style silhouette, it features adjustable ties and a stretch fit that accommodates most body types with light to medium cup coverage.
+  </p>
+
+  <p>
+    Perfect for festival wear, beach days, layering outfits, meditation sessions, or everyday cosmic comfort, each bralette carries the signature Yarni Mama aura — a blend of cultural craftsmanship, chakra‑aligned energy, and intentional handmade detail.
+  </p>
+
+  <p>
+    Every piece is unique in texture and stitching, making your bralette a one‑of‑a‑kind expression of Afrotious Nation’s creative frequency.
+  </p>
+</div>
+
+
+
+________________________________________________________
+________________________________________________________
+
+code
+
+ 
+<div class="product-description">
+  <h2>Product Description</h2>
+  <p>
+    This handmade crochet bralette is crafted with soft acrylic yarn using a double‑crochet technique for breathable comfort and flexible support. Designed in a bikini‑style silhouette, it features adjustable ties and a stretch fit that accommodates most body types with light to medium cup coverage.
+  </p>
+
+  <p>
+    Perfect for festival wear, beach days, layering outfits, meditation sessions, or everyday cosmic comfort, each bralette carries the signature Yarni Mama aura — a blend of artistic craftsmanship, chakra‑aligned energy, and intentional handmade detail.
+  </p>
+
+  <p>
+    Every piece is unique in texture and stitching, making your bralette a one‑of‑a‑kind expression of Afrotious Nation’s creative frequency.
+  </p>
+<div class="product-specs">
+  <h2>Specifications</h2>
+  <ul>
+    <li><strong>Material:</strong> Soft acrylic yarn</li>
+    <li><strong>Technique:</strong> Handmade crochet, double crochet</li>
+    <li><strong>Fit:</strong> One size fits most, adjustable ties, stretch fit</li>
+    <li><strong>Cup Coverage:</strong> Light to medium</li>
+    <li><strong>Use:</strong> Festival wear, beachwear, layering, everyday comfort, meditation</li>
+    <li><strong>Care:</strong> Hand wash preferred; roll in towel and air dry; machine washable when washed separate from other clothes in mesh bag; do not bleach</li>
+    <li><strong>Brand:</strong> Yarni Mama – cosmic comfort, chakra frequency, handmade aura</li>
+  </ul>
+</div>
+

@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+  <title>Afrotious Nation Marketplace</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="icon" type="image/png" href="favicon.png">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: radial-gradient(circle at top, #3A0CA3, #0A0A0F);
+      color: #F8F6FF;
+    }
+
+    header {
+      padding: 1.5rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(10, 10, 15, 0.7);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .logo {
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #C8A2C8;
+    }
+
+    nav a {
+      color: #F8F6FF;
+      text-decoration: none;
+      margin-left: 1rem;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #C8A2C8;
+    }
+
+    .hero {
+      padding: 3rem 2rem 1rem;
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+      color: #C8A2C8;
+      text-shadow: 0 0 15px rgba(200, 162, 200, 0.4);
+    }
+
+    .hero p {
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.6;
+      color: #EDE7F6;
+    }
+
+    .products {
+      padding: 2rem;
+      max-width: 1100px;
+      margin: 0 auto 3rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 2rem;
+    }
+
+    .product-card {
+      background: rgba(58, 12, 163, 0.15);
+      border: 1px solid rgba(200, 162, 200, 0.2);
+      border-radius: 15px;
+      padding: 1rem;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(8px);
+      transition: 0.3s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 35px rgba(123, 44, 191, 0.4);
+    }
+
+    .product-card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 0.75rem;
+      object-fit: cover;
+      max-height: 260px;
+      box-shadow: 0 0 20px rgba(200, 162, 200, 0.3);
+    }
+
+    .product-title {
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+      color: #EDE7F6;
+    }
+
+    .product-price {
+      color: #C8A2C8;
+      font-weight: 500;
+      margin-bottom: 0.75rem;
+    }
+
+    .buy-button {
+      display: inline-block;
+      text-align: center;
+      padding: 0.6rem 0.9rem;
+      border-radius: 999px;
+      background: #7B2CBF;
+      color: #F8F6FF;
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: 0.3s;
+    }
+
+    .buy-button:hover {
+      background: #9D4EDD;
+    }
+
+    footer {
+      padding: 1.5rem 2rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      font-size: 0.85rem;
+      color: #C8A2C8;
+      text-align: center;
+    }
+@keyframes floatUp {
+  0% { transform: translateY(0); opacity: 0.8; }
+  100% { transform: translateY(-120vh); opacity: 0; }
+}
+/* Make images responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Make iframe (SoundCloud) responsive */
+iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive text scaling */
+h1, h2, h3, p {
+  word-wrap: break-word;
+}
+
+/* Responsive grid spacing on small screens */
+@media (max-width: 600px) {
+  .products {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .product-card {
+    margin-bottom: 1.5rem;
+  }
+
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 0.5rem;
+  }
+}
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">Afrotious Nation</div>
+    <nav>
+      <a href="index.html">Marketplace</a>
+      <a href="music-universe.html">Music Universe</a>
+      <a href="contact.html">Contact</a>
+      <a href="about.html" class="header-btn">About</a>
+      <a href="faq.html" class="header-btn">FAQ</a>
+      <a href="creator-application.html" class="header-btn">Creator Application</a>
+      <a href="custom-orders.html" class="header-btn">Custom Orders</a>
+      <a href="cosmic-lore.html" class="header-btn">Cosmic Lore</a>
+	<a href="news.html" class="header-btn">News</a>
+	<a href="coming-soon.html" class="header-btn">Blog</a>
+	<a href="coming-soon.html" class="header-btn">Events</a>
+	<a href="radio.html" class="header-btn">Cosmic Radio</a>
+	<a class="header-btn" href="creator-dashboard.html">Dashboard</a>
+    </nav>
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  </header>
+
+<div class="container">
+    <h1>Afrotious Nation – Music Universe</h1>
+    <p class="highlight">
+        Welcome to the Music Universe of Afrotious Nation — where handmade cosmic creations meet sound, story, and Melanindian Waves.
+    </p>
+
+    <div class="section">
+        <h2>1. What Is the Music Universe?</h2>
+        <p>
+            The Music Universe is the sound dimension of Afrotious Nation. It connects:
+        </p>
+        <ul>
+            <li>Melanindian Waves (cosmic radio station)</li>
+            <li>Creator-submitted music</li>
+            <li>Fashion + music integration</li>
+            <li>Roblox experiences and UGC</li>
+            <li>TikTok Live and playlists</li>
+        </ul>
+        <p>
+            This page explains how music lives inside Afrotious Nation, how creators can participate, and how everything stays
+            legally safe and clean for Roblox, TikTok, and streaming platforms.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>2. Melanindian Waves – Cosmic Radio</h2>
+        <p>
+            <span class="highlight">Melanindian Waves</span> is the official Afrotious Nation radio station. It exists as:
+        </p>
+        <ul>
+            <li>A cosmic radio stream concept for TikTok Live</li>
+            <li>A curated playlist experience (Spotify / SoundCloud)</li>
+            <li>A future in-game radio station inside Afrotious Nation City (Roblox)</li>
+        </ul>
+        <p>
+            Melanindian Waves focuses on:
+        </p>
+        <ul>
+            <li>Raw, bold, fierce, calm, and cosmic sounds</li>
+            <li>Non-explicit versions of tracks for Roblox-safe playback</li>
+            <li>Independent creators who keep their masters and rights</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>3. Creator Music – How It Works</h2>
+        <p>
+            Afrotious Nation is a <span class="highlight">platform</span>, not a record label. Creators:
+        </p>
+        <ul>
+            <li>Keep 100% of their masters and royalties</li>
+            <li>Submit music for playlists, Melanindian Waves, and cosmic lore integration</li>
+            <li>Can be featured alongside Afrotious Nation’s own music and brand</li>
+        </ul>
+        <p>
+            Music can be used for:
+        </p>
+        <ul>
+            <li>Melanindian Waves radio streams</li>
+            <li>Cosmic ambient soundscapes</li>
+            <li>Fashion + music bundles</li>
+            <li>Roblox experiences (clean versions only)</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>4. Creator Music Terms (Simple Summary)</h2>
+        <p>
+            Full legal details are in the <a href="/terms">Terms &amp; Conditions</a>, but here is the simple version:
+        </p>
+        <ul>
+            <li>Creators must own the rights to the music they submit.</li>
+            <li>Creators must provide a non-explicit version for any Roblox or family-friendly use.</li>
+            <li>Afrotious Nation may feature, promote, and integrate submitted music across its platforms.</li>
+            <li>Afrotious Nation does not claim ownership of creator music.</li>
+            <li>Creators can request removal of their music at any time.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>5. Music + Fashion + Cosmic Lore</h2>
+        <p>
+            Music in Afrotious Nation is tied to:
+        </p>
+        <ul>
+            <li>Handmade fashion pieces and accessories</li>
+            <li>Cosmic lore stories and character concepts</li>
+            <li>UGC items and Roblox experiences</li>
+            <li>Visual themes like purple, nebula, electric, and calm</li>
+        </ul>
+        <p>
+            The goal is to create a full sensory experience: what you wear, what you hear, and what world you step into all
+            feel connected.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>6. TikTok Live & Streaming</h2>
+        <p>
+            Melanindian Waves and the Music Universe can appear on:
+        </p>
+        <ul>
+            <li>TikTok Live (cosmic radio streams, creator showcases)</li>
+            <li>SoundCloud playlists and embeds</li>
+            <li>Spotify playlists (curated, not label-owned)</li>
+        </ul>
+        <p>
+            Streaming is used for exposure and discovery. The main focus is building the Afrotious Nation brand and giving
+            creators a place to be seen and heard.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>7. Future Roblox Integration</h2>
+        <p>
+            In the future, Melanindian Waves and the Music Universe may connect to:
+        </p>
+        <ul>
+            <li>Afrotious Nation City (Roblox experience)</li>
+            <li>In-game radio zones and listening rooms</li>
+            <li>Cosmic lore quests tied to music themes</li>
+        </ul>
+        <p>
+            All Roblox-related content will follow Roblox’s community guidelines and terms of use, with clean audio and
+            compliant UGC.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>8. How to Submit Music (Coming Soon)</h2>
+        <p>
+            A dedicated <span class="highlight">Creator Application</span> and music submission form will be added in a future update.
+            Creators will be able to:
+        </p>
+        <ul>
+            <li>Apply to have their music featured</li>
+            <li>Submit clean versions for Roblox-safe use</li>
+            <li>Connect their music to fashion, lore, and cosmic themes</li>
+        </ul>
+        <p>
+            Until then, creators can reach out via email:
+            <a href="mailto:support@afrotiousnation.org">support@afrotiousnation.org</a>
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>9. Legal & Safety</h2>
+        <p>
+            For full legal details, please review:
+        </p>
+        <ul>
+            <li><a href="/terms">Terms &amp; Conditions</a></li>
+            <li><a href="/privacy">Privacy Policy</a></li>
+        </ul>
+        <p>
+            Afrotious Nation operates as an independent sole proprietor and respects creator ownership, platform rules,
+            and community guidelines across Roblox, TikTok, and streaming services.
+        </p>
+    </div>
+</div>
+
+<footer>
+    <p>All original content © 2025 Afrotious Nation, © 2026 Afrotious Nation</p>
+    <p>
+        <a href="/terms">Terms &amp; Conditions</a> ·
+        <a href="/privacy">Privacy Policy</a>
+    </p>
+    <p style="opacity:0.8;">Powered by Stripe</p>
+</footer>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const particleContainer = document.createElement("div");
+  particleContainer.style.position = "fixed";
+  particleContainer.style.top = 0;
+  particleContainer.style.left = 0;
+  particleContainer.style.width = "100%";
+  particleContainer.style.height = "100%";
+  particleContainer.style.pointerEvents = "none";
+  particleContainer.style.zIndex = "0";
+  document.body.appendChild(particleContainer);
+
+  function createParticle() {
+    const p = document.createElement("div");
+    p.style.position = "absolute";
+    p.style.width = "6px";
+    p.style.height = "6px";
+    p.style.borderRadius = "50%";
+    p.style.background = "rgba(200,162,200,0.8)";
+    p.style.boxShadow = "0 0 12px rgba(200,162,200,0.9) ";
+    p.style.left = Math.random() * window.innerWidth + "px";
+    p.style.top = window.innerHeight + "px";
+    p.style.opacity = 0.8;
+    p.style.animation = "floatUp 12s linear forwards";
+
+    particleContainer.appendChild(p);
+
+    setTimeout(() => p.remove(), 12000);
+  }
+
+  setInterval(createParticle, 450);
+});
+</script>
+</body>
+</html>

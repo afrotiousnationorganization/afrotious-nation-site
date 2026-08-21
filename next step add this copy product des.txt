@@ -1,0 +1,17 @@
+next step add this copy product description in below and go through all pages and add it then go in and edit the description to match the product
+
+
+<div class="product-description">
+  <h2>Product Description</h2>
+  <p>
+    Our handmade neck pillows are crafted with soft, cosmic‑comfort fabric designed to support your neck, shoulders, and posture. Each pillow is infused with Afrotious Nation’s signature energy — a blend of creativity, culture, and chakra‑aligned craftsmanship.
+  </p>
+
+  <p>
+    Available in Black, White, and Silver, these pillows are perfect for travel, meditation, relaxation, or everyday comfort. Every piece is handmade, making each pillow unique in texture, stitching, and aura.
+  </p>
+
+  <p>
+    Experience comfort the (brand name) way — handmade, intentional, and infused with cosmic frequency.
+  </p>
+</div>

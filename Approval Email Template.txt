@@ -1,0 +1,27 @@
+Approval Email Template
+(Use when you accept an application)
+
+Subject: Welcome to Afrotious Nation — You’re Approved
+
+Hi [Name],
+
+Congratulations! Your application for the [Role Name] position has been approved.
+
+We’re excited to welcome you into the Afrotious Nation creator ecosystem.
+
+Your next step is onboarding through Stripe Connect, which handles:
+• Tax forms
+• Identity verification
+• Bank account setup
+• Payouts
+• Compliance
+
+Once onboarding is complete, you’ll be able to submit your work, upload your brand, and begin earning commissions.
+
+Onboarding Link:  
+[Insert your Stripe Connect onboarding link here]
+
+If you have any questions, reply to this email anytime.
+
+Afrotious Nation  
+support@afrotiousnation.org

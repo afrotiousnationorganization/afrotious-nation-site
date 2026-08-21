@@ -1,0 +1,7 @@
+⭐ Clean up the indentation
+⭐ Fix the nested product-card structure
+⭐ Make the size chart collapsible
+⭐ Add a “View Size Chart” modal popup
+⭐ Add tooltips (since you have W3Schools open)
+⭐ Add a cosmic-themed border around the chart
+⭐ Add a “Select Size” dropdown

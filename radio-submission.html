@@ -68,7 +68,7 @@
 
         <form name="radio-submission" method="POST" data-netlify="true" enctype="multipart/form-data">
 
-            <!-- Hidden Identity Fields (NEW) -->
+            <!-- Hidden Identity Fields (CORRECTED) -->
             <input type="hidden" name="creator-email" id="creator-email">
             <input type="hidden" name="creator-id" id="creator-id">
 
@@ -105,30 +105,20 @@
             <input type="file" id="file" name="file" accept=".mp3,.wav" required>
 
             <button type="submit">Submit Track</button>
-<input type="hidden" name="creator-email" id="creator-email">
-<input type="hidden" name="creator-id" id="creator-id">
 
         </form>
     </div>
 
-    <!-- Identity Linking Script (NEW) -->
+    <!-- Identity Linking Script (CORRECTED) -->
     <script>
-        netlifyIdentity.on('init', user => {
+        document.addEventListener("DOMContentLoaded", () => {
+            const user = netlifyIdentity.currentUser();
             if (user) {
-                document.getElementById('creator-email').value = user.email;
-                document.getElementById('creator-id').value = user.id;
+                document.getElementById("creator-email").value = user.email;
+                document.getElementById("creator-id").value = user.id;
             }
         });
     </script>
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-    const user = netlifyIdentity.currentUser();
-    if (user) {
-        document.getElementById("creator-email").value = user.email;
-        document.getElementById("creator-id").value = user.id;
-    }
-});
-</script>
 
 </body>
 </html>

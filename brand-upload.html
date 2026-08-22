@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Brand Upload — Afrotious Nation</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <meta charset="UTF-8" />
+    <title>Afrotious Nation Brand Upload</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/png" href="favicon.png">
+
+    <!-- Identity Widget (ONE copy only) -->
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
     <style>
@@ -51,9 +52,9 @@
         }
 
         h1 {
-            font-size: 2.4rem;
-            color: #ff4fd8;
-            margin-bottom: 20px;
+            font-size: 2.8rem;
+            color: #C8A2C8;
+            text-shadow: 0 0 15px rgba(200, 162, 200, 0.4);
         }
 
         label {
@@ -101,12 +102,12 @@
         }
 
         footer {
-            padding: 1.5rem 2rem;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            font-size: 0.85rem;
-            color: #C8A2C8;
-            text-align: center;
+            width: 100%;
+            padding: 20px 10px;
             margin-top: 40px;
+            text-align: center;
+            color: #F8F6FF;
+            font-family: 'Poppins', sans-serif;
         }
     </style>
 </head>
@@ -118,7 +119,15 @@
     <nav>
         <a href="index.html">Marketplace</a>
         <a href="music-universe.html">Music Universe</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+        <a href="faq.html">FAQ</a>
         <a href="creator-application.html">Creator Application</a>
+        <a href="custom-orders.html">Custom Orders</a>
+        <a href="cosmic-lore.html">Cosmic Lore</a>
+        <a href="news.html">News</a>
+        <a href="coming-soon.html">Blog</a>
+        <a href="coming-soon.html">Events</a>
         <a href="radio.html">Cosmic Radio</a>
         <a href="creator-portal.html">Creator Portal</a>
     </nav>
@@ -127,9 +136,12 @@
 <div class="container">
 
     <h1>Brand Upload</h1>
-    <p id="auth-status">Checking authentication...</p>
 
-    <div id="upload-content" style="display:none;">
+    <p id="auth-status" style="margin-top:20px;font-size:1.2rem;">
+        Checking authentication...
+    </p>
+
+    <div id="upload-content" style="display:none;margin-top:40px;">
 
         <form name="brand-upload" method="POST" data-netlify="true" enctype="multipart/form-data">
 
@@ -158,33 +170,79 @@
 
 </div>
 
+<!-- ⭐ YOUR EXACT FOOTER (PRESERVED) -->
 <footer>
-    All original content © 2025–2026 Afrotious Nation  
+    <p style="margin: 8px 0; font-size: 1rem;">
+        All original content © 2026 Afrotious Nation
+    </p>
+
+    <p style="margin: 8px 0; font-size: 0.95rem;">
+        <a href="/terms" style="color:#C8A2C8; text-decoration:none; margin-right:20px;">
+            Terms & Conditions
+        </a>
+        <a href="/privacy" style="color:#C8A2C8; text-decoration:none;">
+            Privacy Policy
+        </a>
+    </p>
+
+    <p style="margin: 8px 0; font-size: 0.9rem; opacity: 0.8;">
+        Powered by Stripe
+    </p>
 </footer>
 
+<!-- ⭐ YOUR PARTICLE ANIMATION (PRESERVED EXACTLY) -->
 <script>
 document.addEventListener("DOMContentLoaded", () => {
+  const particleContainer = document.createElement("div");
+  particleContainer.style.position = "fixed";
+  particleContainer.style.top = 0;
+  particleContainer.style.left = 0;
+  particleContainer.style.width = "100%";
+  particleContainer.style.height = "100%";
+  particleContainer.style.pointerEvents = "none";
+  particleContainer.style.zIndex = "0";
+  document.body.appendChild(particleContainer);
 
-    const user = netlifyIdentity.currentUser();
-    const authStatus = document.getElementById("auth-status");
-    const uploadContent = document.getElementById("upload-content");
+  function createParticle() {
+    const p = document.createElement("div");
+    p.style.position = "absolute";
+    p.style.width = "6px";
+    p.style.height = "6px";
+    p.style.borderRadius = "50%";
+    p.style.background = "rgba(200,162,200,0.8)";
+    p.style.boxShadow = "0 0 12px rgba(200,162,200,0.9)";
+    p.style.left = Math.random() * window.innerWidth + "px";
+    p.style.top = window.innerHeight + "px";
+    p.style.opacity = 0.8;
+    p.style.animation = "floatUp 12s linear forwards";
 
-    if (!user) {
-        authStatus.innerHTML = "You must be logged in to upload brand assets.";
-        netlifyIdentity.open();
-        return;
-    }
+    particleContainer.appendChild(p);
+    setTimeout(() => p.remove(), 12000);
+  }
 
+  setInterval(createParticle, 450);
+
+  // Authentication check
+  const user = netlifyIdentity.currentUser();
+  const authStatus = document.getElementById("auth-status");
+  const uploadContent = document.getElementById("upload-content");
+
+  if (!user) {
+    authStatus.innerHTML = "You must be logged in to upload brand assets.";
+    netlifyIdentity.open();
+  } else {
     authStatus.innerHTML = "Authenticated as: " + user.email;
     uploadContent.style.display = "block";
 
     document.getElementById("creator-email").value = user.email;
     document.getElementById("creator-id").value = user.id;
+  }
 
-    document.getElementById("logout-btn").addEventListener("click", () => {
-        netlifyIdentity.logout();
-        location.reload();
-    });
+  // Logout
+  document.getElementById("logout-btn").addEventListener("click", () => {
+    netlifyIdentity.logout();
+    location.reload();
+  });
 });
 </script>
 

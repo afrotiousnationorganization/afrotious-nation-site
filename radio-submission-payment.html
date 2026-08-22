@@ -3,136 +3,231 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Radio Submission Payment — Melanindian Waves</title>
+    <title>Melanindian Waves (A subdivision of Afrotious Nation) — Nightscape Radio</title>
+
+    <link rel="icon" type="image/png" href="favicon.png">
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
     <style>
         body {
             margin: 0;
-            font-family: 'Poppins', sans-serif;
-            background-color: #0a0a0f;
-            color: #fff;
+            font-family: 'Montserrat', sans-serif;
+            background: radial-gradient(circle at top, #3A0CA3, #0A0A0F);
+            color: #F8F6FF;
         }
 
-        .container {
-            max-width: 900px;
-            margin: auto;
-            padding: 40px 20px;
-        }
-
-        h1 {
-            text-align: center;
-            font-size: 2.5rem;
-            color: #ff4fd8;
-            margin-bottom: 10px;
-        }
-
-        p {
-            text-align: center;
-            font-size: 1.1rem;
-            opacity: 0.9;
-            margin-bottom: 40px;
-        }
-
-        .options {
+        header {
+            padding: 1.5rem 2rem;
             display: flex;
-            flex-wrap: wrap;
-            gap: 25px;
-            justify-content: center;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(10, 10, 15, 0.7);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         }
 
-        .option-box {
-            background: #14141a;
-            border: 2px solid #ff4fd8;
-            border-radius: 12px;
-            padding: 25px;
-            width: 280px;
-            text-align: center;
+        .logo {
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: #C8A2C8;
         }
 
-        .option-box h2 {
-            font-size: 1.7rem;
-            margin-bottom: 10px;
-            color: #ff4fd8;
-        }
-
-        .price {
-            font-size: 2rem;
-            margin: 15px 0;
-            color: #fff;
-        }
-
-        .option-box ul {
-            text-align: left;
-            font-size: 0.95rem;
-            line-height: 1.5rem;
-            margin-bottom: 20px;
-        }
-
-        .pay-btn {
-            background-color: #ff4fd8;
-            color: #0a0a0f;
-            padding: 12px 20px;
-            border-radius: 8px;
-            font-size: 1.1rem;
-            font-weight: bold;
+        nav a {
+            color: #F8F6FF;
             text-decoration: none;
-            display: inline-block;
+            margin-left: 1rem;
+            transition: 0.3s;
         }
 
-        .pay-btn:hover {
-            background-color: #ff2fc4;
+        nav a:hover {
+            color: #C8A2C8;
         }
 
-        .note {
+        .hero {
+            padding: 3rem 2rem 1rem;
+            max-width: 900px;
+            margin: 0 auto;
             text-align: center;
-            margin-top: 40px;
-            font-size: 0.95rem;
-            opacity: 0.8;
+        }
+
+        .hero img {
+            width: 60%;
+            max-width: 600px;
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(200, 162, 200, 0.3);
+        }
+
+        .section {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+
+        .section h2 {
+            color: #C8A2C8;
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .section p {
+            line-height: 1.6;
+            color: #EDE7F6;
+        }
+
+        .playlist-embeds {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+
+        .playlist-embeds iframe {
+            width: 100%;
+            border-radius: 12px;
+            margin-bottom: 1.5rem;
+        }
+
+        .link-section {
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .link-section a {
+            color: #C8A2C8;
+            font-size: 1.2rem;
+            text-decoration: none;
+        }
+
+        footer {
+            padding: 1.5rem 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.85rem;
+            color: #C8A2C8;
+            text-align: center;
+        }
+
+        @keyframes floatUp {
+            0% { transform: translateY(0); opacity: 0.8; }
+            100% { transform: translateY(-120vh); opacity: 0; }
         }
     </style>
 </head>
 
 <body>
 
-    <div class="container">
-        <h1>Radio Submission Payment</h1>
-        <p>Select your submission option to continue.</p>
+<header>
+    <div class="logo">Afrotious Nation</div>
+    <nav>
+        <a href="index.html">Marketplace</a>
+        <a href="music-universe.html">Music Universe</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+        <a href="faq.html">FAQ</a>
+        <a href="creator-application.html">Creator Application</a>
+        <a href="custom-orders.html">Custom Orders</a>
+        <a href="cosmic-lore.html">Cosmic Lore</a>
+        <a href="news.html">News</a>
+        <a href="coming-soon.html">Blog</a>
+        <a href="coming-soon.html">Events</a>
+        <a href="radio.html">Cosmic Radio</a>
+        <a href="creator-portal.html">Creator Portal</a>
+    </nav>
+</header>
 
-        <div class="options">
+<div class="hero">
+    <img src="melanindian-waves.png" alt="Melanindian Waves Radio Banner">
+</div>
 
-            <div class="option-box">
-                <h2>One-Time Submission</h2>
-                <div class="price">$15</div>
-                <ul>
-                    <li>Submit 1 track</li>
-                    <li>One week rotation</li>
-                    <li>One show placement</li>
-                    <li>Standard review time</li>
-                </ul>
-                <a href="https://buy.stripe.com/8x2bJ02CX8K7flj1yHgMw1g" class="pay-btn">Pay $15</a>
-            </div>
+<div class="section">
+    <h2>Melanindian Waves — Nightscape Radio</h2>
+    <p>
+        Welcome to Melanindian Waves, the official nightscape radio division of Afrotious Nation.
+        A cosmic broadcast sounding our thoughts and amplifying our dreams.
+    </p>
+</div>
 
-            <div class="option-box">
-                <h2>Monthly Creator Pass</h2>
-                <div class="price">$20/mo</div>
-                <ul>
-                    <li>Unlimited submissions</li>
-                    <li>Priority review</li>
-                    <li>Guaranteed placement</li>
-                    <li>Monthly rotation</li>
-                    <li>Spotlight eligibility</li>
-                </ul>
-                <a href="https://buy.stripe.com/eVq7sKdhBgczgpn2CLgMw1h" class="pay-btn">Subscribe $20/mo</a>
-            </div>
+<div class="section">
+    <h2>Radio Playlist</h2>
+</div>
 
-        </div>
+<div class="playlist-embeds">
 
-        <div class="note">
-            Creators with promo codes may enter them at checkout.<br>
-            After payment, you will be redirected to the Radio Submission Page.
-        </div>
-
+    <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay; encrypted-media" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%253Aplaylists%253A2286011700&color=%233a0ca3&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/afrotious_nation" title="𝔸𝕗𝕣𝕠𝕥𝕚𝕠𝕦𝕤 ℕ𝕒𝕥𝕚𝕠𝕟✨" target="_blank" style="color: #cccccc; text-decoration: none;">𝔸𝕗𝕣𝕠𝕥𝕚𝕠𝕦𝕤 ℕ𝕒𝕥𝕚𝕠𝕟✨</a> · <a href="https://soundcloud.com/afrotious_nation/sets/melanindian-waves-nightscape" title="Melanindian Waves - Nightscape Radio" target="_blank" style="color: #cccccc; text-decoration: none;">Melanindian Waves - Nightscape Radio</a>
     </div>
+
+</div>
+
+<div class="link-section">
+    <a href="music-universe.html">← Return to Music Universe</a>
+</div>
+
+<div class="section">
+    <h2>Want to Submit Your Music?</h2>
+    <p>Press "Submit Your Track" to get started.</p>
+    <a href="radio-payment.html" class="buy-button">Submit Your Track</a>
+</div>
+
+<footer>
+<footer style="
+    width: 100%;
+    padding: 20px 10px;
+    margin-top: 40px;
+    text-align: center;
+    color: #F8F6FF;
+    font-family: 'Poppins', sans-serif;
+">
+    <p style="margin: 8px 0; font-size: 1rem;">
+        All original content © 2026 Melanindian Waves, © 2026 Afrotious Nation
+    </p>
+
+    <p style="margin: 8px 0; font-size: 0.95rem;">
+        <a href="/terms" style="color:#C8A2C8; text-decoration:none; margin-right:20px;">
+            Terms & Conditions
+        </a>
+        <a href="/privacy" style="color:#C8A2C8; text-decoration:none;">
+            Privacy Policy
+        </a>
+    </p>
+
+    <p style="margin: 8px 0; font-size: 0.9rem; opacity: 0.8;">
+        Powered by Stripe
+    </p>
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const particleContainer = document.createElement("div");
+    particleContainer.style.position = "fixed";
+    particleContainer.style.top = 0;
+    particleContainer.style.left = 0;
+    particleContainer.style.width = "100%";
+    particleContainer.style.height = "100%";
+    particleContainer.style.pointerEvents = "none";
+    particleContainer.style.zIndex = "0";
+    document.body.appendChild(particleContainer);
+
+    function createParticle() {
+        const p = document.createElement("div");
+        p.style.position = "absolute";
+        p.style.width = "6px";
+        p.style.height = "6px";
+        p.style.borderRadius = "50%";
+        p.style.background = "rgba(200,162,200,0.8(200,162,200,0.8)";
+        p.style.boxShadow = "0 0 12px rgba(200,162,200,0.9)";
+        p.style.left = Math.random() * window.innerWidth + "px";
+        p.style.top = window.innerHeight + "px";
+        p.style.opacity = 0.8;
+        p.style.animation = "floatUp 12s linear forwards";
+
+        particleContainer.appendChild(p);
+        setTimeout(() => p.remove(), 12000);
+    }
+
+    setInterval(createParticle, 450);
+});
+</script>
 
 </body>
 </html>

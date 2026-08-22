@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Your Track — Nightscape Radio</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #0a0a0f;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #ff4fd8;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-top: 20px;
+            font-size: 1rem;
+            color: #ff4fd8;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 12px;
+            margin-top: 8px;
+            border-radius: 8px;
+            border: none;
+            background-color: #111118;
+            color: #fff;
+        }
+
+        button {
+            margin-top: 30px;
+            width: 100%;
+            padding: 15px;
+            background-color: #ff4fd8;
+            border: none;
+            border-radius: 8px;
+            color: #fff;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Submit Your Track</h1>
+
+        <form name="radio-submission" method="POST" data-netlify="true" enctype="multipart/form-data">
+
+            <!-- Hidden Identity Fields (NEW) -->
+            <input type="hidden" name="creator-email" id="creator-email">
+            <input type="hidden" name="creator-id" id="creator-id">
+
+            <!-- Track Title -->
+            <label for="title">Track Title</label>
+            <input type="text" id="title" name="title" required>
+
+            <!-- Artist Name -->
+            <label for="artist">Artist Name</label>
+            <input type="text" id="artist" name="artist" required>
+
+            <!-- Genre -->
+            <label for="genre">Genre</label>
+            <select id="genre" name="genre" required>
+                <option value="">Select Genre</option>
+                <option>R&B</option>
+                <option>Hip-Hop</option>
+                <option>Electronic</option>
+                <option>Lo-Fi</option>
+                <option>Indie</option>
+                <option>Pop</option>
+                <option>Ambient</option>
+                <option>Experimental</option>
+            </select>
+
+            <label for="explicit">Is this track explicit?</label>
+            <select id="explicit" name="explicit" required>
+                <option value="Clean">Clean</option>
+                <option value="Explicit">Explicit</option>
+            </select>
+
+            <!-- File Upload -->
+            <label for="file">Upload MP3 or WAV</label>
+            <input type="file" id="file" name="file" accept=".mp3,.wav" required>
+
+            <button type="submit">Submit Track</button>
+<input type="hidden" name="creator-email" id="creator-email">
+<input type="hidden" name="creator-id" id="creator-id">
+
+        </form>
+    </div>
+
+    <!-- Identity Linking Script (NEW) -->
+    <script>
+        netlifyIdentity.on('init', user => {
+            if (user) {
+                document.getElementById('creator-email').value = user.email;
+                document.getElementById('creator-id').value = user.id;
+            }
+        });
+    </script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const user = netlifyIdentity.currentUser();
+    if (user) {
+        document.getElementById("creator-email").value = user.email;
+        document.getElementById("creator-id").value = user.id;
+    }
+});
+</script>
+
+</body>
+</html>

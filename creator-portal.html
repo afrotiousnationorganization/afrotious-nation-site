@@ -90,6 +90,56 @@
             font-weight: 600;
             cursor: pointer;
         }
+
+        /* Cosmic Modal */
+        #stripeModal {
+            display:none;
+            position:fixed;
+            top:0; left:0;
+            width:100%; height:100%;
+            background:rgba(0,0,0,0.7);
+            backdrop-filter:blur(6px);
+            z-index:9999;
+            justify-content:center;
+            align-items:center;
+            animation: fadeIn 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity:0; }
+            to { opacity:1; }
+        }
+
+        #stripeModal .modal-content {
+            background:#1a0f2e;
+            padding:30px;
+            border-radius:12px;
+            width:90%;
+            max-width:420px;
+            text-align:center;
+            color:#F8F6FF;
+            border:1px solid rgba(255,255,255,0.15);
+            box-shadow:0 0 25px rgba(200,162,200,0.4);
+        }
+
+        #stripeModal button {
+            padding:12px 20px;
+            border:none;
+            border-radius:8px;
+            font-weight:600;
+            cursor:pointer;
+            margin:10px;
+        }
+
+        #continueStripe {
+            background:#ff4fd8;
+            color:#fff;
+        }
+
+        #cancelStripe {
+            background:#444;
+            color:#fff;
+        }
     </style>
 </head>
 
@@ -131,13 +181,13 @@
             <h2>Submission Portal</h2>
             <a class="btn" href="brand-upload.html">Brand Upload</a>
             <a class="btn" href="music-upload.html">Music Upload</a>
-            <a class="btn" href="radio-submit.html">Radio Track Upload</a>
+            <a class="btn" href="radio-submission.html">Radio Track Upload</a>
         </div>
 
         <div class="box">
             <h2>Payouts</h2>
             <p>All payouts are handled through Stripe.</p>
-            <a class="btn" href="https://dashboard.stripe.com">Open Stripe Dashboard</a>
+            <a class="btn" id="openStripeBtn">Open Stripe Dashboard</a>
         </div>
 
         <button id="logout-btn">Log Out</button>
@@ -146,8 +196,21 @@
 
 </div>
 
-<footer>
-    <footer style="
+<!-- Cosmic Stripe Modal -->
+<div id="stripeModal">
+    <div class="modal-content">
+        <h2 style="color:#C8A2C8;">Leaving Afrotious Nation</h2>
+        <p style="opacity:0.9; line-height:1.6;">
+            You’re about to open your Stripe Dashboard.<br>
+            This will take you outside the Afrotious Nation website.
+        </p>
+
+        <button id="continueStripe">Continue</button>
+        <button id="cancelStripe">Cancel</button>
+    </div>
+</div>
+
+<footer style="
     width: 100%;
     padding: 20px 10px;
     margin-top: 40px;
@@ -172,6 +235,7 @@
         Powered by Stripe
     </p>
 </footer>
+
 <script>
 document.addEventListener("DOMContentLoaded", () => {
   const particleContainer = document.createElement("div");
@@ -191,21 +255,20 @@ document.addEventListener("DOMContentLoaded", () => {
     p.style.height = "6px";
     p.style.borderRadius = "50%";
     p.style.background = "rgba(200,162,200,0.8)";
-    p.style.boxShadow = "0 0 12px rgba(200,162,200,0.9) ";
+    p.style.boxShadow = "0 0 12px rgba(200,162,200,0.9)";
     p.style.left = Math.random() * window.innerWidth + "px";
     p.style.top = window.innerHeight + "px";
     p.style.opacity = 0.8;
     p.style.animation = "floatUp 12s linear forwards";
-
     particleContainer.appendChild(p);
-
     setTimeout(() => p.remove(), 12000);
   }
 
   setInterval(createParticle, 450);
 });
-document.addEventListener("DOMContentLoaded", () => {
 
+// Identity login
+document.addEventListener("DOMContentLoaded", () => {
     const user = netlifyIdentity.currentUser();
     const authStatus = document.getElementById("auth-status");
     const portalContent = document.getElementById("portal-content");
@@ -226,6 +289,24 @@ document.addEventListener("DOMContentLoaded", () => {
         netlifyIdentity.logout();
         location.reload();
     });
+});
+
+// Stripe Modal Logic
+const stripeBtn = document.getElementById("openStripeBtn");
+const stripeModal = document.getElementById("stripeModal");
+const continueStripe = document.getElementById("continueStripe");
+const cancelStripe = document.getElementById("cancelStripe");
+
+stripeBtn.addEventListener("click", () => {
+    stripeModal.style.display = "flex";
+});
+
+continueStripe.addEventListener("click", () => {
+    window.location.href = "https://dashboard.stripe.com";
+});
+
+cancelStripe.addEventListener("click", () => {
+    stripeModal.style.display = "none";
 });
 </script>
 

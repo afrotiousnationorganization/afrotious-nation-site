@@ -1,358 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-  <title>Afrotious Nation - Creator Application</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="icon" type="image/png" href="favicon.png">
+<meta charset="UTF-8">
+<title>Creator Application — Afrotious Nation</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Montserrat', sans-serif;
-      background: radial-gradient(circle at top, #3A0CA3, #0A0A0F);
-      color: #F8F6FF;
-    }
-
-    header {
-      padding: 1.5rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background: rgba(10, 10, 15, 0.7);
-      backdrop-filter: blur(10px);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    }
-
-    .logo {
-      font-weight: 700;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      color: #C8A2C8;
-    }
-
-    nav a {
-      color: #F8F6FF;
-      text-decoration: none;
-      margin-left: 1rem;
-      transition: 0.3s;
-    }
-
-    nav a:hover {
-      color: #C8A2C8;
-    }
-
-    .hero {
-      padding: 3rem 2rem 1rem;
-      max-width: 900px;
-      margin: 0 auto;
-      text-align: center;
-    }
-
-    .hero h1 {
-      font-size: 2.8rem;
-      margin-bottom: 0.5rem;
-      color: #C8A2C8;
-      text-shadow: 0 0 15px rgba(200, 162, 200, 0.4);
-    }
-
-    .hero p {
-      max-width: 600px;
-      margin: 0 auto;
-      line-height: 1.6;
-      color: #EDE7F6;
-    }
-
-    .products {
-      padding: 2rem;
-      max-width: 1100px;
-      margin: 0 auto 3rem;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 2rem;
-    }
-
-    .product-card {
-      background: rgba(58, 12, 163, 0.15);
-      border: 1px solid rgba(200, 162, 200, 0.2);
-      border-radius: 15px;
-      padding: 1rem;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
-      backdrop-filter: blur(8px);
-      transition: 0.3s;
-    }
-
-    .product-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 15px 35px rgba(123, 44, 191, 0.4);
-    }
-
-    .product-card img {
-      width: 100%;
-      border-radius: 10px;
-      margin-bottom: 0.75rem;
-      object-fit: cover;
-      max-height: 260px;
-      box-shadow: 0 0 20px rgba(200, 162, 200, 0.3);
-    }
-
-    .product-title {
-      font-weight: 600;
-      margin-bottom: 0.25rem;
-      color: #EDE7F6;
-    }
-
-    .product-price {
-      color: #C8A2C8;
-      font-weight: 500;
-      margin-bottom: 0.75rem;
-    }
-
-    .buy-button {
-      display: inline-block;
-      text-align: center;
-      padding: 0.6rem 0.9rem;
-      border-radius: 999px;
-      background: #7B2CBF;
-      color: #F8F6FF;
-      font-weight: 600;
-      text-decoration: none;
-      font-size: 0.9rem;
-      transition: 0.3s;
-    }
-
-    .buy-button:hover {
-      background: #9D4EDD;
-    }
-
-    footer {
-      padding: 1.5rem 2rem;
-      border-top: 1px solid rgba(255, 255, 255, 0.1);
-      font-size: 0.85rem;
-      color: #C8A2C8;
-      text-align: center;
-    }
-@keyframes floatUp {
-  0% { transform: translateY(0); opacity: 0.8; }
-  100% { transform: translateY(-120vh); opacity: 0; }
-}
-/* Make images responsive */
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Make iframe (SoundCloud) responsive */
-iframe {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Responsive text scaling */
-h1, h2, h3, p {
-  word-wrap: break-word;
-}
-
-/* Responsive grid spacing on small screens */
-@media (max-width: 600px) {
-  .products {
-    grid-template-columns: 1fr;
-    padding: 1rem;
-  }
-
-  .product-card {
-    margin-bottom: 1.5rem;
-  }
-
-  header {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  nav a {
-    display: inline-block;
-    margin: 0.5rem;
-  }
-}
-
-  </style>
-</head>
-
-<body>
-
-  <header>
-    <div class="logo">Afrotious Nation</div>
-    <nav>
-      <a href="index.html">Marketplace</a>
-      <a href="music-universe.html">Music Universe</a>
-      <a href="contact.html">Contact</a>
-      <a href="about.html" class="header-btn">About</a>
-      <a href="faq.html" class="header-btn">FAQ</a>
-      <a href="creator-application.html" class="header-btn">Creator Application</a>
-      <a href="custom-orders.html" class="header-btn">Custom Orders</a>
-      <a href="cosmic-lore.html" class="header-btn">Cosmic Lore</a>
-	<a href="news.html" class="header-btn">News</a>
-	<a href="coming-soon.html" class="header-btn">Blog</a>
-	<a href="coming-soon.html" class="header-btn">Events</a>
-	<a href="radio.html" class="header-btn">Cosmic Radio</a>
-	<a class="header-btn" href="creator-portal.html">Creator Portal</a>
-    </nav>
+<link rel="icon" href="favicon.png">
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-  </header>
 
-
-<div class="section">
-    <h1>Creator Applications</h1>
-    <p>
-        Afrotious Nation is expanding into a multi‑creator cosmic marketplace and Roblox universe.  
-        Below are open creator roles you can apply for. Each role includes responsibilities, requirements,  
-        and next steps to prepare your professional profile. We have more than one application type available, please feel free to apply below!
-    </p>
-</div>
-<div class="section">
-    <h2>✨How Afrotious Nation Works✨</h2>
-
-    <p>
-        Afrotious Nation is an independent, creator-powered marketplace and cosmic universe.  
-        The platform is designed so creators can earn from their own products, games, and digital  
-        experiences — while Afrotious Nation earns a small marketplace fee that keeps the platform  
-        running. This allows us to stay sustainable, independent, and creator-first.
-    </p>
-
-    <p><strong>Creator Earnings Model</strong></p>
-    <p>
-        • Creators earn from their own sales, products, UGC items, and game experiences.  
-        • Afrotious Nation earns a small marketplace fee (typically 10%) from each sale.  
-        • This fee covers the cost of hosting, domain, development, marketing, and future expansion.  
-        • No monthly fees. No upfront costs. No pay-to-join.  
-        • You earn from your creations — Afrotious Nation earns only when you earn.
-    </p>
-
-    <p><strong>Why This Model Exists</strong></p>
-    <p>
-        Afrotious Nation is built by an independent creator with no external funding.  
-        The marketplace fee ensures the platform can sustain itself without charging creators  
-        or relying on ads. This keeps the experience clean, cosmic, and creator-focused.
-    </p>
-
-    <p><strong>What This Means for You</strong></p>
-    <p>
-        • You keep the majority of your earnings.  
-        • You never pay out of pocket to participate.  
-        • You join a growing cosmic brand and marketplace ecosystem.  
-        • Your creations become part of Afrotious Nation’s universe — both online and in Roblox.
-    </p>
-</div>
-
-<div class="section">
-    <h2>🌌 Roblox Game Creator – Build a Game Inside Afrotious Nation City</h2>
-
-    <p><strong>About This Role</strong></p>
-    <p>
-        Afrotious Nation's City is expanding with creator‑built experiences.  
-        We are looking for Roblox developers who want to build their own game inside our city,  
-        accessible through a branded portal. Your game becomes part of the Afrotious Nation universe,  
-        connected to our fashion marketplace and cosmic brand identity.
-    </p>
-
-    <p><strong>Responsibilities</strong></p>
-    <p>
-        • Build a unique Roblox experience  
-        • Maintain   
-        • Collaborate on cosmic‑themed branding and UI  
-        • Optionally create matching UGC items or outfits to showcase in the game.  
-        • Work with Afrotious Nation to align your game’s theme with the marketplace  
-    </p>
-
-    <p><strong>Requirements</strong></p>
-    <p>
-        • Experience with Roblox Studio  
-        • Ability to script in Lua  
-        • Ability to design environments or gameplay loops  
-        • Willingness to collaborate on brand integration  
-        • Optional: ability to create UGC items  
-    </p>
-
-    <p><strong>What You’ll Build </strong></p>
-    <p>
-        • A playable Roblox game inside Afrotious Nation City  
-        • A portal entrance branded with your creator identity  
-        • Optional matching real‑life clothing + Roblox outfit sets  
-        • A creator profile page on AfrotiousNation.org  
-    </p>
-
-    <p><strong>Next Step: Build Your LinkedIn Profile</strong></p>
-    <p>
-        To apply professionally, you will need a LinkedIn profile that reflects your creator role.  
-        Include sections such as:
-        <br><br>
-        • “Roblox Game Creator – Afrotious Nation Universe”  
-        • “UGC Designer (Preferred)”  
-        • “Cosmic Brand Integration Developer”  
-        • “Creator Marketplace Partner”  
-        <br><br>
-        Add your portfolio, screenshots, and any Roblox experience you’ve built.
-    </p>
-
-    <a href="apply.html" class="apply-btn">Apply for This Role</a>
-</div>
-
-<div class="divider"></div>
-
-<div class="section">
-    <h2> Fashion Brand Creator – Real Life + Roblox Outfit Integration</h2>
-    <p>
-        This role will allow creators to design real‑life clothing that matches Roblox outfits  
-        for cross‑platform fashion drops.  
-    </p>
-    <a href="fashion-brand-creator.html" class="apply-btn">Apply For This Role</a>
-</div>
-
-<div class="divider"></div>
-
-<div class="section">
-    <h2> Cosmic Accessory Designer – Handmade Items for Marketplace</h2>
-    <p>
-        This role will allow creators to design handmade cosmic accessories for the Afrotious Nation marketplace. We highly encourage Roblox UGC Creators to apply as well.    </p>
-    <a href="cosmic-accessory-designer.html" class="apply-btn">Apply For This Role</a>
-</div>
-<div class="creator-role">
-  <h2>Music / Brand Submission Creator</h2>
-  <p>
-    Submit your music, brand assets, or creative identity to be featured within the Afrotious Nation
-    ecosystem. Approved creators will gain access to submission tools, marketplace listing options,
-    and Stripe Connect onboarding for payouts and commissions.
-  </p>
-
-  <a class="header-btn" href="music-brand-submission.html">Apply for Music / Brand Submission Creator</a>
-</div>
-
-<footer>
-    <footer style="
+<style>
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: radial-gradient(circle at top, #3A0CA3, #0A0A0F);
+    color: #F8F6FF;
+}
+header {
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(10,10,15,0.7);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.logo {
+    font-weight: 700;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+    color: #C8A2C8;
+}
+nav a {
+    color: #F8F6FF;
+    text-decoration: none;
+    margin-left: 1rem;
+    transition: .3s;
+}
+nav a:hover { color: #C8A2C8; }
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 20px;
+}
+h1 {
+    font-size: 2.8rem;
+    color: #C8A2C8;
+    text-shadow: 0 0 15px rgba(200,162,200,0.4);
+}
+.section-box {
+    background: rgba(255,255,255,0.05);
+    padding: 25px;
+    border-radius: 12px;
+    margin-top: 30px;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+.section-box h2 {
+    color: #ff4fd8;
+}
+.section-box a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 20px;
+    background: #ff4fd8;
+    border-radius: 8px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+footer {
     width: 100%;
     padding: 20px 10px;
     margin-top: 40px;
     text-align: center;
     color: #F8F6FF;
     font-family: 'Poppins', sans-serif;
-">
-    <p style="margin: 8px 0; font-size: 1rem;">
-        All original content © 2025 Afrotious Nation, © 2026 Afrotious Nation
-    </p>
+}
+</style>
+</head>
 
-    <p style="margin: 8px 0; font-size: 0.95rem;">
-        <a href="/terms" style="color:#C8A2C8; text-decoration:none; margin-right:20px;">
-            Terms & Conditions
-        </a>
-        <a href="/privacy" style="color:#C8A2C8; text-decoration:none;">
-            Privacy Policy
-        </a>
-    </p>
+<body>
 
-    <p style="margin: 8px 0; font-size: 0.9rem; opacity: 0.8;">
-        Powered by Stripe
+<header>
+    <div class="logo">Afrotious Nation</div>
+    <nav>
+        <a href="index.html">Marketplace</a>
+        <a href="music-universe.html">Music Universe</a>
+        <a href="creator-application.html">Creator Application</a>
+        <a href="custom-orders.html">Custom Orders</a>
+        <a href="cosmic-lore.html">Cosmic Lore</a>
+        <a href="radio.html">Cosmic Radio</a>
+        <a href="creator-portal.html">Creator Portal</a>
+    </nav>
+</header>
+
+<div class="container">
+
+    <h1>Creator Applications</h1>
+
+    <p>Afrotious Nation is expanding into a multi‑creator cosmic marketplace and Roblox universe. Below are open creator roles you can apply for. Each role includes responsibilities, requirements, and next steps to prepare your professional profile. We have more than one application type available, please feel free to apply below!</p>
+
+    <h2>✨ How Afrotious Nation Works ✨</h2>
+
+    <p>Afrotious Nation is an independent, creator-powered marketplace and cosmic universe. The platform is designed so creators can earn from their own products, games, and digital experiences — while Afrotious Nation earns a small marketplace fee that keeps the platform running. This allows us to stay sustainable, independent, and creator-first.</p>
+
+    <div class="section-box">
+        <h2>Creator Earnings Model</h2>
+        <ul>
+            <li>Creators earn from their own sales, products, UGC items, and game experiences.</li>
+            <li>Afrotious Nation earns a small marketplace fee (typically 10%) from each sale.</li>
+            <li>This fee covers hosting, domain, development, marketing, and future expansion.</li>
+            <li>No monthly fees. No upfront costs. No pay-to-join.</li>
+            <li>You earn from your creations — Afrotious Nation earns only when you earn.</li>
+        </ul>
+    </div>
+
+    <div class="section-box">
+        <h2>Why This Model Exists</h2>
+        <p>Afrotious Nation is built by an independent creator with no external funding. The marketplace fee ensures the platform can sustain itself without charging creators or relying on ads. This keeps the experience clean, cosmic, and creator-focused.</p>
+    </div>
+
+    <div class="section-box">
+        <h2>What This Means for You</h2>
+        <ul>
+            <li>You keep the majority of your earnings.</li>
+            <li>You never pay out of pocket to participate.</li>
+            <li>You join a growing cosmic brand and marketplace ecosystem.</li>
+            <li>Your creations become part of Afrotious Nation’s universe — both online and in Roblox.</li>
+        </ul>
+    </div>
+
+    <!-- ROLE 1 -->
+    <div class="section-box">
+        <h2>🌌 Roblox Game Creator – Build a Game Inside Afrotious Nation City</h2>
+
+        <h3>About This Role</h3>
+        <p>Afrotious Nation's City is expanding with creator‑built experiences. We are looking for Roblox developers who want to build their own game inside our city, accessible through a branded portal. Your game becomes part of the Afrotious Nation universe, connected to our fashion marketplace and cosmic brand identity.</p>
+
+        <h3>Responsibilities</h3>
+        <ul>
+            <li>Build a unique Roblox experience</li>
+            <li>Maintain</li>
+            <li>Collaborate on cosmic‑themed branding and UI</li>
+            <li>Optionally create matching UGC items or outfits</li>
+            <li>Align your game’s theme with the marketplace</li>
+        </ul>
+
+        <h3>Requirements</h3>
+        <ul>
+            <li>Experience with Roblox Studio</li>
+            <li>Ability to script in Lua</li>
+            <li>Ability to design environments or gameplay loops</li>
+            <li>Willingness to collaborate on brand integration</li>
+            <li>Optional: ability to create UGC items</li>
+        </ul>
+
+        <h3>What You’ll Build</h3>
+        <ul>
+            <li>A playable Roblox game inside Afrotious Nation City</li>
+            <li>A portal entrance branded with your creator identity</li>
+            <li>Optional matching real‑life clothing + Roblox outfit sets</li>
+            <li>A creator profile page on AfrotiousNation.org</li>
+        </ul>
+
+        <h3>Next Step: Build Your LinkedIn Profile</h3>
+        <p>Include sections such as:</p>
+        <ul>
+            <li>“Roblox Game Creator – Afrotious Nation Universe”</li>
+            <li>“UGC Designer (Preferred)”</li>
+            <li>“Cosmic Brand Integration Developer”</li>
+            <li>“Creator Marketplace Partner”</li>
+        </ul>
+
+        <a href="/apply">Apply for This Role</a>
+    </div>
+
+    <!-- ROLE 2 -->
+    <div class="section-box">
+        <h2>Fashion Brand Creator – Real Life + Roblox Outfit Integration</h2>
+        <p>This role will allow creators to design real‑life clothing that matches Roblox outfits for cross‑platform fashion drops.</p>
+        <a href="/fashion-brand-creator">Apply For This Role</a>
+    </div>
+
+    <!-- ROLE 3 -->
+    <div class="section-box">
+        <h2>Cosmic Accessory Designer – Handmade Items for Marketplace</h2>
+        <p>This role will allow creators to design handmade cosmic accessories for the Afrotious Nation marketplace. Roblox UGC Creators are highly encouraged to apply.</p>
+        <a href="/cosmic-accessory-designer">Apply For This Role</a>
+    </div>
+
+    <!-- ROLE 4 -->
+    <div class="section-box">
+        <h2>Music / Brand Submission Creator</h2>
+        <p>Submit your music, brand assets, or creative identity to be featured within the Afrotious Nation ecosystem. Approved creators gain access to submission tools, marketplace listing options, and Stripe Connect onboarding for payouts and commissions.</p>
+        <a href="/music-brand-submission">Apply for Music / Brand Submission Creator</a>
+    </div>
+
+</div>
+
+<footer>
+    <p>All original content © 2026 Afrotious Nation</p>
+    <p>
+        <a href="/terms" style="color:#C8A2C8; margin-right:20px;">Terms & Conditions</a>
+        <a href="/privacy" style="color:#C8A2C8;">Privacy Policy</a>
     </p>
+    <p style="opacity:0.8;">Powered by Stripe</p>
 </footer>
+
 <script>
 document.addEventListener("DOMContentLoaded", () => {
   const particleContainer = document.createElement("div");
@@ -372,19 +225,18 @@ document.addEventListener("DOMContentLoaded", () => {
     p.style.height = "6px";
     p.style.borderRadius = "50%";
     p.style.background = "rgba(200,162,200,0.8)";
-    p.style.boxShadow = "0 0 12px rgba(200,162,200,0.9) ";
+    p.style.boxShadow = "0 0 12px rgba(200,162,200,0.9)";
     p.style.left = Math.random() * window.innerWidth + "px";
     p.style.top = window.innerHeight + "px";
     p.style.opacity = 0.8;
     p.style.animation = "floatUp 12s linear forwards";
-
     particleContainer.appendChild(p);
-
     setTimeout(() => p.remove(), 12000);
   }
 
   setInterval(createParticle, 450);
 });
 </script>
+
 </body>
 </html>

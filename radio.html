@@ -3,342 +3,214 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Melanindian Waves (A subdivision of Afrotious Nation) — Nightscape Radio</title>
-   <link rel="icon" type="image/png" href="favicon.png">
+    <title>Melanindian Waves — Nightscape Radio</title>
+
+    <link rel="icon" type="image/png" href="favicon.png">
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Montserrat', sans-serif;
-      background: radial-gradient(circle at top, #3A0CA3, #0A0A0F);
-      color: #F8F6FF;
-    }
 
-    header {
-      padding: 1.5rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background: rgba(10, 10, 15, 0.7);
-      backdrop-filter: blur(10px);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    }
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background: radial-gradient(circle at top, #3A0CA3, #0A0A0F);
+            color: #F8F6FF;
+        }
 
-    .logo {
-      font-weight: 700;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      color: #C8A2C8;
-    }
+        header {
+            padding: 1.5rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(10, 10, 15, 0.7);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
 
-    nav a {
-      color: #F8F6FF;
-      text-decoration: none;
-      margin-left: 1rem;
-      transition: 0.3s;
-    }
+        .logo {
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: #C8A2C8;
+        }
 
-    nav a:hover {
-      color: #C8A2C8;
-    }
+        nav a {
+            color: #F8F6FF;
+            text-decoration: none;
+            margin-left: 1rem;
+            transition: 0.3s;
+        }
 
-    .hero {
-      padding: 3rem 2rem 1rem;
-      max-width: 900px;
-      margin: 0 auto;
-      text-align: center;
-    }
+        nav a:hover {
+            color: #C8A2C8;
+        }
 
-    .hero h1 {
-      font-size: 2.8rem;
-      margin-bottom: 0.5rem;
-      color: #C8A2C8;
-      text-shadow: 0 0 15px rgba(200, 162, 200, 0.4);
-    }
+        .hero {
+            padding: 3rem 2rem 1rem;
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
 
-    .hero p {
-      max-width: 600px;
-      margin: 0 auto;
-      line-height: 1.6;
-      color: #EDE7F6;
-    }
+        .hero img {
+            width: 60%;
+            max-width: 600px;
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(200, 162, 200, 0.3);
+        }
 
-    .products {
-      padding: 2rem;
-      max-width: 1100px;
-      margin: 0 auto 3rem;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 2rem;
-    }
+        .section {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
 
-    .product-card {
-      background: rgba(58, 12, 163, 0.15);
-      border: 1px solid rgba(200, 162, 200, 0.2);
-      border-radius: 15px;
-      padding: 1rem;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
-      backdrop-filter: blur(8px);
-      transition: 0.3s;
-    }
+        .section h2 {
+            color: #C8A2C8;
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
 
-    .product-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 15px 35px rgba(123, 44, 191, 0.4);
-    }
+        .section p {
+            line-height: 1.6;
+            color: #EDE7F6;
+        }
 
-    .product-card img {
-      width: 100%;
-      border-radius: 10px;
-      margin-bottom: 0.75rem;
-      object-fit: cover;
-      max-height: 260px;
-      box-shadow: 0 0 20px rgba(200, 162, 200, 0.3);
-    }
+        .playlist-embeds {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
 
-    .product-title {
-      font-weight: 600;
-      margin-bottom: 0.25rem;
-      color: #EDE7F6;
-    }
+        .playlist-embeds iframe {
+            width: 100%;
+            border-radius: 12px;
+            margin-bottom: 1.5rem;
+        }
 
-    .product-price {
-      color: #C8A2C8;
-      font-weight: 500;
-      margin-bottom: 0.75rem;
-    }
+        .link-section {
+            text-align: center;
+            margin: 2rem 0;
+        }
 
-    .buy-button {
-      display: inline-block;
-      text-align: center;
-      padding: 0.6rem 0.9rem;
-      border-radius: 999px;
-      background: #7B2CBF;
-      color: #F8F6FF;
-      font-weight: 600;
-      text-decoration: none;
-      font-size: 0.9rem;
-      transition: 0.3s;
-    }
+        .link-section a {
+            color: #C8A2C8;
+            font-size: 1.2rem;
+            text-decoration: none;
+        }
 
-    .buy-button:hover {
-      background: #9D4EDD;
-    }
+        footer {
+            padding: 1.5rem 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.85rem;
+            color: #C8A2C8;
+            text-align: center;
+        }
 
-    footer {
-      padding: 1.5rem 2rem;
-      border-top: 1px solid rgba(255, 255, 255, 0.1);
-      font-size: 0.85rem;
-      color: #C8A2C8;
-      text-align: center;
-    }
-@keyframes floatUp {
-  0% { transform: translateY(0); opacity: 0.8; }
-  100% { transform: translateY(-120vh); opacity: 0; }
-}
-/* Make images responsive */
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Make iframe (SoundCloud) responsive */
-iframe {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Responsive text scaling */
-h1, h2, h3, p {
-  word-wrap: break-word;
-}
-
-/* Responsive grid spacing on small screens */
-@media (max-width: 600px) {
-  .products {
-    grid-template-columns: 1fr;
-    padding: 1rem;
-  }
-
-  .product-card {
-    margin-bottom: 1.5rem;
-  }
-
-  header {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  nav a {
-    display: inline-block;
-    margin: 0.5rem;
-  }
-}
-
-  </style>
+        @keyframes floatUp {
+            0% { transform: translateY(0); opacity: 0.8; }
+            100% { transform: translateY(-120vh); opacity: 0; }
+        }
+    </style>
 </head>
 
 <body>
+
 <header>
     <div class="logo">Afrotious Nation</div>
     <nav>
-      <a href="index.html">Marketplace</a>
-      <a href="music-universe.html">Music Universe</a>
-      <a href="contact.html">Contact</a>
-      <a href="about.html" class="header-btn">About</a>
-      <a href="faq.html" class="header-btn">FAQ</a>
-      <a href="creator-application.html" class="header-btn">Creator Application</a>
-      <a href="custom-orders.html" class="header-btn">Custom Orders</a>
-      <a href="cosmic-lore.html" class="header-btn">Cosmic Lore</a>
-	<a href="news.html" class="header-btn">News</a>
-	<a href="coming-soon.html" class="header-btn">Blog</a>
-	<a href="coming-soon.html" class="header-btn">Events</a>
-	<a href="radio.html" class="header-btn">Cosmic Radio</a>
-	<a class="header-btn" href="creator-portal.html">Creator Portal</a>
+        <a href="index.html">Marketplace</a>
+        <a href="music-universe.html">Music Universe</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+        <a href="faq.html">FAQ</a>
+        <a href="creator-application.html">Creator Application</a>
+        <a href="custom-orders.html">Custom Orders</a>
+        <a href="cosmic-lore.html">Cosmic Lore</a>
+        <a href="news.html">News</a>
+        <a href="coming-soon.html">Blog</a>
+        <a href="coming-soon.html">Events</a>
+        <a href="radio.html">Cosmic Radio</a>
+        <a href="creator-portal.html">Creator Portal</a>
     </nav>
-<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-  </header>
-    <div class="hero">
-        <img src="melanindian-waves.png" alt="Melanindian Waves Radio Banner">
-    </div>
+</header>
 
-    <div class="section">
-        <h2>Melanindian Waves — Nightscape Radio</h2>
-        <p>
-            Welcome to Melanindian Waves, the official nightscape radio division of Afrotious Nation.
-            A cosmic broadcast sounding our thoughts and amplifying our dreams.  
-            Featuring creators, dreamers, musicians, and storytellers from across the Afrotious Universe.
-        </p>
-    </div>
+<div class="hero">
+    <img src="melanindian-waves.png" alt="Melanindian Waves Radio Banner">
+</div>
 
-    <div class="section">
-        <h2>What is Nightscape Radio?</h2>
-        <p>
-            Nightscape Radio is a neon‑lit, dreamwave broadcast blending cosmic ambience with creator‑submitted music.
-            Every track is curated to match the Melanindian aesthetic — futuristic, soulful, and deeply imaginative.
-        </p>
-    </div>
-
-    <div class="section">
-        <h2>How Creators Get Featured</h2>
-        <p>
-            Creators can submit clean versions of their music through the Music / Brand Submission Creator Application, found on the "Creator Application" page.
-            Approved tracks are added to our playlists, featured on TikTok Live shows, and highlighted in weekly spotlights.
-        </p>
-    </div>
-
-    <div class="section">
-        <h2>Music Selection Guidelines</h2>
-        <p>
-            • Clean version required  
-            • No copyrighted samples  
-            • Must match cosmic / nightscape theme  
-            • High‑quality audio  
-            • Must pass review  
-        </p>
-    </div>
-
-    <div class="section">
-        <h2>The Cosmic Theme</h2>
-        <p>
-            Melanindian Waves blends neon aesthetics, dreamwave ambience, and Afrofuturistic storytelling.
-            Every broadcast is designed to feel like a journey through a glowing nightscape.
-        </p>
-    </div>
-
-    <div class="section">
-        <h2>TikTok Live Broadcasts</h2>
-        <p>
-            Weekly live shows featuring creator music, cosmic commentary, and interactive community moments.
-            Approved creators may be featured during live segments.
-        </p>
-    </div>
-
-    <div class="section">
-        <h2>Radio Playlists</h2>
-        <div class="playlist-embeds">
-            <iframe width="100%" height="300" scrolling="no" frameborder="no"
-                src="https://w.soundcloud.com/player/?url=.hero img {
-    width: 60%;
-    max-width: 600px;
-    margin: 0 auto;
-    display: block;
-}
-"></iframe>
-
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/placeholder"
-                width="100%" height="300" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-        </div>
-    </div>
-    <div class="link-section">
-        <a href="music-universe.htmlF">← Return to Music Universe</a>
-    </div>
-
-    <div class="section">
-        <h2>Featured Creators & Tracks</h2>
-        <p>
-            Each week, Melanindian Waves highlights a creator, a track, and a brand that embodies the cosmic identity.
-            These features appear on the radio page, TikTok Live, and Music Universe.
-        </p>
-    </div>
 <div class="section">
-        <h2>Want to Submit your Music to the community radio?</h2>
-        <p>
-            Press "Submit Your Track" to get started
-        </p>
+    <h2>Melanindian Waves — Nightscape Radio</h2>
+    <p>
+        Welcome to Melanindian Waves, the official nightscape radio division of Afrotious Nation.
+        A cosmic broadcast sounding our thoughts and amplifying our dreams.
+    </p>
+</div>
+
+<div class="section">
+    <h2>Radio Playlist</h2>
+</div>
+
+<div class="playlist-embeds">
+
+    <!-- ⭐ Your Correct SoundCloud Embed -->
+    <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay; encrypted-media"
+    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2055152740&color=%233a0ca3&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+
+    <div style="font-size: 10px; color: #cccccc; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">
+        <a href="https://soundcloud.com/afrotious_nation" target="_blank" style="color: #cccccc;">Afrotious Nation</a> · 
+        <a href="https://soundcloud.com/afrotious_nation/acreatorsuniversalstudios" target="_blank" style="color: #cccccc;">light</a>
     </div>
-<a href="radio-payment.html">Submit Your Track</a>
+
+</div>
+
+<div class="link-section">
+    <a href="music-universe.html">← Return to Music Universe</a>
+</div>
+
+<div class="section">
+    <h2>Want to Submit Your Music?</h2>
+    <p>Press "Submit Your Track" to get started.</p>
+    <a href="radio-payment.html" class="buy-button">Submit Your Track</a>
+</div>
+
+<footer>
+    Melanindian Waves — Afrotious Nation © 2026
 </footer>
+
 <script>
 document.addEventListener("DOMContentLoaded", () => {
-  const particleContainer = document.createElement("div");
-  particleContainer.style.position = "fixed";
-  particleContainer.style.top = 0;
-  particleContainer.style.left = 0;
-  particleContainer.style.width = "100%";
-  particleContainer.style.height = "100%";
-  particleContainer.style.pointerEvents = "none";
-  particleContainer.style.zIndex = "0";
-  document.body.appendChild(particleContainer);
+    const particleContainer = document.createElement("div");
+    particleContainer.style.position = "fixed";
+    particleContainer.style.top = 0;
+    particleContainer.style.left = 0;
+    particleContainer.style.width = "100%";
+    particleContainer.style.height = "100%";
+    particleContainer.style.pointerEvents = "none";
+    particleContainer.style.zIndex = "0";
+    document.body.appendChild(particleContainer);
 
-  function createParticle() {
-    const p = document.createElement("div");
-    p.style.position = "absolute";
-    p.style.width = "6px";
-    p.style.height = "6px";
-    p.style.borderRadius = "50%";
-    p.style.background = "rgba(200,162,200,0.8)";
-    p.style.boxShadow = "0 0 12px rgba(200,162,200,0.9) ";
-    p.style.left = Math.random() * window.innerWidth + "px";
-    p.style.top = window.innerHeight + "px";
-    p.style.opacity = 0.8;
-    p.style.animation = "floatUp 12s linear forwards";
+    function createParticle() {
+        const p = document.createElement("div");
+        p.style.position = "absolute";
+        p.style.width = "6px";
+        p.style.height = "6px";
+        p.style.borderRadius = "50%";
+        p.style.background = "rgba(200,162,200,0.8)";
+        p.style.boxShadow = "0 0 12px rgba(200,162,200,0.9)";
+        p.style.left = Math.random() * window.innerWidth + "px";
+        p.style.top = window.innerHeight + "px";
+        p.style.opacity = 0.8;
+        p.style.animation = "floatUp 12s linear forwards";
 
-    particleContainer.appendChild(p);
+        particleContainer.appendChild(p);
+        setTimeout(() => p.remove(), 12000);
+    }
 
-    setTimeout(() => p.remove(), 12000);
-  }
-
-  setInterval(createParticle, 450);
-// Authentication check
-  const user = netlifyIdentity.currentUser();
-  const authStatus = document.getElementById("auth-status");
-  const portalContent = document.getElementById("portal-content");
-
-  if (!user) {
-    authStatus.innerHTML = "You must be logged in to access the Submission Portal.";
-    netlifyIdentity.open();
-  } else {
-    authStatus.innerHTML = "Authenticated as: " + user.email;
-    portalContent.style.display = "block";
-  }
-
-  // Logout
-  document.getElementById("logout-btn").addEventListener("click", () => {
-    netlifyIdentity.logout();
-    location.reload();
-  });
+    setInterval(createParticle, 450);
 });
 </script>
+
 </body>
 </html>

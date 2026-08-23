@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Submit Custom Request – Afrotious Nation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <!-- Schema: WebPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Submit Custom Request",
+    "url": "https://afrotiousnation.org/custom-request-submission.html",
+    "description": "Submit a custom handmade request for crochet tops, durags, accessories, and more."
+  }
+  </script>
+
+  <!-- Schema: Service -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Custom Handmade Item Request",
+    "provider": {
+      "@type": "Organization",
+      "name": "Afrotious Nation",
+      "url": "https://afrotiousnation.org"
+    },
+    "areaServed": "Worldwide",
+    "serviceType": "Custom Crochet & Handmade Item Creation"
+  }
+  </script>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: radial-gradient(circle at top, #3A0CA3, #0A0A0F);
+      color: #F8F6FF;
+      padding-bottom: 50px;
+    }
+
+    header {
+      padding: 1.5rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(10, 10, 15, 0.7);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid #C8A2C8;
+    }
+
+    .logo {
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #C8A2C8;
+    }
+
+    nav a {
+      color: #F8F6FF;
+      text-decoration: none;
+      margin-left: 1rem;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #C8A2C8;
+    }
+
+    .hero {
+      padding: 3rem 2rem 1rem;
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2.6rem;
+      color: #C8A2C8;
+      text-shadow: 0 0 15px rgba(200, 162, 200, 0.4);
+    }
+
+    .form-section {
+      max-width: 900px;
+      margin: 0 auto;
+      background: rgba(58, 12, 163, 0.25);
+      border: 1px solid #7B2CBF;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 25px rgba(123, 44, 191, 0.4);
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: 600;
+      color: #EDE7F6;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 12px;
+      margin-top: 8px;
+      border-radius: 8px;
+      border: 1px solid #C8A2C8;
+      background: rgba(10, 10, 15, 0.6);
+      color: #F8F6FF;
+      font-size: 1rem;
+    }
+
+    textarea {
+      height: 140px;
+      resize: vertical;
+    }
+
+    .submit-btn {
+      margin-top: 25px;
+      padding: 12px 20px;
+      background: #7B2CBF;
+      color: #F8F6FF;
+      border-radius: 999px;
+      font-weight: 600;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s;
+      width: 100%;
+    }
+
+    .submit-btn:hover {
+      background: #C8A2C8;
+      color: #0A0A0F;
+    }
+
+    footer {
+      padding: 1.5rem 2rem;
+      border-top: 1px solid #C8A2C8;
+      font-size: 0.85rem;
+      color: #C8A2C8;
+      text-align: center;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">Afrotious Nation</div>
+  <nav>
+    <a href="index.html">Marketplace</a>
+    <a href="music-universe.html">Music Universe</a>
+    <a href="contact.html">Contact</a>
+    <a href="about.html">About</a>
+    <a href="faq.html">FAQ</a>
+    <a href="creator-application.html">Creator Application</a>
+    <a href="custom-orders.html">Custom Orders</a>
+    <a href="cosmic-lore.html">Cosmic Lore</a>
+    <a href="news.html">News</a>
+    <a href="coming-soon.html">Blog</a>
+    <a href="coming-soon.html">Events</a>
+    <a href="radio.html">Cosmic Radio</a>
+    <a href="creator-portal.html">Creator Portal</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Submit a Custom Request</h1>
+  <p>Fill out the form below to request a handmade custom piece. A creator will contact you with pricing, timeline, and details.</p>
+</section>
+
+<section class="form-section">
+
+  <!-- Netlify Form -->
+  <form name="custom-request" method="POST" data-netlify="true" enctype="multipart/form-data">
+    <input type="hidden" name="form-name" value="custom-request">
+
+    <label>Your Name</label>
+    <input type="text" name="name" required>
+
+    <label>Email Address</label>
+    <input type="email" name="email" required>
+
+    <label>Type of Item</label>
+    <select name="item-type" required>
+      <option value="">Select an item</option>
+      <option>Bralette</option>
+      <option>Top</option>
+      <option>Durag</option>
+      <option>Accessory</option>
+      <option>Jewelry</option>
+      <option>Veil</option>
+      <option>Sachet</option>
+      <option>Dress</option>
+      <option>Bottoms</option>
+      <option>Set</option>
+      <option>Hat</option>
+      <option>Neck Pillow</option>
+      <option>Vest</option>
+      <option>Arm Warmers</option>
+      <option>Gloves</option>
+      <option>Scarf</option>
+      <option>Beanie</option>
+      <option>Other</option>
+    </select>
+
+    <label>Colors / Theme</label>
+    <input type="text" name="colors" placeholder="Example: brown + lavender, cosmic theme, nature aesthetic">
+
+    <label>Size</label>
+    <input type="text" name="size" placeholder="XS / S / M / L / XL or custom measurements">
+
+    <label>Describe Your Custom Request</label>
+    <textarea name="description" required></textarea>
+
+    <label>Upload Reference Photos (optional)</label>
+    <input type="file" name="photos" multiple>
+
+    <button class="submit-btn" type="submit">Submit Request</button>
+  </form>
+
+</section>
+
+<footer>
+  <p>All original content © 2025 Afrotious Nation, © 2026 Afrotious Nation</p>
+  <p>
+    <a href="/terms" style="color:#C8A2C8;">Terms & Conditions</a> |
+    <a href="/privacy" style="color:#C8A2C8;">Privacy Policy</a>
+  </p>
+  <p style="opacity:0.8;">Powered by Stripe</p>
+</footer>
+
+</body>
+</html>

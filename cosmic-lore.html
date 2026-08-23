@@ -4,7 +4,51 @@
   <meta charset="UTF-8" />
   <title>Afrotious Nation - Cosmic Lore</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="icon" type="image/png" href="favicon.png">
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <link rel="canonical" href="https://afrotiousnation.org/cosmic-lore">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Brand",
+    "name": "Afrotious Nation",
+    "url": "https://afrotiousnation.org",
+    "logo": "https://afrotiousnation.org/favicon.png",
+    "sameAs": [
+      "https://www.youtube.com/@AfrotiousNation",
+      "https://www.instagram.com/afrotiousnation",
+      "https://linktr.ee/Afrotious_Nation"
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Afrotious Nation",
+    "url": "https://afrotiousnation.org",
+    "founder": {
+      "@type": "Person",
+      "name": "Aaliyah Casteele"
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Afrotious Nation",
+    "url": "https://afrotiousnation.org",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://afrotiousnation.org/?s={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
 
   <style>
     body {
@@ -42,87 +86,21 @@
       color: #C8A2C8;
     }
 
-    .hero {
-      padding: 3rem 2rem 1rem;
+    .section {
+      padding: 3rem 2rem;
       max-width: 900px;
       margin: 0 auto;
-      text-align: center;
     }
 
-    .hero h1 {
-      font-size: 2.8rem;
-      margin-bottom: 0.5rem;
+    .section h1, .section h2 {
       color: #C8A2C8;
       text-shadow: 0 0 15px rgba(200, 162, 200, 0.4);
     }
 
-    .hero p {
-      max-width: 600px;
-      margin: 0 auto;
+    .section p {
       line-height: 1.6;
       color: #EDE7F6;
-    }
-
-    .products {
-      padding: 2rem;
-      max-width: 1100px;
-      margin: 0 auto 3rem;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 2rem;
-    }
-
-    .product-card {
-      background: rgba(58, 12, 163, 0.15);
-      border: 1px solid rgba(200, 162, 200, 0.2);
-      border-radius: 15px;
-      padding: 1rem;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
-      backdrop-filter: blur(8px);
-      transition: 0.3s;
-    }
-
-    .product-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 15px 35px rgba(123, 44, 191, 0.4);
-    }
-
-    .product-card img {
-      width: 100%;
-      border-radius: 10px;
-      margin-bottom: 0.75rem;
-      object-fit: cover;
-      max-height: 260px;
-      box-shadow: 0 0 20px rgba(200, 162, 200, 0.3);
-    }
-
-    .product-title {
-      font-weight: 600;
-      margin-bottom: 0.25rem;
-      color: #EDE7F6;
-    }
-
-    .product-price {
-      color: #C8A2C8;
-      font-weight: 500;
-      margin-bottom: 0.75rem;
-    }
-
-    .buy-button {
-      display: inline-block;
-      text-align: center;
-      padding: 0.6rem 0.9rem;
-      border-radius: 999px;
-      background: #7B2CBF;
-      color: #F8F6FF;
-      font-weight: 600;
-      text-decoration: none;
-      font-size: 0.9rem;
-      transition: 0.3s;
-    }
-
-    .buy-button:hover {
-      background: #9D4EDD;
+      margin-bottom: 1rem;
     }
 
     footer {
@@ -132,55 +110,39 @@
       color: #C8A2C8;
       text-align: center;
     }
-@keyframes floatUp {
-  0% { transform: translateY(0); opacity: 0.8; }
-  100% { transform: translateY(-120vh); opacity: 0; }
-}
-/* Make images responsive */
-img {
-  max-width: 100%;
-  height: auto;
-}
 
-/* Make iframe (SoundCloud) responsive */
-iframe {
-  max-width: 100%;
-  height: auto;
-}
+    @keyframes floatUp {
+      0% { transform: translateY(0); opacity: 0.8; }
+      100% { transform: translateY(-120vh); opacity: 0; }
+    }
 
-/* Responsive text scaling */
-h1, h2, h3, p {
-  word-wrap: break-word;
-}
+    img {
+      max-width: 100%;
+      height: auto;
+    }
 
-/* Responsive grid spacing on small screens */
-@media (max-width: 600px) {
-  .products {
-    grid-template-columns: 1fr;
-    padding: 1rem;
-  }
+    iframe {
+      max-width: 100%;
+      height: auto;
+    }
 
-  .product-card {
-    margin-bottom: 1.5rem;
-  }
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
 
-  header {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  nav a {
-    display: inline-block;
-    margin: 0.5rem;
-  }
-}
-
+      nav a {
+        display: inline-block;
+        margin: 0.5rem;
+      }
+    }
   </style>
 </head>
 
 <body>
 
-  <header>
+<header>
     <div class="logo">Afrotious Nation</div>
     <nav>
       <a href="index.html">Marketplace</a>
@@ -191,14 +153,14 @@ h1, h2, h3, p {
       <a href="creator-application.html" class="header-btn">Creator Application</a>
       <a href="custom-orders.html" class="header-btn">Custom Orders</a>
       <a href="cosmic-lore.html" class="header-btn">Cosmic Lore</a>
-	<a href="news.html" class="header-btn">News</a>
-	<a href="coming-soon.html" class="header-btn">Blog</a>
-	<a href="coming-soon.html" class="header-btn">Events</a>
-	<a href="radio.html" class="header-btn">Cosmic Radio</a>
-	<a class="header-btn" href="creator-portal.html">Creator Portal</a>
+      <a href="news.html" class="header-btn">News</a>
+      <a href="coming-soon.html" class="header-btn">Blog</a>
+      <a href="coming-soon.html" class="header-btn">Events</a>
+      <a href="radio.html" class="header-btn">Cosmic Radio</a>
+      <a class="header-btn" href="creator-portal.html">Creator Portal</a>
     </nav>
-<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-  </header>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</header>
 
 <div class="section">
     <h1>Cosmic Lore</h1>
@@ -213,15 +175,15 @@ h1, h2, h3, p {
     <h2>🌌 Brand Integration Model</h2>
     <p>
         Afrotious Nation integrates creators into the cosmic universe through fashion,  
-        digital experiences, and Roblox worlds.  
+        digital experiences, and Roblox worlds.
     </p>
 
     <p><strong>How integration works:</strong></p>
     <p>
-        • Roblox creators build games inside Afrotious Nation City  
-        • Fashion creators design cosmic-themed clothing  
-        • UGC creators build matching digital outfits  
-        • Handmade creators craft physical items that reflect cosmic identity  
+        • Roblox creators build games inside Afrotious Nation City<br>
+        • Fashion creators design cosmic-themed clothing<br>
+        • UGC creators build matching digital outfits<br>
+        • Handmade creators craft physical items that reflect cosmic identity<br>
         • All creators become part of the Afrotious Nation universe  
     </p>
 
@@ -230,32 +192,22 @@ h1, h2, h3, p {
         while keeping the cosmic brand unified.
     </p>
 </div>
-<footer>
-<footer style="
-    width: 100%;
-    padding: 20px 10px;
-    margin-top: 40px;
-    text-align: center;
-    color: #F8F6FF;
-    font-family: 'Poppins', sans-serif;
-">
+
+<footer style="width: 100%; padding: 20px 10px; margin-top: 40px; text-align: center; color: #F8F6FF; font-family: 'Poppins', sans-serif;">
     <p style="margin: 8px 0; font-size: 1rem;">
         All original content © 2025 Afrotious Nation, © 2026 Afrotious Nation
     </p>
 
     <p style="margin: 8px 0; font-size: 0.95rem;">
-        <a href="/terms" style="color:#C8A2C8; text-decoration:none; margin-right:20px;">
-            Terms & Conditions
-        </a>
-        <a href="/privacy" style="color:#C8A2C8; text-decoration:none;">
-            Privacy Policy
-        </a>
+        <a href="/terms" style="color:#C8A2C8; margin-right:20px;">Terms & Conditions</a>
+        <a href="/privacy" style="color:#C8A2C8;">Privacy Policy</a>
     </p>
 
     <p style="margin: 8px 0; font-size: 0.9rem; opacity: 0.8;">
         Powered by Stripe
     </p>
 </footer>
+
 <script>
 document.addEventListener("DOMContentLoaded", () => {
   const particleContainer = document.createElement("div");
@@ -275,19 +227,19 @@ document.addEventListener("DOMContentLoaded", () => {
     p.style.height = "6px";
     p.style.borderRadius = "50%";
     p.style.background = "rgba(200,162,200,0.8)";
-    p.style.boxShadow = "0 0 12px rgba(200,162,200,0.9) ";
+    p.style.boxShadow = "0 0 12px rgba(200,162,200,0.9)";
     p.style.left = Math.random() * window.innerWidth + "px";
     p.style.top = window.innerHeight + "px";
     p.style.opacity = 0.8;
     p.style.animation = "floatUp 12s linear forwards";
 
     particleContainer.appendChild(p);
-
     setTimeout(() => p.remove(), 12000);
   }
 
   setInterval(createParticle, 450);
 });
 </script>
+
 </body>
 </html>

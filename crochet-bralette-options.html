@@ -4,7 +4,52 @@
   <meta charset="UTF-8" />
   <title>Crochet Bralette Options – Afrotious Nation</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="icon" type="image/png" href="favicon.png">
+  <meta name="description" content="Handmade crochet bralettes by Yarni Mama for festival wear, beach days, meditation, and everyday cosmic comfort. Shop sizes XS–XL in multiple colors via Afrotious Nation.">
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <link rel="canonical" href="https://afrotiousnation.org/crochet-bralette-options">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Brand",
+    "name": "Afrotious Nation",
+    "url": "https://afrotiousnation.org",
+    "logo": "https://afrotiousnation.org/favicon.png",
+    "sameAs": [
+      "https://www.youtube.com/@AfrotiousNation",
+      "https://www.instagram.com/afrotiousnation",
+      "https://linktr.ee/Afrotious_Nation"
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Afrotious Nation",
+    "url": "https://afrotiousnation.org",
+    "founder": {
+      "@type": "Person",
+      "name": "Aaliyah Casteele"
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Afrotious Nation",
+    "url": "https://afrotiousnation.org",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://afrotiousnation.org/?s={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
 
   <style>
     body {
@@ -13,7 +58,6 @@
       background: radial-gradient(circle at top, #3A0CA3, #0A0A0F);
       color: #F8F6FF;
     }
-
     header {
       padding: 1.5rem 2rem;
       display: flex;
@@ -23,46 +67,37 @@
       backdrop-filter: blur(10px);
       border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
-
     .logo {
       font-weight: 700;
       letter-spacing: 0.15em;
       text-transform: uppercase;
       color: #C8A2C8;
     }
-
     nav a {
       color: #F8F6FF;
       text-decoration: none;
       margin-left: 1rem;
       transition: 0.3s;
     }
-
-    nav a:hover {
-      color: #C8A2C8;
-    }
-
+    nav a:hover { color: #C8A2C8; }
     .hero {
       padding: 3rem 2rem 1rem;
       max-width: 900px;
       margin: 0 auto;
       text-align: center;
     }
-
     .hero h1 {
       font-size: 2.8rem;
       margin-bottom: 0.5rem;
       color: #C8A2C8;
       text-shadow: 0 0 15px rgba(200, 162, 200, 0.4);
     }
-
     .hero p {
       max-width: 600px;
       margin: 0 auto;
       line-height: 1.6;
       color: #EDE7F6;
     }
-
     .products {
       padding: 2rem;
       max-width: 1100px;
@@ -71,7 +106,6 @@
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       gap: 2rem;
     }
-
     .product-card {
       background: rgba(58, 12, 163, 0.15);
       border: 1px solid rgba(200, 162, 200, 0.2);
@@ -81,12 +115,10 @@
       backdrop-filter: blur(8px);
       transition: 0.3s;
     }
-
     .product-card:hover {
       transform: translateY(-5px);
       box-shadow: 0 15px 35px rgba(123, 44, 191, 0.4);
     }
-
     .product-card img {
       width: 100%;
       border-radius: 10px;
@@ -95,19 +127,16 @@
       max-height: 260px;
       box-shadow: 0 0 20px rgba(200, 162, 200, 0.3);
     }
-
     .product-title {
       font-weight: 600;
       margin-bottom: 0.25rem;
       color: #EDE7F6;
     }
-
     .product-price {
       color: #C8A2C8;
       font-weight: 500;
       margin-bottom: 0.75rem;
     }
-
     .buy-button {
       display: inline-block;
       text-align: center;
@@ -120,209 +149,185 @@
       font-size: 0.9rem;
       transition: 0.3s;
     }
-
-    .buy-button:hover {
-      background: #9D4EDD;
+    .buy-button:hover { background: #9D4EDD; }
+    .matrix {
+      margin-top: 20px;
+      overflow-x: auto;
     }
-
-    footer {
-      padding: 1.5rem 2rem;
-      border-top: 1px solid rgba(255, 255, 255, 0.1);
-      font-size: 0.85rem;
-      color: #C8A2C8;
+    .matrix-table {
+      display: grid;
+      grid-template-columns: 80px repeat(auto-fit, minmax(150px, 1fr));
+      border: 1px solid #C8A2C8;
+      min-width: 650px;
+      background: rgba(10, 10, 15, 0.8);
+    }
+    .matrix-cell {
+      padding: 10px;
+      border-bottom: 1px solid #C8A2C8;
+      border-right: 1px solid #C8A2C8;
       text-align: center;
+      white-space: nowrap;
     }
-
-    img {
-      max-width: 100%;
-      height: auto;
+    .matrix-cell.header {
+      font-weight: 700;
+      background: #3A0CA3;
+      color: #F8F6FF;
     }
-
-    @media (max-width: 600px) {
-      .products {
-        grid-template-columns: 1fr;
-        padding: 1rem;
-      }
-
-      .product-card {
-        margin-bottom: 1.5rem;
-      }
-
-      header {
-        flex-direction: column;
-        text-align: center;
-      }
-
-      nav a {
-        display: inline-block;
-        margin: 0.5rem;
-      }
+    .matrix-cell.size {
+      font-weight: 700;
+      background: rgba(58, 12, 163, 0.4);
+      color: #F8F6FF;
     }
-/* Cosmic Excel-style matrix */
-.matrix {
-  margin-top: 20px;
-  overflow-x: auto;
-}
-
-.matrix-table {
-  display: grid;
-  grid-template-columns: 80px repeat(auto-fit, minmax(150px, 1fr));
-  border: 1px solid #C8A2C8;
-  min-width: 650px;
-  background: rgba(10, 10, 15, 0.8);
-}
-
-.matrix-cell {
-  padding: 10px;
-  border-bottom: 1px solid #C8A2C8;
-  border-right: 1px solid #C8A2C8;
-  text-align: center;
-  white-space: nowrap;
-}
-
-.matrix-cell.header {
-  font-weight: 700;
-  background: #3A0CA3;
-  color: #F8F6FF;
-}
-
-.matrix-cell.size {
-  font-weight: 700;
-  background: rgba(58, 12, 163, 0.4);
-  color: #F8F6FF;
-}
-
   </style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Crochet Bralette – Bikini",
+  "image": "https://afrotiousnation.org/crochet-bralette-purple-rainbow.jpg",
+  "description": "Handmade crochet bikini-style bralette crafted with soft acrylic yarn using a double-crochet technique. Available in Rainbow Purple, Black, and White.",
+  "brand": "Afrotious Nation",
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "USD",
+    "price": "28.00",
+    "availability": "https://schema.org/InStock",
+    "url": "https://afrotiousnation.org/crochet-bralette-options"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Crochet Bralette – Wool Blend",
+  "image": "https://afrotiousnation.org/Handmade Crocheted Bralette by Yarni Mama.png",
+  "description": "Handmade crochet bralette crafted with a premium blend of 98% wool and 2% acrylic yarn. Features mesh and crocodile stitch patterns and adjustable straps.",
+  "brand": "Afrotious Nation",
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "USD",
+    "price": "35.00",
+    "availability": "https://schema.org/InStock",
+    "url": "https://afrotiousnation.org/crochet-bralette-options"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Handmade Crocheted Bralette with X",
+  "image": "https://afrotiousnation.org/crochet-bralette-with-x.png",
+  "description": "Handmade crochet bralette featuring an X-style design, crafted with soft acrylic yarn using a double-crochet technique. Available in Rainbow Blue, Grey, and Red.",
+  "brand": "Afrotious Nation",
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "USD",
+    "price": "30.00",
+    "availability": "https://schema.org/InStock",
+    "url": "https://afrotiousnation.org/crochet-bralette-options"
+  }
+}
+</script>
+
+</head>
 
 </head>
 
 <body>
-  <header>
-    <div class="logo">Afrotious Nation</div>
-    <nav>
-      <a href="index.html">Marketplace</a>
-      <a href="music-universe.html">Music Universe</a>
-      <a href="contact.html">Contact</a>
-      <a href="about.html" class="header-btn">About</a>
-      <a href="faq.html" class="header-btn">FAQ</a>
-      <a href="creator-application.html" class="header-btn">Creator Application</a>
-      <a href="custom-orders.html" class="header-btn">Custom Orders</a>
-      <a href="cosmic-lore.html" class="header-btn">Cosmic Lore</a>
-	<a href="news.html" class="header-btn">News</a>
-	<a href="coming-soon.html" class="header-btn">Blog</a>
-	<a href="coming-soon.html" class="header-btn">Events</a>
-	<a href="radio.html" class="header-btn">Cosmic Radio</a>
-	<a class="header-btn" href="creator-portal.html">Creator Portal</a>
-    </nav>
-<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-  </header>
 
-  <section class="hero">
-    <h1>Bralettes</h1>
-    <p>Select your handmade bralette below.</p>
-  </section>
-<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay; encrypted-media" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1616566857&color=%233a0ca3&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/seguyaviviana" title="SEGUYA VIVIANA" target="_blank" style="color: #cccccc; text-decoration: none;">SEGUYA VIVIANA</a> · <a href="https://soundcloud.com/seguyaviviana/seguya-viviana-gamble-hearts" title="Gamble Hearts" target="_blank" style="color: #cccccc; text-decoration: none;">Gamble Hearts</a></div>
-  <section class="products">
+<header>
+  <div class="logo">Afrotious Nation</div>
+  <nav>
+    <a href="index.html">Marketplace</a>
+    <a href="music-universe.html">Music Universe</a>
+    <a href="contact.html">Contact</a>
+    <a href="about.html" class="header-btn">About</a>
+    <a href="faq.html" class="header-btn">FAQ</a>
+    <a href="creator-application.html" class="header-btn">Creator Application</a>
+    <a href="custom-orders.html" class="header-btn">Custom Orders</a>
+    <a href="cosmic-lore.html" class="header-btn">Cosmic Lore</a>
+    <a href="news.html" class="header-btn">News</a>
+    <a href="coming-soon.html" class="header-btn">Blog</a>
+    <a href="coming-soon.html" class="header-btn">Events</a>
+    <a href="radio.html" class="header-btn">Cosmic Radio</a>
+    <a class="header-btn" href="creator-portal.html">Creator Portal</a>
+  </nav>
+</header>
 
-    
+<section class="hero">
+  <h1>Bralettes</h1>
+  <p>Select your handmade bralette below.</p>
+</section>
+
+<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay; encrypted-media"
+src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1616566857&color=%233a0ca3&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+
+<div style="font-size: 10px; color: #cccccc; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+  <a href="https://soundcloud.com/seguyaviviana" target="_blank" style="color:#cccccc;">SEGUYA VIVIANA</a> · 
+  <a href="https://soundcloud.com/seguyaviviana/seguya-viviana-gamble-hearts" target="_blank" style="color:#cccccc;">Gamble Hearts</a>
+</div>
+
+<section class="products">
     <div class="product-card">
       <img src="crochet-bralette-purple-rainbow.jpg" alt="Crochet Bralette Style 1" />
       <div class="product-title">Crochet Bralette – Bikini</div>
       <div class="product-price">$28.00</div>
+
       <p style="text-align:center; font-size:0.9rem; opacity:0.85;">
         Handmade by
-        <a href="https://www.instagram.com/yarni_mama/" target="_blank" style="color:#c8a2ff; text-decoration:underline;">
-          yarni_mama
-	</a>
+        <a href="https://www.instagram.com/yarni_mama/" target="_blank" style="color:#c8a2ff;">yarni_mama</a>
       </p>
 
-      
-
-      
       <div style="text-align:center; margin-top:15px; font-size:0.9rem; opacity:0.85;">
         <strong>Select Color/Size:</strong>
       </div>
 
-      <div style="display:flex; justify-content:center; gap:10px; margin-top:10px; flex-wrap:wrap;">
-       
+      <div class="matrix">
+        <div class="matrix-table">
+
+          <div class="matrix-cell header">Size</div>
+          <div class="matrix-cell header">Rainbow Purple</div>
+          <div class="matrix-cell header">Black</div>
+          <div class="matrix-cell header">White</div>
+
+          <div class="matrix-cell size">XS</div>
+          <div class="matrix-cell"><a class="buy-button" href="https://buy.stripe.com/3cIeVc3H1d0n1utb9hgMw0F" target="_blank">Buy XS</a></div>
+          <div class="matrix-cell"><a class="buy-button" href="coming-soon.html" target="_blank">Buy XS</a></div>
+          <div class="matrix-cell"><a class="buy-button" href="coming-soon.html" target="_blank">Buy XS</a></div>
+
+          <div class="matrix-cell size">S</div>
+          <div class="matrix-cell"><a class="buy-button" href="https://buy.stripe.com/6oU9AS0uP3pNflj2CLgMw1c" target="_blank">Buy S</a></div>
+          <div class="matrix-cell"><a class="buy-button" href="coming-soon.html" target="_blank">Buy S</a></div>
+          <div class="matrix-cell"><a class="buy-button" href="coming-soon.html" target="_blank">Buy S</a></div>
+
+          <div class="matrix-cell size">M</div>
+          <div class="matrix-cell"><a class="buy-button" href="https://buy.stripe.com/9B6dR85P93pNehfdhpgMw1d" target="_blank">Buy M</a></div>
+          <div class="matrix-cell"><a class="buy-button" href="coming-soon.html" target="_blank">Buy M</a></div>
+          <div class="matrix-cell"><a class="buy-button" href="coming-soon.html" target="_blank">Buy M</a></div>
+
+          <div class="matrix-cell size">L</div>
+          <div class="matrix-cell"><a class="buy-button" href="https://buy.stripe.com/fZudR8elFbWjb53cdlgMw1e" target="_blank">Buy L</a></div>
+          <div class="matrix-cell"><a class="buy-button" href="coming-soon.html" target="_blank">Buy L</a></div>
+          <div class="matrix-cell"><a class="buy-button" href="coming-soon.html" target="_blank">Buy L</a></div>
+
+          <div class="matrix-cell size">XL</div>
+          <div class="matrix-cell"><a class="buy-button" href="https://buy.stripe.com/7sY8wOfpJ6BZ8WVa5dgMw1f" target="_blank">Buy XL</a></div>
+          <div class="matrix-cell"><a class="buy-button" href="coming-soon.html" target="_blank">Buy XL</a></div>
+          <div class="matrix-cell"><a class="buy-button" href="coming-soon.html" target="_blank">Buy XL</a></div>
+
+        </div>
       </div>
-<div class="matrix">
-  <div class="matrix-table">
 
-    <div class="matrix-cell header">Size</div>
-    <div class="matrix-cell header">Rainbow Purple</div>
-    <div class="matrix-cell header">Black</div>
-    <div class="matrix-cell header">White</div>
-
-    <div class="matrix-cell size">XS</div>
-    <div class="matrix-cell">
-      <a class="buy-button" href="https://buy.stripe.com/3cIeVc3H1d0n1utb9hgMw0F" target="_blank">Buy XS</a>
-    </div>
-    <div class="matrix-cell">
-      <a class="buy-button" href="coming-soon.html" target="_blank">Buy XS</a>
-    </div>
-    <div class="matrix-cell">
-      <a class="buy-button" href="coming-soon.html" target="_blank">Buy XS</a>
-    </div>
-
-    <div class="matrix-cell size">S</div>
-    <div class="matrix-cell">
-      <a class="buy-button" href="https://buy.stripe.com/6oU9AS0uP3pNflj2CLgMw1c" target="_blank">Buy S</a>
-    </div>
-    <div class="matrix-cell">
-      <a class="buy-button" href="coming-soon.html" target="_blank">Buy S</a>
-    </div>
-    <div class="matrix-cell">
-      <a class="buy-button" href="coming-soon.html" target="_blank">Buy S</a>
-    </div>
-
-    <div class="matrix-cell size">M</div>
-    <div class="matrix-cell">
-      <a class="buy-button" href="https://buy.stripe.com/9B6dR85P93pNehfdhpgMw1d" target="_blank">Buy M</a>
-    </div>
-    <div class="matrix-cell">
-      <a class="buy-button" href="coming-soon.html" target="_blank">Buy M</a>
-    </div>
-    <div class="matrix-cell">
-      <a class="buy-button" href="coming-soon.html" target="_blank">Buy M</a>
-    </div>
-
-    <div class="matrix-cell size">L</div>
-    <div class="matrix-cell">
-      <a class="buy-button" href="https://buy.stripe.com/fZudR8elFbWjb53cdlgMw1e" target="_blank">Buy L</a>
-    </div>
-    <div class="matrix-cell">
-      <a class="buy-button" href="coming-soon.html" target="_blank">Buy L</a>
-    </div>
-    <div class="matrix-cell">
-      <a class="buy-button" href="coming-soon.html" target="_blank">Buy L</a>
-    </div>
-
-    <div class="matrix-cell size">XL</div>
-    <div class="matrix-cell">
-      <a class="buy-button" href="https://buy.stripe.com/7sY8wOfpJ6BZ8WVa5dgMw1f" target="_blank">Buy XL</a>
-    </div>
-    <div class="matrix-cell">
-      <a class="buy-button" href="coming-soon.html" target="_blank">Buy XL</a>
-    </div>
-    <div class="matrix-cell">
-      <a class="buy-button" href="coming-soon.html" target="_blank">Buy XL</a>
-    </div>
-
-  </div>
-</div>
-
-<div class="product-description">
+      <div class="product-description">
         <h2>Product Description</h2>
-        <p>
-          This handmade crochet bralette is crafted with soft acrylic yarn using a double‑crochet technique for breathable comfort and flexible support. Designed in a bikini‑style silhouette, it features adjustable ties and a stretch fit that accommodates most body types with light to medium cup coverage.
-        </p>
-        <p>
-          Perfect for festival wear, beach days, layering outfits, meditation sessions, or everyday cosmic comfort, each bralette carries the signature Yarni Mama aura — a blend of artistic craftsmanship, chakra‑aligned energy, and intentional handmade detail.
-        </p>
-        <p>
-          Every piece is unique in texture and stitching, making your bralette a one‑of‑a‑kind expression of Afrotious Nation’s creative frequency.
-        </p>
+        <p>This handmade crochet bralette is crafted with soft acrylic yarn using a double‑crochet technique for breathable comfort and flexible support.</p>
+        <p>Perfect for festival wear, beach days, layering outfits, meditation sessions, or everyday cosmic comfort, each bralette carries the signature Yarni Mama aura — a blend of artistic craftsmanship, chakra‑aligned energy, and intentional handmade detail.</p>
+        <p>Every piece is unique in texture and stitching, making your bralette a one‑of‑a‑kind expression of Afrotious Nation’s creative frequency.</p>
       </div>
 
       <div class="product-specs">
@@ -343,120 +348,75 @@
       </div>
     </div>
 
-    
     <div class="product-card">
       <img src="Handmade Crocheted Bralette by Yarni Mama.png" alt="Crochet Bralette Style 2" />
       <div class="product-title">Crochet Bralette</div>
       <div class="product-price">$35.00</div>
+
       <p style="text-align:center; font-size:0.9rem; opacity:0.85;">
-       Handmade by
-        <a href="https://www.instagram.com/yarni_mama/" target="_blank" style="color:#c8a2ff; text-decoration:underline;">
-          yarni_mama
-	</a>
+        Handmade by
+        <a href="https://www.instagram.com/yarni_mama/" target="_blank" style="color:#c8a2ff;">yarni_mama</a>
       </p>
 
-      
-
-      
       <div style="text-align:center; margin-top:15px; font-size:0.9rem; opacity:0.85;">
         <strong>Select Color/Size:</strong>
       </div>
 
-      <div style="display:flex; justify-content:center; gap:10px; margin-top:10px; flex-wrap:wrap;">
-        <div class="matrix">
-  <div class="matrix-table">
+      <div class="matrix">
+        <div class="matrix-table">
 
-    <div class="matrix-cell header">Size</div>
-    <div class="matrix-cell header">Umber</div>
-    <div class="matrix-cell header">Black</div>
-    <div class="matrix-cell header">White</div>
+          <div class="matrix-cell header">Size</div>
+          <div class="matrix-cell header">Umber</div>
+          <div class="matrix-cell header">Black</div>
+          <div class="matrix-cell header">White</div>
 
-    <div class="matrix-cell size">XS</div>
-    <div class="matrix-cell">
-      <a class="buy-button" href="https://buy.stripe.com/9B628q6Td9Ob1utb9hgMw0D" target="_blank">Buy XS</a>
-    </div>
-    <div class="matrix-cell">
-      <a class="buy-button" href="coming-soon.html" target="_blank">Buy XS</a>
-    </div>
-    <div class="matrix-cell">
-      <a class="buy-button" href="coming-soon.html" target="_blank">Buy XS</a>
-    </div>
+          <div class="matrix-cell size">XS</div>
+          <div class="matrix-cell"><a class="buy-button" href="https://buy.stripe.com/9B628q6Td9Ob1utb9hgMw0D" target="_blank">Buy XS</a></div>
+          <div class="matrix-cell"><a class="buy-button" href="coming-soon.html" target="_blank">Buy XS</a></div>
+          <div class="matrix-cell"><a class="buy-button" href="coming-soon.html" target="_blank">Buy XS</a></div>
 
-    <div class="matrix-cell size">S</div>
-    <div class="matrix-cell">
-      <a class="buy-button" href="https://buy.stripe.com/fZueVc2CX4tRehffpxgMw0Z" target="_blank">Buy S</a>
-    </div>
-    <div class="matrix-cell">
-      <a class="buy-button" href="coming-soon.html" target="_blank">Buy S</a>
-    </div>
-    <div class="matrix-cell">
-      <a class="buy-button" href="coming-soon.html" target="_blank">Buy S</a>
-    </div>
+          <div class="matrix-cell size">S</div>
+          <div class="matrix-cell"><a class="buy-button" href="https://buy.stripe.com/fZueVc2CX4tRehffpxgMw0Z" target="_blank">Buy S</a></div>
+          <div class="matrix-cell"><a class="buy-button" href="coming-soon.html" target="_blank">Buy S</a></div>
+          <div class="matrix-cell"><a class="buy-button" href="coming-soon.html" target="_blank">Buy S</a></div>
 
-    <div class="matrix-cell size">M</div>
-    <div class="matrix-cell">
-      <a class="buy-button" href="https://buy.stripe.com/6oU4gy4L59Obgpna5dgMw10" target="_blank">Buy M</a>
-    </div>
-    <div class="matrix-cell">
-      <a class="buy-button" href="coming-soon.html" target="_blank">Buy M</a>
-    </div>
-    <div class="matrix-cell">
-      <a class="buy-button" href="coming-soon.html" target="_blank">Buy M</a>
-    </div>
+          <div class="matrix-cell size">M</div>
+          <div class="matrix-cell"><a class="buy-button" href="https://buy.stripe.com/6oU4gy4L59Obgpna5dgMw10" target="_blank">Buy M</a></div>
+          <div class="matrix-cell"><a class="buy-button" href="coming-soon.html" target="_blank">Buy M</a></div>
+          <div class="matrix-cell"><a class="buy-button" href="coming-soon.html" target="_blank">Buy M</a></div>
 
-    <div class="matrix-cell size">L</div>
-    <div class="matrix-cell">
-      <a class="buy-button" href="https://buy.stripe.com/dRmcN45P98K78WV4KTgMw11" target="_blank">Buy L</a>
-    </div>
-    <div class="matrix-cell">
-      <a class="buy-button" href="coming-soon.html" target="_blank">Buy L</a>
-    </div>
-    <div class="matrix-cell">
-      <a class="buy-button" href="coming-soon.html" target="_blank">Buy L</a>
-    </div>
+          <div class="matrix-cell size">L</div>
+          <div class="matrix-cell"><a class="buy-button" href="https://buy.stripe.com/dRmcN45P98K78WV4KTgMw11" target="_blank">Buy L</a></div>
+          <div class="matrix-cell"><a class="buy-button" href="coming-soon.html" target="_blank">Buy L</a></div>
+          <div class="matrix-cell"><a class="buy-button" href="coming-soon.html" target="_blank">Buy L</a></div>
 
-    <div class="matrix-cell size">XL</div>
-    <div class="matrix-cell">
-      <a class="buy-button" href="https://buy.stripe.com/5kQ6oG5P9aSfflj7X5gMw12" target="_blank">Buy XL</a>
-    </div>
-    <div class="matrix-cell">
-      <a class="buy-button" href="coming-soon.html" target="_blank">Buy XL</a>
-    </div>
-    <div class="matrix-cell">
-      <a class="buy-button" href="coming-soon.html" target="_blank">Buy XL</a>
-    </div>
+          <div class="matrix-cell size">XL</div>
+          <div class="matrix-cell"><a class="buy-button" href="https://buy.stripe.com/5kQ6oG5P9aSfflj7X5gMw12" target="_blank">Buy XL</a></div>
+          <div class="matrix-cell"><a class="buy-button" href="coming-soon.html" target="_blank">Buy XL</a></div>
+          <div class="matrix-cell"><a class="buy-button" href="coming-soon.html" target="_blank">Buy XL</a></div>
 
-  </div>
-</div>
-
+        </div>
       </div>
 
-<div class="product-description">
-  <h2>Product Description</h2>
-  <p>
-    This handmade crochet bralette is crafted with a premium blend of 98% wool and 2% acrylic yarn, giving it exceptional softness, warmth, and comfort. Designed with long, versatile straps, it can be worn in two styles — tied behind the back as a tube‑top bralette, or wrapped around the neck to create a halter silhouette.
-  </p>
+      <div class="product-description">
+        <h2>Product Description</h2>
+        <p>This handmade crochet bralette is crafted with a premium blend of 98% wool and 2% acrylic yarn, giving it exceptional softness, warmth, and comfort.</p>
+        <p>The mesh and crocodile stitch pattern adds texture, breathability, and visual dimension, making this bralette perfect for festival outfits, layering, meditation sessions, or everyday cosmic expression.</p>
+        <p>Every piece is handmade by Yarni Mama, carrying a unique aura of artistic craftsmanship and chakra‑aligned intention.</p>
+      </div>
 
-  <p>
-    The mesh and crocodile stitch pattern adds texture, breathability, and visual dimension, making this bralette perfect for festival outfits, layering, meditation sessions, or everyday cosmic expression. Its flexible structure provides light to medium support while maintaining a comfortable, natural fit.
-  </p>
-
-  <p>
-    Every piece is handmade by Yarni Mama, carrying a unique aura of artistic craftsmanship and chakra‑aligned intention. No two bralettes are identical — each one is a one‑of‑a‑kind expression of Afrotious Nation’s creative frequency.
-  </p>
-</div>
-<div class="product-specs">
-  <h2>Specifications</h2>
-  <ul>
-    <li><strong>Material:</strong> 98% wool, 2% acrylic yarn</li>
-    <li><strong>Technique:</strong> Handmade crochet, mesh + crocodile stitch</li>
-    <li><strong>Fit:</strong> One size fits most; adjustable straps for tube‑top or halter style</li>
-    <li><strong>Cup Coverage:</strong> Light to medium</li>
-    <li><strong>Use:</strong> Festival wear, layering, meditation, everyday comfort</li>
-    <li><strong>Care:</strong> Hand wash preferred; roll in towel and air dry; do not bleach</li>
-    <li><strong>Brand:</strong> Yarni Mama – cosmic comfort, chakra frequency, handmade aura</li>
-  </ul>
-</div>
+      <div class="product-specs">
+        <h2>Specifications</h2>
+        <ul>
+          <li><strong>Material:</strong> 98% wool, 2% acrylic yarn</li>
+          <li><strong>Technique:</strong> Handmade crochet, mesh + crocodile stitch</li>
+          <li><strong>Fit:</strong> One size fits most; adjustable straps for tube‑top or halter style</li>
+          <li><strong>Cup Coverage:</strong> Light to medium</li>
+          <li><strong>Use:</strong> Festival wear, layering, meditation, everyday comfort</li>
+          <li><strong>Care:</strong> Hand wash preferred; roll in towel and air dry; do not bleach</li>
+          <li><strong>Brand:</strong> Yarni Mama – cosmic comfort, chakra frequency, handmade aura</li>
+        </ul>
+      </div>
 
       <div class="size-chart-image" style="text-align:center; margin-top:15px;">
         <img src="bralette-size-chart-for-3.5mm-hook-bra-cups.png" alt="Yarni Mama Bralette Size Chart">
@@ -467,92 +427,57 @@
       <img src="crochet-bralette-with-x.png" alt="Handmade Crocheted Bralette with X" />
       <div class="product-title">Handmade Crocheted Bralette with X</div>
       <div class="product-price">$30.00</div>
+
       <p style="text-align:center; font-size:0.9rem; opacity:0.8;">
-        Handmade by<a href="https://www.instagram.com/yarni_mama/" target="_blank" style="color:#c8a2ff; text-decoration:underline;">
-          yarni_mama
-	</a>
-	<div style="text-align:center; margin-top:15px; font-size:0.9rem; opacity:0.85;">
+        Handmade by
+        <a href="https://www.instagram.com/yarni_mama/" target="_blank" style="color:#c8a2ff;">yarni_mama</a>
+      </p>
+
+      <div style="text-align:center; margin-top:15px; font-size:0.9rem; opacity:0.85;">
         <strong>Select Color/Size:</strong>
       </div>
-      </p>
+
       <div class="matrix">
-  <div class="matrix-table">
+        <div class="matrix-table">
 
-    <div class="matrix-cell header">Size</div>
-    <div class="matrix-cell header">Rainbow Blue</div>
-    <div class="matrix-cell header">Grey</div>
-    <div class="matrix-cell header">Red</div>
+          <div class="matrix-cell header">Size</div>
+          <div class="matrix-cell header">Rainbow Blue</div>
+          <div class="matrix-cell header">Grey</div>
+          <div class="matrix-cell header">Red</div>
 
-    <div class="matrix-cell size">XS</div>
-    <div class="matrix-cell">
-      <a class="buy-button" href="https://buy.stripe.com/cNiaEWb9tf8v1utcdlgMw0I" target="_blank">Buy XS</a>
-    </div>
-    <div class="matrix-cell">
-      <a class="buy-button" href="coming-soon.html" target="_blank">Buy XS</a>
-    </div>
-    <div class="matrix-cell">
-      <a class="buy-button" href="coming-soon.html" target="_blank">Buy XS</a>
-    </div>
+          <div class="matrix-cell size">XS</div>
+          <div class="matrix-cell"><a class="buy-button" href="https://buy.stripe.com/cNiaEWb9tf8v1utcdlgMw0I" target="_blank">Buy XS</a></div>
+          <div class="matrix-cell"><a class="buy-button" href="coming-soon.html" target="_blank">Buy XS</a></div>
+          <div class="matrix-cell"><a class="buy-button" href="coming-soon.html" target="_blank">Buy XS</a></div>
 
-    <div class="matrix-cell size">S</div>
-    <div class="matrix-cell">
-      <a class="buy-button" href="https://buy.stripe.com/00wdR83H1gczflj6T1gMw18" target="_blank">Buy S</a>
-    </div>
-    <div class="matrix-cell">
-      <a class="buy-button" href="coming-soon.html" target="_blank">Buy S</a>
-    </div>
-    <div class="matrix-cell">
-      <a class="buy-button" href="coming-soon.html" target="_blank">Buy S</a>
-    </div>
+          <div class="matrix-cell size">S</div>
+          <div class="matrix-cell"><a class="buy-button" href="https://buy.stripe.com/00wdR83H1gczflj6T1gMw18" target="_blank">Buy S</a></div>
+          <div class="matrix-cell"><a class="buy-button" href="coming-soon.html" target="_blank">Buy S</a></div>
+          <div class="matrix-cell"><a class="buy-button" href="coming-soon.html" target="_blank">Buy S</a></div>
 
-    <div class="matrix-cell size">M</div>
-    <div class="matrix-cell">
-      <a class="buy-button" href="https://buy.stripe.com/7sYcN4cdx5xVb53919gMw19" target="_blank">Buy M</a>
-    </div>
-    <div class="matrix-cell">
-      <a class="buy-button" href="coming-soon.html" target="_blank">Buy M</a>
-    </div>
-    <div class="matrix-cell">
-      <a class="buy-button" href="coming-soon.html" target="_blank">Buy M</a>
-    </div>
+          <div class="matrix-cell size">M</div>
+          <div class="matrix-cell"><a class="buy-button" href="https://buy.stripe.com/7sYcN4cdx5xVb53919gMw19" target="_blank">Buy M</a></div>
+          <div class="matrix-cell"><a class="buy-button" href="coming-soon.html" target="_blank">Buy M</a></div>
+          <div class="matrix-cell"><a class="buy-button" href="coming-soon.html" target="_blank">Buy M</a></div>
 
-    <div class="matrix-cell size">L</div>
-    <div class="matrix-cell">
-      <a class="buy-button" href="https://buy.stripe.com/cNi7sK7Xh9Ob6ONdhpgMw1a" target="_blank">Buy L</a>
-    </div>
-    <div class="matrix-cell">
-      <a class="buy-button" href="coming-soon.html" target="_blank">Buy L</a>
-    </div>
-    <div class="matrix-cell">
-      <a class="buy-button" href="coming-soon.html" target="_blank">Buy L</a>
-    </div>
+          <div class="matrix-cell size">L</div>
+          <div class="matrix-cell"><a class="buy-button" href="https://buy.stripe.com/cNi7sK7Xh9Ob6ONdhpgMw1a" target="_blank">Buy L</a></div>
+          <div class="matrix-cell"><a class="buy-button" href="coming-soon.html" target="_blank">Buy L</a></div>
+          <div class="matrix-cell"><a class="buy-button" href="coming-soon.html" target="_blank">Buy L</a></div>
 
-    <div class="matrix-cell size">XL</div>
-    <div class="matrix-cell">
-      <a class="buy-button" href="https://buy.stripe.com/14AfZg1yT9Ob3CB6T1gMw1b" target="_blank">Buy XL</a>
-    </div>
-    <div class="matrix-cell">
-      <a class="buy-button" href="coming-soon.html" target="_blank">Buy XL</a>
-    </div>
-    <div class="matrix-cell">
-      <a class="buy-button" href="coming-soon.html" target="_blank">Buy XL</a>
-    </div>
+          <div class="matrix-cell size">XL</div>
+          <div class="matrix-cell"><a class="buy-button" href="https://buy.stripe.com/14AfZg1yT9Ob3CB6T1gMw1b" target="_blank">Buy XL</a></div>
+          <div class="matrix-cell"><a class="buy-button" href="coming-soon.html" target="_blank">Buy XL</a></div>
+          <div class="matrix-cell"><a class="buy-button" href="coming-soon.html" target="_blank">Buy XL</a></div>
 
-  </div>
-</div>
-
+        </div>
+      </div>
 
       <div class="product-description">
         <h2>Product Description</h2>
-        <p>
-          This handmade crochet bralette is crafted with soft acrylic yarn using a double‑crochet technique for breathable comfort and flexible support. Designed in a bikini‑style silhouette, it features adjustable ties and a stretch fit that accommodates most body types with light to medium cup coverage.
-        </p>
-        <p>
-          Perfect for festival wear, beach days, layering outfits, meditation sessions, or everyday cosmic comfort, each bralette carries the signature Yarni Mama aura — a blend of artistic craftsmanship, chakra‑aligned energy, and intentional handmade detail.
-        </p>
-        <p>
-          Every piece is unique in texture and stitching, making your bralette a one‑of‑a‑kind expression of Afrotious Nation’s creative frequency.
-        </p>
+        <p>This handmade crochet bralette is crafted with soft acrylic yarn using a double‑crochet technique for breathable comfort and flexible support.</p>
+        <p>Perfect for festival wear, beach days, layering outfits, meditation sessions, or everyday cosmic comfort, each bralette carries the signature Yarni Mama aura — a blend of artistic craftsmanship, chakra‑aligned energy, and intentional handmade detail.</p>
+        <p>Every piece is unique in texture and stitching, making your bralette a one‑of‑a‑kind expression of Afrotious Nation’s creative frequency.</p>
       </div>
 
       <div class="product-specs">
@@ -575,32 +500,34 @@
 
   </section>
 
-  <footer>
-    <footer style="
-    width: 100%;
-    padding: 20px 10px;
-    margin-top: 40px;
-    text-align: center;
-    color: #F8F6FF;
-    font-family: 'Poppins', sans-serif;
+</section>
+
+<footer style="
+  width: 100%;
+  padding: 20px 10px;
+  margin-top: 40px;
+  text-align: center;
+  color: #F8F6FF;
+  font-family: 'Poppins', sans-serif;
 ">
-    <p style="margin: 8px 0; font-size: 1rem;">
-        All original content © 2025 Afrotious Nation, © 2026 Afrotious Nation
-    </p>
+  <p style="margin: 8px 0; font-size: 1rem;">
+    All original content © 2025 Afrotious Nation, © 2026 Afrotious Nation
+  </p>
 
-    <p style="margin: 8px 0; font-size: 0.95rem;">
-        <a href="/terms" style="color:#C8A2C8; text-decoration:none; margin-right:20px;">
-            Terms & Conditions
-        </a>
-        <a href="/privacy" style="color:#C8A2C8; text-decoration:none;">
-            Privacy Policy
-        </a>
-    </p>
+  <p style="margin: 8px 0; font-size: 0.95rem;">
+    <a href="/terms" style="color:#C8A2C8; text-decoration:none; margin-right:20px;">
+      Terms & Conditions
+    </a>
+    <a href="/privacy" style="color:#C8A2C8; text-decoration:none;">
+      Privacy Policy
+    </a>
+  </p>
 
-    <p style="margin: 8px 0; font-size: 0.9rem; opacity: 0.8;">
-        Powered by Stripe
-    </p>
+  <p style="margin: 8px 0; font-size: 0.9rem; opacity: 0.8;">
+    Powered by Stripe
+  </p>
 </footer>
+
 <script>
 document.addEventListener("DOMContentLoaded", () => {
   const particleContainer = document.createElement("div");
@@ -620,7 +547,7 @@ document.addEventListener("DOMContentLoaded", () => {
     p.style.height = "6px";
     p.style.borderRadius = "50%";
     p.style.background = "rgba(200,162,200,0.8)";
-    p.style.boxShadow = "0 0 12px rgba(200,162,200,0.9) ";
+    p.style.boxShadow = "0 0 12px rgba(200,162,200,0.9)";
     p.style.left = Math.random() * window.innerWidth + "px";
     p.style.top = window.innerHeight + "px";
     p.style.opacity = 0.8;
@@ -634,5 +561,5 @@ document.addEventListener("DOMContentLoaded", () => {
   setInterval(createParticle, 450);
 });
 </script>
+
 </body>
-</html>  

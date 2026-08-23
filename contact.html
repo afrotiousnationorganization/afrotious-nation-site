@@ -2,185 +2,159 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-  <title>Afrotious Nation - Contact Us</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="icon" type="image/png" href="favicon.png">
+    <title>Afrotious Nation - Contact Us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" href="favicon.png">
 
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Montserrat', sans-serif;
-      background: radial-gradient(circle at top, #3A0CA3, #0A0A0F);
-      color: #F8F6FF;
+    <link rel="canonical" href="https://afrotiousnation.org/contact">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Brand",
+      "name": "Afrotious Nation",
+      "url": "https://afrotiousnation.org",
+      "logo": "https://afrotiousnation.org/favicon.png",
+      "sameAs": [
+        "https://www.youtube.com/@AfrotiousNation",
+        "https://www.instagram.com/afrotiousnation",
+        "https://linktr.ee/Afrotious_Nation"
+      ]
     }
+    </script>
 
-    header {
-      padding: 1.5rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background: rgba(10, 10, 15, 0.7);
-      backdrop-filter: blur(10px);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Afrotious Nation",
+      "url": "https://afrotiousnation.org",
+      "founder": {
+        "@type": "Person",
+        "name": "Aaliyah Casteele"
+      }
     }
+    </script>
 
-    .logo {
-      font-weight: 700;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      color: #C8A2C8;
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Afrotious Nation",
+      "url": "https://afrotiousnation.org",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://afrotiousnation.org/?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
     }
+    </script>
 
-    nav a {
-      color: #F8F6FF;
-      text-decoration: none;
-      margin-left: 1rem;
-      transition: 0.3s;
-    }
+    <style>
+        body {
+          margin: 0;
+          font-family: 'Montserrat', sans-serif;
+          background: radial-gradient(circle at top, #3A0CA3, #0A0A0F);
+          color: #F8F6FF;
+        }
 
-    nav a:hover {
-      color: #C8A2C8;
-    }
+        header {
+          padding: 1.5rem 2rem;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          background: rgba(10, 10, 15, 0.7);
+          backdrop-filter: blur(10px);
+          border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
 
-    .hero {
-      padding: 3rem 2rem 1rem;
-      max-width: 900px;
-      margin: 0 auto;
-      text-align: center;
-    }
+        .logo {
+          font-weight: 700;
+          letter-spacing: 0.15em;
+          text-transform: uppercase;
+          color: #C8A2C8;
+        }
 
-    .hero h1 {
-      font-size: 2.8rem;
-      margin-bottom: 0.5rem;
-      color: #C8A2C8;
-      text-shadow: 0 0 15px rgba(200, 162, 200, 0.4);
-    }
+        nav a {
+          color: #F8F6FF;
+          text-decoration: none;
+          margin-left: 1rem;
+          transition: 0.3s;
+        }
 
-    .hero p {
-      max-width: 600px;
-      margin: 0 auto;
-      line-height: 1.6;
-      color: #EDE7F6;
-    }
+        nav a:hover {
+          color: #C8A2C8;
+        }
 
-    .products {
-      padding: 2rem;
-      max-width: 1100px;
-      margin: 0 auto 3rem;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 2rem;
-    }
+        .container {
+          max-width: 900px;
+          margin: auto;
+          padding: 40px 20px;
+        }
 
-    .product-card {
-      background: rgba(58, 12, 163, 0.15);
-      border: 1px solid rgba(200, 162, 200, 0.2);
-      border-radius: 15px;
-      padding: 1rem;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
-      backdrop-filter: blur(8px);
-      transition: 0.3s;
-    }
+        h2 {
+          font-size: 2.2rem;
+          color: #C8A2C8;
+          text-shadow: 0 0 15px rgba(200,162,200,0.4);
+        }
 
-    .product-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 15px 35px rgba(123, 44, 191, 0.4);
-    }
+        label {
+          display: block;
+          margin-top: 20px;
+          font-size: 1rem;
+          color: #C8A2C8;
+        }
 
-    .product-card img {
-      width: 100%;
-      border-radius: 10px;
-      margin-bottom: 0.75rem;
-      object-fit: cover;
-      max-height: 260px;
-      box-shadow: 0 0 20px rgba(200, 162, 200, 0.3);
-    }
+        input, textarea {
+          width: 100%;
+          padding: 12px;
+          margin-top: 8px;
+          border-radius: 8px;
+          border: none;
+          background-color: #111118;
+          color: #fff;
+        }
 
-    .product-title {
-      font-weight: 600;
-      margin-bottom: 0.25rem;
-      color: #EDE7F6;
-    }
+        button {
+          margin-top: 30px;
+          width: 100%;
+          padding: 15px;
+          background-color: #7B2CBF;
+          border: none;
+          border-radius: 8px;
+          color: #fff;
+          font-size: 1.2rem;
+          cursor: pointer;
+        }
 
-    .product-price {
-      color: #C8A2C8;
-      font-weight: 500;
-      margin-bottom: 0.75rem;
-    }
+        button:hover {
+          opacity: 0.8;
+        }
 
-    .buy-button {
-      display: inline-block;
-      text-align: center;
-      padding: 0.6rem 0.9rem;
-      border-radius: 999px;
-      background: #7B2CBF;
-      color: #F8F6FF;
-      font-weight: 600;
-      text-decoration: none;
-      font-size: 0.9rem;
-      transition: 0.3s;
-    }
+        .product-card {
+          background: rgba(58, 12, 163, 0.15);
+          border: 1px solid rgba(200, 162, 200, 0.2);
+          border-radius: 15px;
+          padding: 1rem;
+          box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+          backdrop-filter: blur(8px);
+          margin-top: 40px;
+        }
 
-    .buy-button:hover {
-      background: #9D4EDD;
-    }
-
-    footer {
-      padding: 1.5rem 2rem;
-      border-top: 1px solid rgba(255, 255, 255, 0.1);
-      font-size: 0.85rem;
-      color: #C8A2C8;
-      text-align: center;
-    }
-@keyframes floatUp {
-  0% { transform: translateY(0); opacity: 0.8; }
-  100% { transform: translateY(-120vh); opacity: 0; }
-}
-/* Make images responsive */
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Make iframe (SoundCloud) responsive */
-iframe {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Responsive text scaling */
-h1, h2, h3, p {
-  word-wrap: break-word;
-}
-
-/* Responsive grid spacing on small screens */
-@media (max-width: 600px) {
-  .products {
-    grid-template-columns: 1fr;
-    padding: 1rem;
-  }
-
-  .product-card {
-    margin-bottom: 1.5rem;
-  }
-
-  header {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  nav a {
-    display: inline-block;
-    margin: 0.5rem;
-  }
-}
-
-  </style>
+        footer {
+          width: 100%;
+          padding: 20px 10px;
+          margin-top: 40px;
+          text-align: center;
+          color: #F8F6FF;
+          font-family: 'Poppins', sans-serif;
+        }
+    </style>
 </head>
 
 <body>
 
-  <header>
+<header>
     <div class="logo">Afrotious Nation</div>
     <nav>
       <a href="index.html">Marketplace</a>
@@ -191,113 +165,81 @@ h1, h2, h3, p {
       <a href="creator-application.html" class="header-btn">Creator Application</a>
       <a href="custom-orders.html" class="header-btn">Custom Orders</a>
       <a href="cosmic-lore.html" class="header-btn">Cosmic Lore</a>
-	<a href="news.html" class="header-btn">News</a>
-	<a href="coming-soon.html" class="header-btn">Blog</a>
-	<a href="coming-soon.html" class="header-btn">Events</a>
-	<a href="radio.html" class="header-btn">Cosmic Radio</a>
-	<a class="header-btn" href="creator-portal.html">Creator Portal</a>
+      <a href="news.html" class="header-btn">News</a>
+      <a href="coming-soon.html" class="header-btn">Blog</a>
+      <a href="coming-soon.html" class="header-btn">Events</a>
+      <a href="radio.html" class="header-btn">Cosmic Radio</a>
+      <a class="header-btn" href="creator-portal.html">Creator Portal</a>
     </nav>
-  </header>
-
+</header>
 
 <div class="container">
     <h2>Reach Out to Us</h2>
     <p>Have questions, custom requests, collaborations, or marketplace inquiries?  
        We’d love to hear from you.</p>
 
-    
     <form action="https://formspree.io/f/xaqrvyzn" method="POST">
-        <label for="name">Your Name</label>
-        <input type="text" id="name" name="name" required>
+        <label>Your Name</label>
+        <input type="text" name="name" required>
 
-        <label for="email">Your Email</label>
-        <input type="email" id="email" name="_replyto" required>
+        <label>Your Email</label>
+        <input type="email" name="_replyto" required>
 
-        <label for="message">Your Message</label>
-        <textarea id="message" name="message" rows="6" required></textarea>
+        <label>Your Message</label>
+        <textarea name="message" rows="6" required></textarea>
 
         <button type="submit">Send Message</button>
     </form>
-<br></br>
-<br></br>
-<div class="product-card">
-  
-      <p style="text-align:center; font-size:0.9rem; opacity:0.85; margin-top:10px;">
-<p2 style="text-align:center; font-size:0.9rem; opacity:0.85; margin-top:16px;">
-	<h1>Socials:</h1>
-	</p2>
-	<br></br>
-	LinkedIn:
-<a href="https://www.linkedin.com/in/afrotious-nation-460434427/" target="_blank" style="color:#c8a2ff; text-decoration:underline;">
-          afrotious_nation
-	</a>
-<br></br>
-        Instagram:
-        <a href="https://www.instagram.com/afrotious_nation/" target="_blank" style="color:#c8a2ff; text-decoration:underline;">
-          afrotious_nation
-        </a>
-<br></br>
-	Threads:
-        <a href="https://www.threads.net/@afrotious_nation" target="_blank" style="color:#c8a2ff; text-decoration:underline;">
-          afrotious_nation
-        </a>
-<br></br>
-	Tiktok:
-        <a href="https://www.tiktok.com/@afrotious_nation" target="_blank" style="color:#c8a2ff; text-decoration:underline;">
-          afrotious_nation
-        </a>
-<br></br>
-	Discord:
-        <a href="https://discord.gg/hKwaE3Q9Na" target="_blank" style="color:#c8a2ff; text-decoration:underline;">
-          afrotious_nation
-        </a>
-<br></br>
-	LinkTree:
-        <a href="https://linktr.ee/Afrotious_Nation
-" target="_blank" style="color:#c8a2ff; text-decoration:underline;">
-          afrotious_nation
-        </a>
-<br></br>
-	Pinterest:
-        <a href="https://www.pinterest.com/afrotious_nation/_profile/" target="_blank" style="color:#c8a2ff; text-decoration:underline;">
-          afrotious_nation
-        </a>
-<br></br>
-	
-      </p>
-<br></br>
-	
 
-         </div>
+    <div class="product-card">
+        <h1 style="text-align:center; color:#C8A2C8;">Socials</h1>
 
+        <p style="text-align:center; font-size:0.9rem; opacity:0.85;">
+          LinkedIn:  
+          <a href="https://www.linkedin.com/in/afrotious-nation-460434427/" target="_blank" style="color:#c8a2ff;">afrotious_nation</a>
+          <br><br>
+
+          Instagram:  
+          <a href="https://www.instagram.com/afrotious_nation/" target="_blank" style="color:#c8a2ff;">afrotious_nation</a>
+          <br><br>
+
+          Threads:  
+          <a href="https://www.threads.net/@afrotious_nation" target="_blank" style="color:#c8a2ff;">afrotious_nation</a>
+          <br><br>
+
+          TikTok:  
+          <a href="https://www.tiktok.com/@afrotious_nation" target="_blank" style="color:#c8a2ff;">afrotious_nation</a>
+          <br><br>
+
+          Discord:  
+          <a href="https://discord.gg/hKwaE3Q9Na" target="_blank" style="color:#c8a2ff;">afrotious_nation</a>
+          <br><br>
+
+          LinkTree:  
+          <a href="https://linktr.ee/Afrotious_Nation" target="_blank" style="color:#c8a2ff;">afrotious_nation</a>
+          <br><br>
+
+          Pinterest:  
+          <a href="https://www.pinterest.com/afrotious_nation/_profile/" target="_blank" style="color:#c8a2ff;">afrotious_nation</a>
+        </p>
+    </div>
 </div>
 
-<footer>
-    <footer style="
-    width: 100%;
-    padding: 20px 10px;
-    margin-top: 40px;
-    text-align: center;
-    color: #F8F6FF;
-    font-family: 'Poppins', sans-serif;
-">
+<footer style="width: 100%; padding: 20px 10px; margin-top: 40px; text-align: center; color: #F8F6FF; font-family: 'Poppins', sans-serif;">
     <p style="margin: 8px 0; font-size: 1rem;">
         All original content © 2025 Afrotious Nation, © 2026 Afrotious Nation
     </p>
 
     <p style="margin: 8px 0; font-size: 0.95rem;">
-        <a href="/terms" style="color:#C8A2C8; text-decoration:none; margin-right:20px;">
-            Terms & Conditions
-        </a>
-        <a href="/privacy" style="color:#C8A2C8; text-decoration:none;">
-            Privacy Policy
-        </a>
+        <a href="/terms" style="color:#C8A2C8; margin-right:20px;">Terms & Conditions</a>
+        <a href="/privacy" style="color:#C8A2C8;">Privacy Policy</a>
     </p>
 
     <p style="margin: 8px 0; font-size: 0.9rem; opacity: 0.8;">
         Powered by Stripe
     </p>
 </footer>
+
 <script>
 document.addEventListener("DOMContentLoaded", () => {
   const particleContainer = document.createElement("div");
@@ -317,19 +259,19 @@ document.addEventListener("DOMContentLoaded", () => {
     p.style.height = "6px";
     p.style.borderRadius = "50%";
     p.style.background = "rgba(200,162,200,0.8)";
-    p.style.boxShadow = "0 0 12px rgba(200,162,200,0.9) ";
+    p.style.boxShadow = "0 0 12px rgba(200,162,200,0.9)";
     p.style.left = Math.random() * window.innerWidth + "px";
     p.style.top = window.innerHeight + "px";
     p.style.opacity = 0.8;
     p.style.animation = "floatUp 12s linear forwards";
 
     particleContainer.appendChild(p);
-
     setTimeout(() => p.remove(), 12000);
   }
 
   setInterval(createParticle, 450);
 });
 </script>
+
 </body>
 </html>

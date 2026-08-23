@@ -4,7 +4,135 @@
   <meta charset="UTF-8" />
   <title>Afrotious Nation - News</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="icon" type="image/png" href="favicon.png">
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <link rel="canonical" href="https://afrotiousnation.org/news.html">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Brand",
+    "name": "Afrotious Nation",
+    "url": "https://afrotiousnation.org",
+    "logo": "https://afrotiousnation.org/favicon.png",
+    "sameAs": [
+      "https://www.youtube.com/@AfrotiousNation",
+      "https://www.instagram.com/afrotiousnation",
+      "https://linktr.ee/Afrotious_Nation"
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Afrotious Nation",
+    "url": "https://afrotiousnation.org",
+    "founder": {
+      "@type": "Person",
+      "name": "Aaliyah Casteele"
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Afrotious Nation",
+    "url": "https://afrotiousnation.org",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://afrotiousnation.org/?s={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    "headline": "Melanindian Waves Radio — Official Launch Announcement",
+    "datePublished": "2026-08-19",
+    "author": {
+      "@type": "Organization",
+      "name": "Afrotious Nation"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Afrotious Nation",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://afrotiousnation.org/favicon.png"
+      }
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    "headline": "Radio Schedule Page Added",
+    "datePublished": "2026-08-21",
+    "author": {
+      "@type": "Organization",
+      "name": "Afrotious Nation"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Afrotious Nation",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://afrotiousnation.org/favicon.png"
+      }
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    "headline": "Radio Workflow Page Added",
+    "datePublished": "2026-08-21",
+    "author": {
+      "@type": "Organization",
+      "name": "Afrotious Nation"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Afrotious Nation",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://afrotiousnation.org/favicon.png"
+      }
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    "headline": "Radio FAQ Page Added",
+    "datePublished": "2026-08-21",
+    "author": {
+      "@type": "Organization",
+      "name": "Afrotious Nation"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Afrotious Nation",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://afrotiousnation.org/favicon.png"
+      }
+    }
+  }
+  </script>
 
   <style>
     body {
@@ -42,276 +170,184 @@
       color: #C8A2C8;
     }
 
-    .hero {
-      padding: 3rem 2rem 1rem;
+    section {
       max-width: 900px;
-      margin: 0 auto;
+      margin: 60px auto 20px;
+      padding: 0 20px;
       text-align: center;
     }
 
-    .hero h1 {
+    section h1 {
       font-size: 2.8rem;
-      margin-bottom: 0.5rem;
       color: #C8A2C8;
       text-shadow: 0 0 15px rgba(200, 162, 200, 0.4);
     }
 
-    .hero p {
-      max-width: 600px;
+    .news-list {
+      max-width: 900px;
       margin: 0 auto;
-      line-height: 1.6;
-      color: #EDE7F6;
+      padding: 20px;
     }
 
-    .products {
-      padding: 2rem;
-      max-width: 1100px;
-      margin: 0 auto 3rem;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 2rem;
+    .news-item {
+      background: rgba(255,255,255,0.05);
+      padding: 25px;
+      border-radius: 12px;
+      margin-bottom: 30px;
+      border: 1px solid rgba(255,255,255,0.1);
     }
 
-    .product-card {
-      background: rgba(58, 12, 163, 0.15);
-      border: 1px solid rgba(200, 162, 200, 0.2);
-      border-radius: 15px;
-      padding: 1rem;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
-      backdrop-filter: blur(8px);
-      transition: 0.3s;
+    .news-item h2 {
+      color: #ff4fd8;
+      margin-bottom: 10px;
     }
 
-    .product-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 15px 35px rgba(123, 44, 191, 0.4);
-    }
-
-    .product-card img {
-      width: 100%;
-      border-radius: 10px;
-      margin-bottom: 0.75rem;
-      object-fit: cover;
-      max-height: 260px;
-      box-shadow: 0 0 20px rgba(200, 162, 200, 0.3);
-    }
-
-    .product-title {
-      font-weight: 600;
-      margin-bottom: 0.25rem;
-      color: #EDE7F6;
-    }
-
-    .product-price {
-      color: #C8A2C8;
-      font-weight: 500;
-      margin-bottom: 0.75rem;
-    }
-
-    .buy-button {
-      display: inline-block;
-      text-align: center;
-      padding: 0.6rem 0.9rem;
-      border-radius: 999px;
-      background: #7B2CBF;
-      color: #F8F6FF;
-      font-weight: 600;
-      text-decoration: none;
+    .news-date {
       font-size: 0.9rem;
-      transition: 0.3s;
-    }
-
-    .buy-button:hover {
-      background: #9D4EDD;
+      opacity: 0.8;
+      margin-bottom: 15px;
     }
 
     footer {
-      padding: 1.5rem 2rem;
-      border-top: 1px solid rgba(255, 255, 255, 0.1);
-      font-size: 0.85rem;
-      color: #C8A2C8;
+      width: 100%;
+      padding: 20px 10px;
+      margin-top: 40px;
       text-align: center;
+      color: #F8F6FF;
+      font-family: 'Poppins', sans-serif;
+      border-top: 1px solid rgba(255,255,255,0.1);
     }
-@keyframes floatUp {
-  0% { transform: translateY(0); opacity: 0.8; }
-  100% { transform: translateY(-120vh); opacity: 0; }
-}
-/* Make images responsive */
-img {
-  max-width: 100%;
-  height: auto;
-}
 
-/* Make iframe (SoundCloud) responsive */
-iframe {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Responsive text scaling */
-h1, h2, h3, p {
-  word-wrap: break-word;
-}
-
-/* Responsive grid spacing on small screens */
-@media (max-width: 600px) {
-  .products {
-    grid-template-columns: 1fr;
-    padding: 1rem;
-  }
-
-  .product-card {
-    margin-bottom: 1.5rem;
-  }
-
-  header {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  nav a {
-    display: inline-block;
-    margin: 0.5rem;
-  }
-}
-
+    @keyframes floatUp {
+      0% { transform: translateY(0); opacity: 0.8; }
+      100% { transform: translateY(-120vh); opacity: 0; }
+    }
   </style>
 </head>
 
 <body>
 
-  <header>
-    <div class="logo">Afrotious Nation</div>
-    <nav>
-     <a href="index.html">Marketplace</a>
-      <a href="music-universe.html">Music Universe</a>
-      <a href="contact.html">Contact</a>
-      <a href="about.html" class="header-btn">About</a>
-      <a href="faq.html" class="header-btn">FAQ</a>
-      <a href="creator-application.html" class="header-btn">Creator Application</a>
-      <a href="custom-orders.html" class="header-btn">Custom Orders</a>
-      <a href="cosmic-lore.html" class="header-btn">Cosmic Lore</a>
-	<a href="news.html" class="header-btn">News</a>
-	<a href="coming-soon.html" class="header-btn">Blog</a>
-	<a href="coming-soon.html" class="header-btn">Events</a>
-	<a href="radio.html" class="header-btn">Cosmic Radio</a>
-	<a class="header-btn" href="creator-portal.html">Creator Portal</a>
-    </nav>
-<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-  </header>
+<header>
+  <div class="logo">Afrotious Nation</div>
+  <nav>
+    <a href="index.html">Marketplace</a>
+    <a href="music-universe.html">Music Universe</a>
+    <a href="contact.html">Contact</a>
+    <a href="about.html" class="header-btn">About</a>
+    <a href="faq.html" class="header-btn">FAQ</a>
+    <a href="creator-application.html" class="header-btn">Creator Application</a>
+    <a href="custom-orders.html" class="header-btn">Custom Orders</a>
+    <a href="cosmic-lore.html" class="header-btn">Cosmic Lore</a>
+    <a href="news.html" class="header-btn">News</a>
+    <a href="coming-soon.html" class="header-btn">Blog</a>
+    <a href="coming-soon.html" class="header-btn">Events</a>
+    <a href="radio.html" class="header-btn">Cosmic Radio</a>
+    <a class="header-btn" href="creator-portal.html">Creator Portal</a>
+  </nav>
+</header>
 
 <section>
-    <h1>Afrotious Nation News</h1>
-    <p>Official updates, platform changes, new features, and announcements across the Afrotious Nation ecosystem.</p>
+  <h1>Afrotious Nation News</h1>
+  <p>Official updates, platform changes, new features, and announcements across the Afrotious Nation ecosystem.</p>
 </section>
 
 <section class="news-list">
 
-    <article class="news-item">
-        <h2>Melanindian Waves Radio — Official Launch Announcement</h2>
-        <p class="news-date">August 19, 2026</p>
+  <article class="news-item">
+    <h2>Melanindian Waves Radio — Official Launch Announcement</h2>
+    <p class="news-date">August 19, 2026</p>
 
-        <p>
-            Afrotious Nation is expanding its creative universe with the launch of 
-            <strong>Melanindian Waves</strong>, our official cosmic radio station. 
-            Built to amplify creators, storytellers, and sound‑artists across the realm, 
-            Melanindian Waves will feature live shows, curated playlists, creator submissions, 
-            and cosmic soundscapes that align with the Afrotious Nation vision.
-        </p>
+    <p>
+      Afrotious Nation is expanding its creative universe with the launch of 
+      <strong>Melanindian Waves</strong>, our official cosmic radio station. 
+      Built to amplify creators, storytellers, and sound‑artists across the realm, 
+      Melanindian Waves will feature live shows, curated playlists, creator submissions, 
+      and cosmic soundscapes that align with the Afrotious Nation vision.
+    </p>
 
-        <p>
-            The radio station will operate as a division of AfrotiousNation.org and will 
-            introduce a new submission system, creator placement options, and a dedicated 
-            Cosmic Radio page. This marks the beginning of our multi‑platform expansion 
-            across web, music, handmade creations, and digital experiences.
-        </p>
+    <p>
+      The radio station will operate as a division of AfrotiousNation.org and will 
+      introduce a new submission system, creator placement options, and a dedicated 
+      Cosmic Radio page. This marks the beginning of our multi‑platform expansion 
+      across web, music, handmade creations, and digital experiences.
+    </p>
 
-        <p>
-            Stay tuned for the official Cosmic Radio page launch and creator submission 
-            guidelines coming soon.
-        </p>
-    </article>
-<article class="news-item">
+    <p>
+      Stay tuned for the official Cosmic Radio page launch and creator submission 
+      guidelines coming soon.
+    </p>
+  </article>
+
+  <article class="news-item">
     <h2>Radio Schedule Page Added</h2>
     <p class="news-date">August 21, 2026</p>
 
     <p>
-        The full Melanindian Waves nightly broadcast schedule is now live. 
-        Creators can see exactly where their track will be placed across our 
-        seven cosmic-themed shows.
+      The full Melanindian Waves nightly broadcast schedule is now live. 
+      Creators can see exactly where their track will be placed across our 
+      seven cosmic-themed shows.
     </p>
 
     <p>
-        This update completes the public-facing structure of the radio system 
-        and prepares the platform for backend integration.
+      This update completes the public-facing structure of the radio system 
+      and prepares the platform for backend integration.
     </p>
 
     <a href="radio-schedule.html" style="color:#C8A2C8;">View Radio Schedule</a>
-</article>
+  </article>
 
-<article class="news-item">
+  <article class="news-item">
     <h2>Radio Workflow Page Added</h2>
     <p class="news-date">August 21, 2026</p>
 
     <p>
-        The complete submission-to-broadcast workflow is now available. 
-        Creators can understand how review, placement, rotation, spotlighting, 
-        and TikTok Live priority work.
+      The complete submission-to-broadcast workflow is now available. 
+      Creators can understand how review, placement, rotation, spotlighting, 
+      and TikTok Live priority work.
     </p>
 
     <p>
-        This page is essential for transparency and helps creators understand 
-        how their track moves through the system.
+      This page is essential for transparency and helps creators understand 
+      how their track moves through the system.
     </p>
 
     <a href="radio-workflow.html" style="color:#C8A2C8;">View Radio Workflow</a>
-</article>
+  </article>
 
-<article class="news-item">
+  <article class="news-item">
     <h2>Radio FAQ Page Added</h2>
     <p class="news-date">August 21, 2026</p>
 
     <p>
-        A full FAQ page has been added to answer common questions about 
-        submissions, rotation duration, spotlighting, genres, and more.
+      A full FAQ page has been added to answer common questions about 
+      submissions, rotation duration, spotlighting, genres, and more.
     </p>
 
     <p>
-        This completes the public-facing radio documentation and prepares 
-        the platform for backend development.
+      This completes the public-facing radio documentation and prepares 
+      the platform for backend development.
     </p>
 
     <a href="radio-faq.html" style="color:#C8A2C8;">View Radio FAQ</a>
-</article>
-
+  </article>
 
 </section>
+
 <footer>
-<footer style="
-    width: 100%;
-    padding: 20px 10px;
-    margin-top: 40px;
-    text-align: center;
-    color: #F8F6FF;
-    font-family: 'Poppins', sans-serif;
-">
-    <p style="margin: 8px 0; font-size: 1rem;">
-        All original content © 2025 Afrotious Nation, © 2026 Afrotious Nation
-    </p>
+  <p style="margin: 8px 0; font-size: 1rem;">
+    All original content © 2025 Afrotious Nation, © 2026 Afrotious Nation
+  </p>
 
-    <p style="margin: 8px 0; font-size: 0.95rem;">
-        <a href="/terms" style="color:#C8A2C8; text-decoration:none; margin-right:20px;">
-            Terms & Conditions
-        </a>
-        <a href="/privacy" style="color:#C8A2C8; text-decoration:none;">
-            Privacy Policy
-        </a>
-    </p>
+  <p style="margin: 8px 0; font-size: 0.95rem;">
+    <a href="/terms" style="color:#C8A2C8; text-decoration:none; margin-right:20px;">Terms & Conditions</a>
+    <a href="/privacy" style="color:#C8A2C8; text-decoration:none;">Privacy Policy</a>
+  </p>
 
-    <p style="margin: 8px 0; font-size: 0.9rem; opacity: 0.8;">
-        Powered by Stripe
-    </p>
+  <p style="margin: 8px 0; font-size: 0.9rem; opacity: 0.8;">
+    Powered by Stripe
+  </p>
 </footer>
+
 <script>
 document.addEventListener("DOMContentLoaded", () => {
   const particleContainer = document.createElement("div");
@@ -331,14 +367,13 @@ document.addEventListener("DOMContentLoaded", () => {
     p.style.height = "6px";
     p.style.borderRadius = "50%";
     p.style.background = "rgba(200,162,200,0.8)";
-    p.style.boxShadow = "0 0 12px rgba(200,162,200,0.9) ";
+    p.style.boxShadow = "0 0 12px rgba(200,162,200,0.9)";
     p.style.left = Math.random() * window.innerWidth + "px";
     p.style.top = window.innerHeight + "px";
     p.style.opacity = 0.8;
     p.style.animation = "floatUp 12s linear forwards";
 
     particleContainer.appendChild(p);
-
     setTimeout(() => p.remove(), 12000);
   }
 

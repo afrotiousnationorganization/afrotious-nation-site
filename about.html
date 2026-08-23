@@ -2,11 +2,59 @@
 <html lang="en">
 <head>
    <meta charset="UTF-8" />
-  <title>About Afrotious Nation</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="icon" type="image/png" href="favicon.png">
+   <title>About Afrotious Nation</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <link rel="icon" type="image/png" href="favicon.png">
 
-  <style>
+   <!-- CANONICAL -->
+   <link rel="canonical" href="https://afrotiousnation.org/about">
+
+   <!-- BRAND IDENTITY SCHEMA -->
+   <script type="application/ld+json">
+   {
+     "@context": "https://schema.org",
+     "@type": "Brand",
+     "name": "Afrotious Nation",
+     "url": "https://afrotiousnation.org",
+     "logo": "https://afrotiousnation.org/favicon.png",
+     "sameAs": [
+       "https://www.youtube.com/@AfrotiousNation",
+       "https://www.instagram.com/afrotiousnation",
+       "https://linktr.ee/Afrotious_Nation"
+     ]
+   }
+   </script>
+
+   <!-- ORGANIZATION / FOUNDER SCHEMA -->
+   <script type="application/ld+json">
+   {
+     "@context": "https://schema.org",
+     "@type": "Organization",
+     "name": "Afrotious Nation",
+     "url": "https://afrotiousnation.org",
+     "founder": {
+       "@type": "Person",
+       "name": "Aaliyah Casteele"
+     }
+   }
+   </script>
+
+   <!-- WEBSITE SCHEMA -->
+   <script type="application/ld+json">
+   {
+     "@context": "https://schema.org",
+     "@type": "WebSite",
+     "name": "Afrotious Nation",
+     "url": "https://afrotiousnation.org",
+     "potentialAction": {
+       "@type": "SearchAction",
+       "target": "https://afrotiousnation.org/?s={search_term_string}",
+       "query-input": "required name=search_term_string"
+     }
+   }
+   </script>
+
+<style>
     body {
       margin: 0;
       font-family: 'Montserrat', sans-serif;
@@ -132,28 +180,26 @@
       color: #C8A2C8;
       text-align: center;
     }
+
 @keyframes floatUp {
   0% { transform: translateY(0); opacity: 0.8; }
   100% { transform: translateY(-120vh); opacity: 0; }
 }
-/* Make images responsive */
+
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* Make iframe (SoundCloud) responsive */
 iframe {
   max-width: 100%;
   height: auto;
 }
 
-/* Responsive text scaling */
 h1, h2, h3, p {
   word-wrap: break-word;
 }
 
-/* Responsive grid spacing on small screens */
 @media (max-width: 600px) {
   .products {
     grid-template-columns: 1fr;
@@ -174,8 +220,7 @@ h1, h2, h3, p {
     margin: 0.5rem;
   }
 }
-
-  </style>
+</style>
 </head>
 
 <body>
@@ -191,14 +236,15 @@ h1, h2, h3, p {
       <a href="creator-application.html" class="header-btn">Creator Application</a>
       <a href="custom-orders.html" class="header-btn">Custom Orders</a>
       <a href="cosmic-lore.html" class="header-btn">Cosmic Lore</a>
-	<a href="news.html" class="header-btn">News</a>
-	<a href="coming-soon.html" class="header-btn">Blog</a>
-	<a href="coming-soon.html" class="header-btn">Events</a>
-	<a href="radio.html" class="header-btn">Cosmic Radio</a>
-	<a class="header-btn" href="creator-portal.html">Creator Portal</a>
+      <a href="news.html" class="header-btn">News</a>
+      <a href="coming-soon.html" class="header-btn">Blog</a>
+      <a href="coming-soon.html" class="header-btn">Events</a>
+      <a href="radio.html" class="header-btn">Cosmic Radio</a>
+      <a class="header-btn" href="creator-portal.html">Creator Portal</a>
     </nav>
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </header>
+
 <div class="section">
     <h1>About Afrotious Nation</h1>
     <p>
@@ -244,7 +290,6 @@ h1, h2, h3, p {
     creator profiles, and cosmic lore.
 </p>
 
-<footer>
 <footer style="
     width: 100%;
     padding: 20px 10px;
@@ -270,6 +315,7 @@ h1, h2, h3, p {
         Powered by Stripe
     </p>
 </footer>
+
 <script>
 document.addEventListener("DOMContentLoaded", () => {
   const particleContainer = document.createElement("div");
@@ -289,7 +335,7 @@ document.addEventListener("DOMContentLoaded", () => {
     p.style.height = "6px";
     p.style.borderRadius = "50%";
     p.style.background = "rgba(200,162,200,0.8)";
-    p.style.boxShadow = "0 0 12px rgba(200,162,200,0.9) ";
+    p.style.boxShadow = "0 0 12px rgba(200,162,200,0.9)";
     p.style.left = Math.random() * window.innerWidth + "px";
     p.style.top = window.innerHeight + "px";
     p.style.opacity = 0.8;
@@ -303,5 +349,6 @@ document.addEventListener("DOMContentLoaded", () => {
   setInterval(createParticle, 450);
 });
 </script>
+
 </body>
 </html>

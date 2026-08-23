@@ -4,7 +4,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Radio Submission Payment — Melanindian Waves (A subdivision of Afrotious Nation)</title>
-<link rel="icon" type="image/png" href="favicon.png">
+
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="canonical" href="https://afrotiousnation.org/radio-payment.html">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Brand",
+      "name": "Afrotious Nation",
+      "url": "https://afrotiousnation.org",
+      "logo": "https://afrotiousnation.org/favicon.png",
+      "sameAs": [
+        "https://www.instagram.com/afrotiousnation",
+        "https://www.youtube.com/@AfrotiousNation",
+        "https://linktr.ee/Afrotious_Nation"
+      ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Afrotious Nation",
+      "url": "https://afrotiousnation.org",
+      "logo": "https://afrotiousnation.org/favicon.png",
+      "founder": {
+        "@type": "Person",
+        "name": "Aaliyah Casteele"
+      }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Afrotious Nation",
+      "url": "https://afrotiousnation.org"
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Melanindian Waves Radio Submission",
+      "provider": {
+        "@type": "Organization",
+        "name": "Afrotious Nation",
+        "url": "https://afrotiousnation.org"
+      },
+      "serviceType": "Music Submission & Radio Placement",
+      "areaServed": "Worldwide",
+      "availableChannel": {
+        "@type": "ServiceChannel",
+        "serviceUrl": "https://afrotiousnation.org/radio-payment.html"
+      }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "One-Time Radio Submission",
+      "brand": "Afrotious Nation",
+      "description": "Submit 1 track for one week rotation and one show placement.",
+      "offers": {
+        "@type": "Offer",
+        "price": "15.00",
+        "priceCurrency": "USD",
+        "url": "https://buy.stripe.com/8x2bJ02CX8K7flj1yHgMw1g",
+        "availability": "https://schema.org/InStock"
+      }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "Monthly Creator Pass",
+      "brand": "Afrotious Nation",
+      "description": "Unlimited submissions, priority review, guaranteed placement, monthly rotation, spotlight eligibility.",
+      "offers": {
+        "@type": "Offer",
+        "price": "20.00",
+        "priceCurrency": "USD",
+        "url": "https://buy.stripe.com/eVq7sKdhBgczgpn2CLgMw1h",
+        "availability": "https://schema.org/InStock",
+        "priceValidUntil": "2027-12-31"
+      }
+    }
+    </script>
 
     <style>
     body {
@@ -42,233 +136,162 @@
       color: #C8A2C8;
     }
 
-    .hero {
-      padding: 3rem 2rem 1rem;
+    .container {
       max-width: 900px;
-      margin: 0 auto;
+      margin: auto;
+      padding: 40px 20px;
       text-align: center;
     }
 
-    .hero h1 {
+    h1 {
       font-size: 2.8rem;
-      margin-bottom: 0.5rem;
       color: #C8A2C8;
-      text-shadow: 0 0 15px rgba(200, 162, 200, 0.4);
+      text-shadow: 0 0 15px rgba(200,162,200,0.4);
     }
 
-    .hero p {
-      max-width: 600px;
-      margin: 0 auto;
-      line-height: 1.6;
-      color: #EDE7F6;
+    .options {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 25px;
+      justify-content: center;
+      margin-top: 30px;
     }
 
-    .products {
-      padding: 2rem;
-      max-width: 1100px;
-      margin: 0 auto 3rem;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 2rem;
-    }
-
-    .product-card {
-      background: rgba(58, 12, 163, 0.15);
-      border: 1px solid rgba(200, 162, 200, 0.2);
-      border-radius: 15px;
-      padding: 1rem;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
-      backdrop-filter: blur(8px);
-      transition: 0.3s;
-    }
-
-    .product-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 15px 35px rgba(123, 44, 191, 0.4);
-    }
-
-    .product-card img {
-      width: 100%;
-      border-radius: 10px;
-      margin-bottom: 0.75rem;
-      object-fit: cover;
-      max-height: 260px;
-      box-shadow: 0 0 20px rgba(200, 162, 200, 0.3);
-    }
-
-    .product-title {
-      font-weight: 600;
-      margin-bottom: 0.25rem;
-      color: #EDE7F6;
-    }
-
-    .product-price {
-      color: #C8A2C8;
-      font-weight: 500;
-      margin-bottom: 0.75rem;
-    }
-
-    .buy-button {
-      display: inline-block;
+    .option-box {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 12px;
+      padding: 25px;
+      width: 280px;
       text-align: center;
-      padding: 0.6rem 0.9rem;
-      border-radius: 999px;
-      background: #7B2CBF;
-      color: #F8F6FF;
-      font-weight: 600;
-      text-decoration: none;
-      font-size: 0.9rem;
-      transition: 0.3s;
     }
 
-    .buy-button:hover {
-      background: #9D4EDD;
+    .option-box h2 {
+      color: #ff4fd8;
+      font-size: 1.7rem;
+    }
+
+    .price {
+      font-size: 2rem;
+      margin: 15px 0;
+      color: #fff;
+    }
+
+    .option-box ul {
+      text-align: left;
+      font-size: 0.95rem;
+      line-height: 1.5rem;
+      margin-bottom: 20px;
+    }
+
+    .pay-btn {
+      background-color: #ff4fd8;
+      color: #0a0a0f;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .pay-btn:hover {
+      background-color: #ff2fc4;
+    }
+
+    .note {
+      margin-top: 40px;
+      font-size: 0.95rem;
+      opacity: 0.8;
     }
 
     footer {
-      padding: 1.5rem 2rem;
-      border-top: 1px solid rgba(255, 255, 255, 0.1);
-      font-size: 0.85rem;
-      color: #C8A2C8;
+      width: 100%;
+      padding: 20px 10px;
+      margin-top: 40px;
       text-align: center;
+      color: #F8F6FF;
+      font-family: 'Poppins', sans-serif;
     }
-@keyframes floatUp {
-  0% { transform: translateY(0); opacity: 0.8; }
-  100% { transform: translateY(-120vh); opacity: 0; }
-}
-/* Make images responsive */
-img {
-  max-width: 100%;
-  height: auto;
-}
 
-/* Make iframe (SoundCloud) responsive */
-iframe {
-  max-width: 100%;
-  height: auto;
-}
+    @keyframes floatUp {
+      0% { transform: translateY(0); opacity: 0.8; }
+      100% { transform: translateY(-120vh); opacity: 0; }
+    }
+    </style>
 
-/* Responsive text scaling */
-h1, h2, h3, p {
-  word-wrap: break-word;
-}
-
-/* Responsive grid spacing on small screens */
-@media (max-width: 600px) {
-  .products {
-    grid-template-columns: 1fr;
-    padding: 1rem;
-  }
-
-  .product-card {
-    margin-bottom: 1.5rem;
-  }
-
-  header {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  nav a {
-    display: inline-block;
-    margin: 0.5rem;
-  }
-}
-
-  </style>
-<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 
 <body>
 
-  <header>
+<header>
     <div class="logo">Afrotious Nation</div>
     <nav>
       <a href="index.html">Marketplace</a>
       <a href="music-universe.html">Music Universe</a>
       <a href="contact.html">Contact</a>
-      <a href="about.html" class="header-btn">About</a>
-      <a href="faq.html" class="header-btn">FAQ</a>
-      <a href="creator-application.html" class="header-btn">Creator Application</a>
-      <a href="custom-orders.html" class="header-btn">Custom Orders</a>
-      <a href="cosmic-lore.html" class="header-btn">Cosmic Lore</a>
-	<a href="news.html" class="header-btn">News</a>
-	<a href="coming-soon.html" class="header-btn">Blog</a>
-	<a href="coming-soon.html" class="header-btn">Events</a>
-	<a href="radio.html" class="header-btn">Cosmic Radio</a>
-	<a class="header-btn" href="creator-portal.html">Creator Portal</a>
-
+      <a href="about.html">About</a>
+      <a href="faq.html">FAQ</a>
+      <a href="creator-application.html">Creator Application</a>
+      <a href="custom-orders.html">Custom Orders</a>
+      <a href="cosmic-lore.html">Cosmic Lore</a>
+      <a href="news.html">News</a>
+      <a href="coming-soon.html">Blog</a>
+      <a href="coming-soon.html">Events</a>
+      <a href="radio.html">Cosmic Radio</a>
+      <a href="creator-portal.html">Creator Portal</a>
     </nav>
-  </header>
+</header>
 
-<body>
+<div class="container">
+    <h1>Radio Submission Payment</h1>
+    <p>Select your submission option to continue.</p>
 
-    <div class="container">
-        <h1>Radio Submission Payment</h1>
-        <p>Select your submission option to continue.</p>
+    <div class="options">
 
-        <div class="options">
-
-            <div class="option-box">
-                <h2>One-Time Submission</h2>
-                <div class="price">$15</div>
-                <ul>
-                    <li>Submit 1 track</li>
-                    <li>One week rotation</li>
-                    <li>One show placement</li>
-                    <li>Standard review time</li>
-                </ul>
-                <a href="https://buy.stripe.com/8x2bJ02CX8K7flj1yHgMw1g" class="pay-btn">Pay $15</a>
-            </div>
-
-            <div class="option-box">
-                <h2>Monthly Creator Pass</h2>
-                <div class="price">$20/mo</div>
-                <ul>
-                    <li>Unlimited submissions</li>
-                    <li>Priority review</li>
-                    <li>Guaranteed placement</li>
-                    <li>Monthly rotation</li>
-                    <li>Spotlight eligibility</li>
-                </ul>
-                <a href="https://buy.stripe.com/eVq7sKdhBgczgpn2CLgMw1h" class="pay-btn">Subscribe $20/mo</a>
-            </div>
-
+        <div class="option-box">
+            <h2>One-Time Submission</h2>
+            <div class="price">$15</div>
+            <ul>
+                <li>Submit 1 track</li>
+                <li>One week rotation</li>
+                <li>One show placement</li>
+                <li>Standard review time</li>
+            </ul>
+            <a href="https://buy.stripe.com/8x2bJ02CX8K7flj1yHgMw1g" class="pay-btn">Pay $15</a>
         </div>
 
-        <div class="note">
-            Creators with promo codes may enter them at checkout.<br>
-            After payment, you will be redirected to the Radio Submission Page.
+        <div class="option-box">
+            <h2>Monthly Creator Pass</h2>
+            <div class="price">$20/mo</div>
+            <ul>
+                <li>Unlimited submissions</li>
+                <li>Priority review</li>
+                <li>Guaranteed placement</li>
+                <li>Monthly rotation</li>
+                <li>Spotlight eligibility</li>
+            </ul>
+            <a href="https://buy.stripe.com/eVq7sKdhBgczgpn2CLgMw1h" class="pay-btn">Subscribe $20/mo</a>
         </div>
 
     </div>
+
+    <div class="note">
+        Creators with promo codes may enter them at checkout.<br>
+        After payment, you will be redirected to the Radio Submission Page.
+    </div>
+</div>
+
 <footer>
-    <footer style="
-    width: 100%;
-    padding: 20px 10px;
-    margin-top: 40px;
-    text-align: center;
-    color: #F8F6FF;
-    font-family: 'Poppins', sans-serif;
-">
-    <p style="margin: 8px 0; font-size: 1rem;">
-        All original content © 2025 Afrotious Nation, © 2026 Afrotious Nation
+    <p>All original content © 2025 Afrotious Nation, © 2026 Afrotious Nation</p>
+    <p>
+        <a href="/terms" style="color:#C8A2C8; margin-right:20px;">Terms & Conditions</a>
+        <a href="/privacy" style="color:#C8A2C8;">Privacy Policy</a>
     </p>
-
-    <p style="margin: 8px 0; font-size: 0.95rem;">
-        <a href="/terms" style="color:#C8A2C8; text-decoration:none; margin-right:20px;">
-            Terms & Conditions
-        </a>
-        <a href="/privacy" style="color:#C8A2C8; text-decoration:none;">
-            Privacy Policy
-        </a>
-    </p>
-
-    <p style="margin: 8px 0; font-size: 0.9rem; opacity: 0.8;">
-        Powered by Stripe
-    </p>
+    <p style="opacity:0.8;">Powered by Stripe</p>
 </footer>
+
 <script>
 document.addEventListener("DOMContentLoaded", () => {
   const particleContainer = document.createElement("div");
@@ -288,37 +311,19 @@ document.addEventListener("DOMContentLoaded", () => {
     p.style.height = "6px";
     p.style.borderRadius = "50%";
     p.style.background = "rgba(200,162,200,0.8)";
-    p.style.boxShadow = "0 0 12px rgba(200,162,200,0.9) ";
+    p.style.boxShadow = "0 0 12px rgba(200,162,200,0.9)";
     p.style.left = Math.random() * window.innerWidth + "px";
     p.style.top = window.innerHeight + "px";
     p.style.opacity = 0.8;
     p.style.animation = "floatUp 12s linear forwards";
 
     particleContainer.appendChild(p);
-
     setTimeout(() => p.remove(), 12000);
   }
 
   setInterval(createParticle, 450);
-// Authentication check
-  const user = netlifyIdentity.currentUser();
-  const authStatus = document.getElementById("auth-status");
-  const portalContent = document.getElementById("portal-content");
-
-  if (!user) {
-    authStatus.innerHTML = "You must be logged in to access the Submission Portal.";
-    netlifyIdentity.open();
-  } else {
-    authStatus.innerHTML = "Authenticated as: " + user.email;
-    portalContent.style.display = "block";
-  }
-
-  // Logout
-  document.getElementById("logout-btn").addEventListener("click", () => {
-    netlifyIdentity.logout();
-    location.reload();
-  });
 });
 </script>
+
 </body>
 </html>

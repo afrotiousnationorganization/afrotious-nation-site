@@ -6,6 +6,51 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <link rel="icon" href="favicon.png">
+
+<link rel="canonical" href="https://afrotiousnation.org/music-upload.html">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Brand",
+  "name": "Afrotious Nation",
+  "url": "https://afrotiousnation.org",
+  "logo": "https://afrotiousnation.org/favicon.png",
+  "sameAs": [
+    "https://www.youtube.com/@AfrotiousNation",
+    "https://www.instagram.com/afrotiousnation",
+    "https://linktr.ee/Afrotious_Nation"
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Afrotious Nation",
+  "url": "https://afrotiousnation.org",
+  "founder": {
+    "@type": "Person",
+    "name": "Aaliyah Casteele"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Afrotious Nation",
+  "url": "https://afrotiousnation.org",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://afrotiousnation.org/?s={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
 <style>
@@ -120,14 +165,12 @@ input, textarea {
         <p>Approved creators can upload music to be featured in the Afrotious Nation ecosystem — including Cosmic Radio, Music Universe, and marketplace listings.</p>
     </div>
 
-    <!-- LOGIN GATE -->
     <div class="section-box" id="loginGate">
         <h2>Login Required</h2>
         <p>You must be logged in to upload music.</p>
         <button onclick="netlifyIdentity.open()">Login to Continue</button>
     </div>
 
-    <!-- FORM (HIDDEN UNTIL LOGIN) -->
     <div class="section-box" id="formSection" style="display:none;">
         <h2>Submit Your Track</h2>
 

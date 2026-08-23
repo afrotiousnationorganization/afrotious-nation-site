@@ -2,9 +2,63 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Afrotious Nation Marketplace</title>
+  <title>Afrotious Nation — Terms & Conditions</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="icon" type="image/png" href="favicon.png">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="canonical" href="https://afrotiousnation.org/terms.html">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Brand",
+    "name": "Afrotious Nation",
+    "url": "https://afrotiousnation.org",
+    "logo": "https://afrotiousnation.org/favicon.png",
+    "sameAs": [
+      "https://www.instagram.com/afrotiousnation",
+      "https://www.youtube.com/@AfrotiousNation",
+      "https://linktr.ee/Afrotious_Nation"
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Afrotious Nation",
+    "url": "https://afrotiousnation.org",
+    "logo": "https://afrotiousnation.org/favicon.png",
+    "founder": {
+      "@type": "Person",
+      "name": "Aaliyah Casteele"
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Afrotious Nation",
+    "url": "https://afrotiousnation.org",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://afrotiousnation.org/?s={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Terms & Conditions",
+    "url": "https://afrotiousnation.org/terms.html",
+    "description": "Official Terms & Conditions for Afrotious Nation, covering marketplace rules, creator policies, music submissions, UGC guidelines, payments, and legal responsibilities."
+  }
+  </script>
 
   <style>
     body {
@@ -42,87 +96,27 @@
       color: #C8A2C8;
     }
 
-    .hero {
-      padding: 3rem 2rem 1rem;
+    .container {
       max-width: 900px;
-      margin: 0 auto;
-      text-align: center;
+      margin: auto;
+      padding: 40px 20px;
     }
 
-    .hero h1 {
+    h1 {
       font-size: 2.8rem;
-      margin-bottom: 0.5rem;
       color: #C8A2C8;
       text-shadow: 0 0 15px rgba(200, 162, 200, 0.4);
+      margin-bottom: 10px;
     }
 
-    .hero p {
-      max-width: 600px;
-      margin: 0 auto;
+    h2 {
+      margin-top: 30px;
+      color: #ff4fd8;
+    }
+
+    p {
       line-height: 1.6;
       color: #EDE7F6;
-    }
-
-    .products {
-      padding: 2rem;
-      max-width: 1100px;
-      margin: 0 auto 3rem;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 2rem;
-    }
-
-    .product-card {
-      background: rgba(58, 12, 163, 0.15);
-      border: 1px solid rgba(200, 162, 200, 0.2);
-      border-radius: 15px;
-      padding: 1rem;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
-      backdrop-filter: blur(8px);
-      transition: 0.3s;
-    }
-
-    .product-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 15px 35px rgba(123, 44, 191, 0.4);
-    }
-
-    .product-card img {
-      width: 100%;
-      border-radius: 10px;
-      margin-bottom: 0.75rem;
-      object-fit: cover;
-      max-height: 260px;
-      box-shadow: 0 0 20px rgba(200, 162, 200, 0.3);
-    }
-
-    .product-title {
-      font-weight: 600;
-      margin-bottom: 0.25rem;
-      color: #EDE7F6;
-    }
-
-    .product-price {
-      color: #C8A2C8;
-      font-weight: 500;
-      margin-bottom: 0.75rem;
-    }
-
-    .buy-button {
-      display: inline-block;
-      text-align: center;
-      padding: 0.6rem 0.9rem;
-      border-radius: 999px;
-      background: #7B2CBF;
-      color: #F8F6FF;
-      font-weight: 600;
-      text-decoration: none;
-      font-size: 0.9rem;
-      transition: 0.3s;
-    }
-
-    .buy-button:hover {
-      background: #9D4EDD;
     }
 
     footer {
@@ -132,73 +126,35 @@
       color: #C8A2C8;
       text-align: center;
     }
-@keyframes floatUp {
-  0% { transform: translateY(0); opacity: 0.8; }
-  100% { transform: translateY(-120vh); opacity: 0; }
-}
-/* Make images responsive */
-img {
-  max-width: 100%;
-  height: auto;
-}
 
-/* Make iframe (SoundCloud) responsive */
-iframe {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Responsive text scaling */
-h1, h2, h3, p {
-  word-wrap: break-word;
-}
-
-/* Responsive grid spacing on small screens */
-@media (max-width: 600px) {
-  .products {
-    grid-template-columns: 1fr;
-    padding: 1rem;
-  }
-
-  .product-card {
-    margin-bottom: 1.5rem;
-  }
-
-  header {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  nav a {
-    display: inline-block;
-    margin: 0.5rem;
-  }
-}
-
+    @keyframes floatUp {
+      0% { transform: translateY(0); opacity: 0.8; }
+      100% { transform: translateY(-120vh); opacity: 0; }
+    }
   </style>
 </head>
 
 <body>
 
-  <header>
+<header>
     <div class="logo">Afrotious Nation</div>
     <nav>
       <a href="index.html">Marketplace</a>
       <a href="music-universe.html">Music Universe</a>
       <a href="contact.html">Contact</a>
-      <a href="about.html" class="header-btn">About</a>
-      <a href="faq.html" class="header-btn">FAQ</a>
-      <a href="creator-application.html" class="header-btn">Creator Application</a>
-      <a href="custom-orders.html" class="header-btn">Custom Orders</a>
-      <a href="cosmic-lore.html" class="header-btn">Cosmic Lore</a>
-	<a href="news.html" class="header-btn">News</a>
-	<a href="coming-soon.html" class="header-btn">Blog</a>
-	<a href="coming-soon.html" class="header-btn">Events</a>
-	<a href="radio.html" class="header-btn">Cosmic Radio</a>
-	<a class="header-btn" href="creator-portal.html">Creator Portal</a>
+      <a href="about.html">About</a>
+      <a href="faq.html">FAQ</a>
+      <a href="creator-application.html">Creator Application</a>
+      <a href="custom-orders.html">Custom Orders</a>
+      <a href="cosmic-lore.html">Cosmic Lore</a>
+      <a href="news.html">News</a>
+      <a href="coming-soon.html">Blog</a>
+      <a href="coming-soon.html">Events</a>
+      <a href="radio.html">Cosmic Radio</a>
+      <a href="creator-portal.html">Creator Portal</a>
     </nav>
-<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-  </header>
+</header>
+
 <div class="container">
     <h1>Afrotious Nation – Terms & Conditions</h1>
     <p><strong>Effective Date:</strong> August 2026</p>
@@ -208,91 +164,81 @@ h1, h2, h3, p {
     <p>
         Welcome to Afrotious Nation, a creative marketplace and digital platform offering handmade products,
         digital goods, UGC items, music submissions, creator services, and Roblox integrations.
-        By accessing or using this website, you agree to these Terms & Conditions. If you do not agree,
-        you must discontinue use of the site.
+        By accessing or using this website, you agree to these Terms & Conditions.
     </p>
 
     <h2>2. Definitions</h2>
     <p>
-        <strong>“Company”, “we”, “our”, “us”</strong> – Afrotious Nation (sole proprietor).<br>
-        <strong>“User”, “you”, “creator”, “customer”</strong> – any person accessing or using the site.<br>
-        <strong>“Marketplace”</strong> – the Afrotious Nation platform where creators sell goods.<br>
-        <strong>“Creator”</strong> – any person submitting handmade items, digital goods, UGC, or music.<br>
-        <strong>“Content”</strong> – all text, images, audio, video, UGC, and submissions.<br>
-        <strong>“Cosmic Radio / Melanindian Waves”</strong> – the Afrotious Nation music broadcast system.<br>
-        <strong>“Roblox Integration”</strong> – any UGC, game pass, or in-game experience connected to Afrotious Nation.
+        <strong>“Company”</strong> – Afrotious Nation.<br>
+        <strong>“User”</strong> – any person accessing the site.<br>
+        <strong>“Creator”</strong> – any person submitting goods or content.<br>
+        <strong>“Marketplace”</strong> – the Afrotious Nation platform.<br>
+        <strong>“Cosmic Radio / Melanindian Waves”</strong> – the Afrotious Nation broadcast system.<br>
+        <strong>“Roblox Integration”</strong> – UGC or game experiences connected to Afrotious Nation.
     </p>
 
     <h2>3. Eligibility</h2>
-    <p>
-        You must be at least 13 years old to use this site. Creators under 18 must have parental permission.
-    </p>
+    <p>You must be at least 13 years old. Creators under 18 require parental permission.</p>
 
     <h2>4. Creator Marketplace Rules</h2>
     <p>
-        Creators may submit handmade products, digital goods, UGC items, music, fashion items, and cosmic-themed creations.
+        Creators may submit handmade products, digital goods, UGC items, music, fashion, and cosmic creations.
         Creators retain 100% ownership of their work.
     </p>
     <p>
-        Creators grant Afrotious Nation a non-exclusive license to display, promote, feature, integrate, and showcase
-        their submissions on the website, Cosmic Radio, Roblox experiences, and social media.
+        Creators grant Afrotious Nation a non-exclusive license to display, promote, integrate, and showcase
+        their submissions across the website, Cosmic Radio, Roblox experiences, and social media.
     </p>
-    <p>
-        Creators earn 90% of marketplace sales. Afrotious Nation earns 10% as a platform fee.
-    </p>
+    <p>Creators earn 90% of marketplace sales. Afrotious Nation earns 10% as a platform fee.</p>
 
     <h2>5. Music Submission Rules</h2>
     <p>
-        Creators submitting music must own the rights to their music, provide a non-explicit version for Roblox compliance,
-        and allow Afrotious Nation to feature their music on Melanindian Waves, playlists, and cosmic lore integrations.
-        Creators retain 100% of their masters and royalties. Afrotious Nation does not claim ownership of music.
+        Creators must own their music, provide clean versions for Roblox compliance, and allow Afrotious Nation
+        to feature their music on Melanindian Waves and cosmic integrations. Creators retain 100% of masters.
     </p>
 
     <h2>6. UGC & Roblox Integration Rules</h2>
     <p>
-        Creators submitting UGC or Roblox assets must own the rights to their designs, comply with Roblox guidelines,
-        and allow Afrotious Nation to integrate UGC into cosmic experiences and promotional materials.
-        Roblox revenue is shared according to Roblox’s payout system.
+        Creators must own their UGC designs, comply with Roblox guidelines, and allow integration into cosmic experiences.
+        Roblox payouts follow Roblox’s revenue system.
     </p>
 
     <h2>7. Prohibited Content</h2>
     <p>
-        Users may not submit explicit music (without a clean version), hate speech, illegal content, stolen or copyrighted
-        material, sexually explicit content, harmful or violent content, malware, or malicious files. Violations may result
-        in removal or banning.
+        No explicit music (without clean version), hate speech, illegal content, stolen materials, sexual content,
+        harmful content, malware, or malicious files.
     </p>
 
     <h2>8. Payments & Fees</h2>
     <p>
         Payments are processed through Stripe. Afrotious Nation does not store payment information.
-        Creators receive payouts according to Stripe’s schedule. Marketplace fee: 10%. Creator earnings: 90%.
+        Marketplace fee: 10%. Creator earnings: 90%.
     </p>
 
     <h2>9. Intellectual Property</h2>
     <p>
-        All original content on this site is © 2025–2026 Afrotious Nation. Creators retain ownership of their submissions.
-        You may not copy, reproduce, or redistribute any content without permission.
+        All original content is © 2025–2026 Afrotious Nation. Creators retain ownership of their submissions.
     </p>
 
     <h2>10. Limitation of Liability</h2>
     <p>
         Afrotious Nation is not responsible for creator disputes, shipping issues, product defects, Roblox outages,
-        third-party platform failures, Stripe delays, or user misuse of content. Use the site at your own risk.
+        third-party failures, Stripe delays, or misuse of content.
     </p>
 
     <h2>11. Termination</h2>
     <p>
-        We may suspend or terminate accounts for violations, fraud, harmful behavior, illegal activity, or misuse of the platform.
+        Accounts may be suspended or terminated for violations, fraud, harmful behavior, or illegal activity.
     </p>
 
     <h2>12. Changes to Terms</h2>
     <p>
-        We may update these Terms at any time. Continued use of the site means you accept the updated Terms.
+        Terms may be updated at any time. Continued use means acceptance of updates.
     </p>
 
     <h2>13. Contact</h2>
     <p>
-        For questions: <a href="mailto:support@afrotiousnation.org">support@afrotiousnation.org</a>
+        Email: <a href="mailto:support@afrotiousnation.org">support@afrotiousnation.org</a>
     </p>
 </div>
 
@@ -304,6 +250,7 @@ h1, h2, h3, p {
     </p>
     <p style="opacity:0.8;">Powered by Stripe</p>
 </footer>
+
 <script>
 document.addEventListener("DOMContentLoaded", () => {
   const particleContainer = document.createElement("div");
@@ -323,19 +270,18 @@ document.addEventListener("DOMContentLoaded", () => {
     p.style.height = "6px";
     p.style.borderRadius = "50%";
     p.style.background = "rgba(200,162,200,0.8)";
-    p.style.boxShadow = "0 0 12px rgba(200,162,200,0.9) ";
+    p.style.boxShadow = "0 0 12px rgba(200,162,200,0.9)";
     p.style.left = Math.random() * window.innerWidth + "px";
     p.style.top = window.innerHeight + "px";
     p.style.opacity = 0.8;
     p.style.animation = "floatUp 12s linear forwards";
-
     particleContainer.appendChild(p);
-
     setTimeout(() => p.remove(), 12000);
   }
 
   setInterval(createParticle, 450);
 });
 </script>
+
 </body>
 </html>

@@ -4,9 +4,52 @@
   <meta charset="UTF-8" />
   <title>Conjuring Creations – Afrotious Nation</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="icon" type="image/png" href="favicon.png">
+  <link rel="icon" type="image/png" href="favicon.png">
 
-  
+  <link rel="canonical" href="https://afrotiousnation.org/coming-soon">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Brand",
+    "name": "Afrotious Nation",
+    "url": "https://afrotiousnation.org",
+    "logo": "https://afrotiousnation.org/favicon.png",
+    "sameAs": [
+      "https://www.youtube.com/@AfrotiousNation",
+      "https://www.instagram.com/afrotiousnation",
+      "https://linktr.ee/Afrotious_Nation"
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Afrotious Nation",
+    "url": "https://afrotiousnation.org",
+    "founder": {
+      "@type": "Person",
+      "name": "Aaliyah Casteele"
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Afrotious Nation",
+    "url": "https://afrotiousnation.org",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://afrotiousnation.org/?s={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
   <style>
     body {
       margin: 0;
@@ -103,29 +146,6 @@
       color: #EDE7F6;
     }
 
-    .product-price {
-      color: #C8A2C8;
-      font-weight: 500;
-      margin-bottom: 0.75rem;
-    }
-
-    .buy-button {
-      display: inline-block;
-      text-align: center;
-      padding: 0.6rem 0.9rem;
-      border-radius: 999px;
-      background: #7B2CBF;
-      color: #F8F6FF;
-      font-weight: 600;
-      text-decoration: none;
-      font-size: 0.9rem;
-      transition: 0.3s;
-    }
-
-    .buy-button:hover {
-      background: #9D4EDD;
-    }
-
     footer {
       padding: 1.5rem 2rem;
       border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -133,49 +153,46 @@
       color: #C8A2C8;
       text-align: center;
     }
-@keyframes floatUp {
-  0% { transform: translateY(0); opacity: 0.8; }
-  100% { transform: translateY(-120vh); opacity: 0; }
-}
-/* Make images responsive */
-img {
-  max-width: 100%;
-  height: auto;
-}
 
-/* Make iframe (SoundCloud) responsive */
-iframe {
-  max-width: 100%;
-  height: auto;
-}
+    @keyframes floatUp {
+      0% { transform: translateY(0); opacity: 0.8; }
+      100% { transform: translateY(-120vh); opacity: 0; }
+    }
 
-/* Responsive text scaling */
-h1, h2, h3, p {
-  word-wrap: break-word;
-}
+    img {
+      max-width: 100%;
+      height: auto;
+    }
 
-/* Responsive grid spacing on small screens */
-@media (max-width: 600px) {
-  .products {
-    grid-template-columns: 1fr;
-    padding: 1rem;
-  }
+    iframe {
+      max-width: 100%;
+      height: auto;
+    }
 
-  .product-card {
-    margin-bottom: 1.5rem;
-  }
+    h1, h2, h3, p {
+      word-wrap: break-word;
+    }
 
-  header {
-    flex-direction: column;
-    text-align: center;
-  }
+    @media (max-width: 600px) {
+      .products {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+      }
 
-  nav a {
-    display: inline-block;
-    margin: 0.5rem;
-  }
-}
+      .product-card {
+        margin-bottom: 1.5rem;
+      }
 
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 0.5rem;
+      }
+    }
   </style>
 </head>
 
@@ -191,24 +208,31 @@ h1, h2, h3, p {
       <a href="creator-application.html" class="header-btn">Creator Application</a>
       <a href="custom-orders.html" class="header-btn">Custom Orders</a>
       <a href="cosmic-lore.html" class="header-btn">Cosmic Lore</a>
-	<a href="news.html" class="header-btn">News</a>
-	<a href="coming-soon.html" class="header-btn">Blog</a>
-	<a href="coming-soon.html" class="header-btn">Events</a>
-	<a href="radio.html" class="header-btn">Cosmic Radio</a>
-	<a class="header-btn" href="creator-portal.html">Creator Portal</a>
-
+      <a href="news.html" class="header-btn">News</a>
+      <a href="coming-soon.html" class="header-btn">Blog</a>
+      <a href="coming-soon.html" class="header-btn">Events</a>
+      <a href="radio.html" class="header-btn">Cosmic Radio</a>
+      <a class="header-btn" href="creator-portal.html">Creator Portal</a>
     </nav>
-<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </header>
 
   <section class="hero">
     <h1>Conjuring Creations</h1>
     <p>New handmade magic is manifesting…</p>
   </section>
-<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay; encrypted-media" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2097207138&color=%23d00dcd&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/afrotious_nation" title="𝔸𝕗𝕣𝕠𝕥𝕚𝕠𝕦𝕤 ℕ𝕒𝕥𝕚𝕠𝕟✨" target="_blank" style="color: #cccccc; text-decoration: none;">𝔸𝕗𝕣𝕠𝕥𝕚𝕠𝕦𝕤 ℕ𝕒𝕥𝕚𝕠𝕟✨</a> · <a href="https://soundcloud.com/afrotious_nation/spaced-out" title="spaced out" target="_blank" style="color: #cccccc; text-decoration: none;">spaced out</a></div>
-  <section class="products">
 
-    
+  <iframe width="100%" height="166" scrolling="no" frameborder="no"
+    allow="autoplay; encrypted-media"
+    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2097207138&color=%23d00dcd&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
+  </iframe>
+
+  <div style="font-size: 10px; color: #cccccc; line-break: anywhere; word-break: normal; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif; font-weight: 100;">
+    <a href="https://soundcloud.com/afrotious_nation" target="_blank" style="color: #cccccc; text-decoration: none;">𝔸𝕗𝕣𝕠𝕥𝕚𝕠𝕦𝕤 ℕ𝕒𝕥𝕚𝕠𝕟✨</a> · 
+    <a href="https://soundcloud.com/afrotious_nation/spaced-out" target="_blank" style="color: #cccccc; text-decoration: none;">spaced out</a>
+  </div>
+
+  <section class="products">
     <div class="product-card">
       <img src="coming-soon.png" alt="Coming Soon" />
 
@@ -225,69 +249,56 @@ h1, h2, h3, p {
         </a>
         for updates.
       </p>
-
-         </div>
-
+    </div>
   </section>
 
-  <footer>
-    <footer style="
-    width: 100%;
-    padding: 20px 10px;
-    margin-top: 40px;
-    text-align: center;
-    color: #F8F6FF;
-    font-family: 'Poppins', sans-serif;
-">
+  <footer style="width: 100%; padding: 20px 10px; margin-top: 40px; text-align: center; color: #F8F6FF; font-family: 'Poppins', sans-serif;">
     <p style="margin: 8px 0; font-size: 1rem;">
-        All original content © 2025 Afrotious Nation, © 2026 Afrotious Nation
+      All original content © 2025 Afrotious Nation, © 2026 Afrotious Nation
     </p>
 
     <p style="margin: 8px 0; font-size: 0.95rem;">
-        <a href="/terms" style="color:#C8A2C8; text-decoration:none; margin-right:20px;">
-            Terms & Conditions
-        </a>
-        <a href="/privacy" style="color:#C8A2C8; text-decoration:none;">
-            Privacy Policy
-        </a>
+      <a href="/terms" style="color:#C8A2C8; text-decoration:none; margin-right:20px;">Terms & Conditions</a>
+      <a href="/privacy" style="color:#C8A2C8; text-decoration:none;">Privacy Policy</a>
     </p>
 
     <p style="margin: 8px 0; font-size: 0.9rem; opacity: 0.8;">
-        Powered by Stripe
+      Powered by Stripe
     </p>
-</footer>
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-  const particleContainer = document.createElement("div");
-  particleContainer.style.position = "fixed";
-  particleContainer.style.top = 0;
-  particleContainer.style.left = 0;
-  particleContainer.style.width = "100%";
-  particleContainer.style.height = "100%";
-  particleContainer.style.pointerEvents = "none";
-  particleContainer.style.zIndex = "0";
-  document.body.appendChild(particleContainer);
+  </footer>
 
-  function createParticle() {
-    const p = document.createElement("div");
-    p.style.position = "absolute";
-    p.style.width = "6px";
-    p.style.height = "6px";
-    p.style.borderRadius = "50%";
-    p.style.background = "rgba(200,162,200,0.8)";
-    p.style.boxShadow = "0 0 12px rgba(200,162,200,0.9) ";
-    p.style.left = Math.random() * window.innerWidth + "px";
-    p.style.top = window.innerHeight + "px";
-    p.style.opacity = 0.8;
-    p.style.animation = "floatUp 12s linear forwards";
+  <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const particleContainer = document.createElement("div");
+    particleContainer.style.position = "fixed";
+    particleContainer.style.top = 0;
+    particleContainer.style.left = 0;
+    particleContainer.style.width = "100%";
+    particleContainer.style.height = "100%";
+    particleContainer.style.pointerEvents = "none";
+    particleContainer.style.zIndex = "0";
+    document.body.appendChild(particleContainer);
 
-    particleContainer.appendChild(p);
+    function createParticle() {
+      const p = document.createElement("div");
+      p.style.position = "absolute";
+      p.style.width = "6px";
+      p.style.height = "6px";
+      p.style.borderRadius = "50%";
+      p.style.background = "rgba(200,162,200,0.8)";
+      p.style.boxShadow = "0 0 12px rgba(200,162,200,0.9)";
+      p.style.left = Math.random() * window.innerWidth + "px";
+      p.style.top = window.innerHeight + "px";
+      p.style.opacity = 0.8;
+      p.style.animation = "floatUp 12s linear forwards";
 
-    setTimeout(() => p.remove(), 12000);
-  }
+      particleContainer.appendChild(p);
+      setTimeout(() => p.remove(), 12000);
+    }
 
-  setInterval(createParticle, 450);
-});
-</script>
+    setInterval(createParticle, 450);
+  });
+  </script>
+
 </body>
 </html>

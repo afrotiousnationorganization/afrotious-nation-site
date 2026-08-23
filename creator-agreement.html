@@ -4,7 +4,55 @@
   <meta charset="UTF-8" />
   <title>Afrotious Nation - Creator Agreement</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="icon" type="image/png" href="favicon.png">
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <!-- CANONICAL -->
+  <link rel="canonical" href="https://afrotiousnation.org/creator-agreement">
+
+  <!-- BRAND IDENTITY SCHEMA -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Brand",
+    "name": "Afrotious Nation",
+    "url": "https://afrotiousnation.org",
+    "logo": "https://afrotiousnation.org/favicon.png",
+    "sameAs": [
+      "https://www.youtube.com/@AfrotiousNation",
+      "https://www.instagram.com/afrotiousnation",
+      "https://linktr.ee/Afrotious_Nation"
+    ]
+  }
+  </script>
+
+  <!-- ORGANIZATION / FOUNDER SCHEMA -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Afrotious Nation",
+    "url": "https://afrotiousnation.org",
+    "founder": {
+      "@type": "Person",
+      "name": "Aaliyah Casteele"
+    }
+  }
+  </script>
+
+  <!-- WEBSITE SCHEMA -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Afrotious Nation",
+    "url": "https://afrotiousnation.org",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://afrotiousnation.org/?s={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
 
   <style>
     body {
@@ -42,145 +90,52 @@
       color: #C8A2C8;
     }
 
-    .hero {
-      padding: 3rem 2rem 1rem;
+    section {
       max-width: 900px;
-      margin: 0 auto;
-      text-align: center;
+      margin: 60px auto;
+      text-align: left;
+      padding: 0 20px;
     }
 
-    .hero h1 {
+    h1 {
       font-size: 2.8rem;
-      margin-bottom: 0.5rem;
       color: #C8A2C8;
-      text-shadow: 0 0 15px rgba(200, 162, 200, 0.4);
+      text-shadow: 0 0 15px rgba(200,162,200,0.4);
     }
 
-    .hero p {
-      max-width: 600px;
-      margin: 0 auto;
+    h2 {
+      margin-top: 40px;
+      color: #C8A2C8;
+    }
+
+    p, ul {
       line-height: 1.6;
       color: #EDE7F6;
     }
 
-    .products {
-      padding: 2rem;
-      max-width: 1100px;
-      margin: 0 auto 3rem;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 2rem;
-    }
-
-    .product-card {
-      background: rgba(58, 12, 163, 0.15);
-      border: 1px solid rgba(200, 162, 200, 0.2);
-      border-radius: 15px;
-      padding: 1rem;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
-      backdrop-filter: blur(8px);
-      transition: 0.3s;
-    }
-
-    .product-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 15px 35px rgba(123, 44, 191, 0.4);
-    }
-
-    .product-card img {
-      width: 100%;
-      border-radius: 10px;
-      margin-bottom: 0.75rem;
-      object-fit: cover;
-      max-height: 260px;
-      box-shadow: 0 0 20px rgba(200, 162, 200, 0.3);
-    }
-
-    .product-title {
-      font-weight: 600;
-      margin-bottom: 0.25rem;
-      color: #EDE7F6;
-    }
-
-    .product-price {
-      color: #C8A2C8;
-      font-weight: 500;
-      margin-bottom: 0.75rem;
-    }
-
-    .buy-button {
-      display: inline-block;
-      text-align: center;
-      padding: 0.6rem 0.9rem;
-      border-radius: 999px;
-      background: #7B2CBF;
-      color: #F8F6FF;
-      font-weight: 600;
-      text-decoration: none;
-      font-size: 0.9rem;
-      transition: 0.3s;
-    }
-
-    .buy-button:hover {
-      background: #9D4EDD;
+    ul {
+      margin-left: 20px;
     }
 
     footer {
-      padding: 1.5rem 2rem;
-      border-top: 1px solid rgba(255, 255, 255, 0.1);
-      font-size: 0.85rem;
-      color: #C8A2C8;
+      width: 100%;
+      padding: 20px 10px;
+      margin-top: 40px;
       text-align: center;
+      color: #F8F6FF;
+      font-family: 'Poppins', sans-serif;
     }
-@keyframes floatUp {
-  0% { transform: translateY(0); opacity: 0.8; }
-  100% { transform: translateY(-120vh); opacity: 0; }
-}
-/* Make images responsive */
-img {
-  max-width: 100%;
-  height: auto;
-}
 
-/* Make iframe (SoundCloud) responsive */
-iframe {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Responsive text scaling */
-h1, h2, h3, p {
-  word-wrap: break-word;
-}
-
-/* Responsive grid spacing on small screens */
-@media (max-width: 600px) {
-  .products {
-    grid-template-columns: 1fr;
-    padding: 1rem;
-  }
-
-  .product-card {
-    margin-bottom: 1.5rem;
-  }
-
-  header {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  nav a {
-    display: inline-block;
-    margin: 0.5rem;
-  }
-}
-
+    @keyframes floatUp {
+      0% { transform: translateY(0); opacity: 0.8; }
+      100% { transform: translateY(-120vh); opacity: 0; }
+    }
   </style>
 </head>
 
 <body>
 
-  <header>
+<header>
     <div class="logo">Afrotious Nation</div>
     <nav>
       <a href="index.html">Marketplace</a>
@@ -191,17 +146,16 @@ h1, h2, h3, p {
       <a href="creator-application.html" class="header-btn">Creator Application</a>
       <a href="custom-orders.html" class="header-btn">Custom Orders</a>
       <a href="cosmic-lore.html" class="header-btn">Cosmic Lore</a>
-	<a href="news.html" class="header-btn">News</a>
-	<a href="coming-soon.html" class="header-btn">Blog</a>
-	<a href="coming-soon.html" class="header-btn">Events</a>
-	<a href="radio.html" class="header-btn">Cosmic Radio</a>
-	<a class="header-btn" href="creator-portal.html">Creator Portal</a>
-
+      <a href="news.html" class="header-btn">News</a>
+      <a href="coming-soon.html" class="header-btn">Blog</a>
+      <a href="coming-soon.html" class="header-btn">Events</a>
+      <a href="radio.html" class="header-btn">Cosmic Radio</a>
+      <a class="header-btn" href="creator-portal.html">Creator Portal</a>
     </nav>
-<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-  </header>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</header>
 
-<section style="max-width:900px;margin:60px auto;text-align:left;">
+<section>
     <h1>Afrotious Nation Creator Agreement</h1>
     <p style="margin-top:15px;font-size:1.2rem;color:#C8A2C8;">
         Independent Contractor Terms & Platform Guidelines
@@ -213,24 +167,19 @@ h1, h2, h3, p {
         and accept the terms listed below.
     </p>
 
-    <h2 style="margin-top:40px;">1. Independent Contractor Status</h2>
-    <p>
-        Creators are classified as <strong>independent contractors</strong>, not employees of Afrotious Nation.
-        This means:
-    </p>
-    <ul style="margin-top:10px;">
+    <h2>1. Independent Contractor Status</h2>
+    <p>Creators are classified as <strong>independent contractors</strong>, not employees of Afrotious Nation.</p>
+    <ul>
         <li>You manage your own taxes and financial reporting.</li>
         <li>You are not eligible for employee benefits.</li>
         <li>You control your own creative process and work schedule.</li>
         <li>You may work with other brands, platforms, or clients.</li>
     </ul>
 
-    <h2 style="margin-top:40px;">2. Stripe Connect Onboarding</h2>
-    <p>
-        Afrotious Nation uses <strong>Stripe Connect</strong> to handle all creator payouts. Stripe Connect 
-        manages:
-    </p>
-    <ul style="margin-top:10px;">
+    <h2>2. Stripe Connect Onboarding</h2>
+    <p>Afrotious Nation uses <strong>Stripe Connect</strong> to handle all creator payouts. Stripe manages:</p>
+
+    <ul>
         <li>Tax form collection (W‑9 for U.S. creators, W‑8BEN for international creators)</li>
         <li>Identity verification</li>
         <li>Bank account setup</li>
@@ -238,82 +187,51 @@ h1, h2, h3, p {
         <li>1099‑NEC generation for eligible U.S. creators</li>
     </ul>
 
-    <p style="margin-top:10px;">
-        Afrotious Nation does <strong>not</strong> collect, store, or process your tax forms or banking information.
-        All sensitive data is handled securely by Stripe.
-    </p>
+    <p>Afrotious Nation does <strong>not</strong> collect, store, or process your tax forms or banking information.  
+       All sensitive data is handled securely by Stripe.</p>
 
-    <h2 style="margin-top:40px;">3. Marketplace Earnings & Commission Structure</h2>
-    <p>
-        Creators earn revenue from sales, submissions, or brand placements within the Afrotious Nation 
-        Marketplace, Music Universe, Cosmic Radio, or related platforms.
-    </p>
+    <h2>3. Marketplace Earnings & Commission Structure</h2>
+    <p>Creators earn revenue from sales, submissions, or brand placements across Afrotious Nation platforms.</p>
 
-    <p style="margin-top:10px;">
-        The standard payout structure is:
-    </p>
-
-    <ul style="margin-top:10px;">
+    <p>The standard payout structure is:</p>
+    <ul>
         <li><strong>Creator Earnings:</strong> 90%</li>
         <li><strong>Afrotious Nation Platform Fee:</strong> 10%</li>
     </ul>
 
-    <p style="margin-top:10px;">
-        Stripe automatically splits payouts according to this structure. You do not need to calculate 
-        commissions manually.
-    </p>
+    <p>Stripe automatically splits payouts according to this structure.</p>
 
-    <h2 style="margin-top:40px;">4. Content Ownership & Licensing</h2>
-    <p>
-        Creators retain full ownership of their original work. By submitting content to Afrotious Nation, 
-        you grant the platform a non-exclusive license to:
-    </p>
-    <ul style="margin-top:10px;">
+    <h2>4. Content Ownership & Licensing</h2>
+    <p>Creators retain full ownership of their original work. By submitting content, you grant Afrotious Nation a non-exclusive license to:</p>
+
+    <ul>
         <li>Display your work on the Marketplace</li>
         <li>Feature your brand or music in Afrotious Nation City</li>
         <li>Use your assets for promotional or platform-related content</li>
     </ul>
 
-    <h2 style="margin-top:40px;">5. Removal or Termination</h2>
-    <p>
-        Creators may request removal of their content at any time. Afrotious Nation may also remove 
-        content that violates platform rules, legal guidelines, or community standards.
-    </p>
+    <h2>5. Removal or Termination</h2>
+    <p>Creators may request removal of their content at any time. Afrotious Nation may also remove content that violates platform rules or legal guidelines.</p>
 
-    <h2 style="margin-top:40px;">6. Acceptance</h2>
-    <p>
-        By continuing with Stripe Connect onboarding, you confirm that you have read and agree to the 
-        terms outlined in this Creator Agreement.
-    </p>
-
+    <h2>6. Acceptance</h2>
+    <p>By continuing with Stripe Connect onboarding, you confirm that you have read and agree to the terms outlined in this Creator Agreement.</p>
 </section>
 
 <footer>
-    <footer style="
-    width: 100%;
-    padding: 20px 10px;
-    margin-top: 40px;
-    text-align: center;
-    color: #F8F6FF;
-    font-family: 'Poppins', sans-serif;
-">
     <p style="margin: 8px 0; font-size: 1rem;">
         All original content © 2025 Afrotious Nation, © 2026 Afrotious Nation
     </p>
 
     <p style="margin: 8px 0; font-size: 0.95rem;">
-        <a href="/terms" style="color:#C8A2C8; text-decoration:none; margin-right:20px;">
-            Terms & Conditions
-        </a>
-        <a href="/privacy" style="color:#C8A2C8; text-decoration:none;">
-            Privacy Policy
-        </a>
+        <a href="/terms" style="color:#C8A2C8; margin-right:20px;">Terms & Conditions</a>
+        <a href="/privacy" style="color:#C8A2C8;">Privacy Policy</a>
     </p>
 
     <p style="margin: 8px 0; font-size: 0.9rem; opacity: 0.8;">
         Powered by Stripe
     </p>
 </footer>
+
 <script>
 document.addEventListener("DOMContentLoaded", () => {
   const particleContainer = document.createElement("div");
@@ -333,37 +251,19 @@ document.addEventListener("DOMContentLoaded", () => {
     p.style.height = "6px";
     p.style.borderRadius = "50%";
     p.style.background = "rgba(200,162,200,0.8)";
-    p.style.boxShadow = "0 0 12px rgba(200,162,200,0.9) ";
+    p.style.boxShadow = "0 0 12px rgba(200,162,200,0.9)";
     p.style.left = Math.random() * window.innerWidth + "px";
     p.style.top = window.innerHeight + "px";
     p.style.opacity = 0.8;
     p.style.animation = "floatUp 12s linear forwards";
 
     particleContainer.appendChild(p);
-
     setTimeout(() => p.remove(), 12000);
   }
 
   setInterval(createParticle, 450);
-// Authentication check
-  const user = netlifyIdentity.currentUser();
-  const authStatus = document.getElementById("auth-status");
-  const portalContent = document.getElementById("portal-content");
-
-  if (!user) {
-    authStatus.innerHTML = "You must be logged in to access the Submission Portal.";
-    netlifyIdentity.open();
-  } else {
-    authStatus.innerHTML = "Authenticated as: " + user.email;
-    portalContent.style.display = "block";
-  }
-
-  // Logout
-  document.getElementById("logout-btn").addEventListener("click", () => {
-    netlifyIdentity.logout();
-    location.reload();
-  });
 });
 </script>
+
 </body>
 </html>
